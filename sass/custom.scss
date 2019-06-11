@@ -137,11 +137,14 @@ regions fullwidth
 #block-crise-formulaireexposeenvironnement-recherchepage-1,
 #block-crise-search {
   float: right;
+  width: 400px;
 }
 #block-reseauxsociaux {
   float: right;
 }
-
+.views-exposed-form .form-item input {
+    width: 165px;/*temp*/
+}
 
 /*temp*/
 .alert-info {
