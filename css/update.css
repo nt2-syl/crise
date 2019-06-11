@@ -1,0 +1,49 @@
+/****/
+/* line 9, ../sass/update.scss */
+.single-course .course-meta .meta-item:nth-child(3n+1) {
+  clear: both;
+}
+@media (max-width: 767px) {
+  /* line 14, ../sass/update.scss */
+  .single-course .course-meta .meta-item {
+    width: 50%;
+  }
+  /* line 16, ../sass/update.scss */
+  .single-course .course-meta .meta-item:nth-child(3n+1) {
+    clear: none;
+  }
+  /* line 19, ../sass/update.scss */
+  .single-course .course-meta .meta-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media (max-width: 400px) {
+  /* line 25, ../sass/update.scss */
+  .single-course .course-meta .meta-item {
+    width: 100%;
+  }
+}
+
+/* line 31, ../sass/update.scss */
+.icon-level {
+  background: url("../images/level-up.png") no-repeat scroll center center transparent;
+}
+
+/* line 34, ../sass/update.scss */
+.icon-price {
+  background: url("../images/price-tag.png") no-repeat scroll center center transparent;
+}
+
+/* line 37, ../sass/update.scss */
+.icon-students {
+  background: url("../images/student.png") no-repeat scroll center center transparent;
+}
+
+/* line 41, ../sass/update.scss */
+.gbb-row.gsc-equal-height .column-content-inner {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  top: 0;
+}

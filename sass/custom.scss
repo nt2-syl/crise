@@ -5,6 +5,135 @@
 
 @import "compass/reset";
 
+/* Liens principaux */
 a {
-  color: #000;
+    color: #262C38;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #86BC42;
+    text-decoration: none;
+}
+a:hover, a:focus, a:active {
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    outline: none !important;
+    color: #86BC42;
+}
+
+/* Default fonts */
+body {
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #657184;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #262C38;
+}
+/* .menu--besoins */
+.nav > li,
+.nav > li > a {
+  display: inline-block;
+}
+
+/* 
+regions fullwidth
+*/
+
+.fullwidth {
+  width: 100%;
+  background: #fff;
+}
+.fullwidth_inner {
+  margin: 0 auto;
+  padding: 0px 0px;
+}
+/*.topbar */
+.top_navigation {
+    background: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    font-size: 12px;
+    padding: 0;
+    margin-top: -1px;
+}
+.main_navigation {
+
+}
+.footer_navigation {
+  background: #222;
+}
+
+/*.breadcrumb-content-inner .gva-breadcrumb-content .gva-block-breadcrumb .breadcrumb-style */
+.title_breadcrumb {
+    background-color: #F6F6F6;
+    padding: 40px 0 30px;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.top1 {
+}
+.top2 {
+}
+.top3 {
+}
+
+
+
+/* MENU PRINCIPAL
+.navigation .gva_menu li a = .menu--besoins
+*/
+.menu--besoins li a {
+    text-align: left !important;
+}
+.menu--besoins > li > a {
+    display: block;
+    position: relative;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 22px 12px;
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    text-align: center;
+    color: #656565;
+}
+
+.menu--besoins > li:hover a {
+    color: #86BC42 !important;
+}
+/* todo: active trail à activer */
+.menu--besoins > li.menu-item--active-trail > a {
+    color: #86BC42 !important;
+}
+
+/**
+* blocs headers
+*/
+#block-besoins {
+  float: right;
+}
+#block-crise-search {
+  float: right;
+}
+#block-reseauxsociaux {
+  float: right;
+}
+
+
+/*temp*/
+.alert-info {
+	background: none;
+	border: none;
 }
