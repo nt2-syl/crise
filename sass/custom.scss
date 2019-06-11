@@ -95,7 +95,8 @@ regions fullwidth
 .menu--main li a {
     text-align: left !important;
 }
-.menu--besoins > li > a {
+.menu--besoins > li > a,
+.menu--main > li > a {
     display: block;
     position: relative;
     font-size: 12px;
