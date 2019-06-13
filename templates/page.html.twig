@@ -195,14 +195,7 @@
   </div>
 {% endblock %}
 
-{% if page.footer %}
 <div class="fullwidth footer_navigation">
   <div class="container">
-  {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endblock %}
-      </div>
+{% include directory ~ '/templates/page/footer.html.twig' %}
   </div>
-{% endif %}
