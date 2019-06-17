@@ -1,21 +1,21 @@
 framework:
   css:
     theme:
-      //fonts.googleapis.com/css?family=Roboto:400,700: { type: external }
-      //fonts.googleapis.com/css?family=Poppins:400,600,700: { type: external }
-      css/sliderlayer.css: {}
-      css/font-awesome.css: {}
-      css/animate.css: {}
-      css/icon.css: {}
-      vendor/owl-carousel/assets/owl.carousel.min.css: {}
-      vendor/owl-carousel/assets/owl.theme.default.min.css: {}
-      vendor/prettyphoto/css/prettyPhoto.css: {}
-      vendor/ytplayer/css/jquery.mb.YTPlayer.min.css: {}
-      vendor/magnific/magnific-popup.css: {}
-      css/bootstrap.css: {}
-      css/template.css: {}
+      #//fonts.googleapis.com/css?family=Roboto:400,700: { type: external }
+      #//fonts.googleapis.com/css?family=Poppins:400,600,700: { type: external }
+      #css/sliderlayer.css: {}
+      #css/font-awesome.css: {}
+      #css/animate.css: {}
+      #css/icon.css: {}
+      #vendor/owl-carousel/assets/owl.carousel.min.css: {}
+      #vendor/owl-carousel/assets/owl.theme.default.min.css: {}
+      #vendor/prettyphoto/css/prettyPhoto.css: {}
+      #vendor/ytplayer/css/jquery.mb.YTPlayer.min.css: {}
+      #vendor/magnific/magnific-popup.css: {}
+      #css/bootstrap.css: {}
+      #css/template.css: {}
       css/style.css: {}
-      css/default.css: {}  
+      #css/default.css: {}  
       css/custom.css: {}    
   js:
     #bootstrap/assets/javascripts/bootstrap/affix.js: {}
