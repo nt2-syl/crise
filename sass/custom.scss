@@ -203,27 +203,33 @@ ul.menu > li a:after {
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
+
+  /* titre des blocs sidebar */
+    .block .block-title {
+      background: none;
+      position: relative;
+      margin: 0 0 10px;
+      color: #86BC42;
+      border-bottom: 1px solid #86BC42;
+      z-index: 1;
+    /*span*/
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      position: relative;
+      letter-spacing: 1px;
+      color: #222;
+      padding: 10px 0 10px;
+      z-index: 9;
+    }
+
 }
 
-.block .block-title {
-  background: none;
-  position: relative;
-  margin: 0 0 10px;
-  color: #86BC42;
-  border-bottom: 1px solid #86BC42;
-  z-index: 1;
-/*span*/
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  position: relative;
-  letter-spacing: 1px;
-  color: #222;
-  padding: 10px 0 10px;
-  z-index: 9;
-}
 
+
+
+/*.sidebae #86BC42*/
 
 /* Taxos listes dans la sidebar */
 .item-list ul {
