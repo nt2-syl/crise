@@ -19,7 +19,6 @@ regions:
   content_bottom: 'Content bottom'
   sidebar_first: 'Primary'
   sidebar_second: 'Secondary'
-  footer: 'Footer'
   page_bottom: 'Related Content'
   before_footer: 'Before Footer'
   footer_first: 'Footer First'
