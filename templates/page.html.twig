@@ -161,13 +161,6 @@
         ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>
-        {# Highlighted #}
-        {% if page.highlighted %}
-          {% block highlighted %}
-            <div class="highlighted">{{ page.highlighted }}</div>
-          {% endblock %}
-        {% endif %}
-
         {# Help #}
         {% if page.help %}
           {% block help %}
@@ -191,6 +184,16 @@
         {% endblock %}
       {% endif %}
     </div>
+
+    {# Page Bottom - 12 column width under content, sidebars #}
+    {% if page.page_bottom %}
+    <div class="col-xs-12">
+      {% block page_bottom %}
+        <div class="page_bottom">{{ page.page_bottom }}</div>
+      {% endblock %}
+    </div>
+    {% endif %}
+
   </div>
 {% endblock %}
 
