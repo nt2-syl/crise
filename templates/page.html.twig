@@ -187,9 +187,9 @@
 
     {# Page Bottom - 12 column width under content, sidebars #}
     {% if page.page_bottom %}
-    <div class="col-xs-12">
+    <div class="row">
       {% block page_bottom %}
-        <div class="page_bottom">{{ page.page_bottom }}</div>
+        <div class="col-xs-12 page_bottom">{{ page.page_bottom }}</div>
       {% endblock %}
     </div>
     {% endif %}
