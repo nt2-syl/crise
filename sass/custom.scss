@@ -146,15 +146,25 @@ regions fullwidth
     width: 165px;/*temp*/
 }
 
+/* Barre Grise (region Breadcrumb) */
+.page-header {
+    padding-bottom: 0;
+    margin: 0;
+    border-bottom: none;
+}
+
+
 /*temp*/
 .alert-info {
 	background: none;
 	border: none;
 }
 
-/* flexslider : fix */
+/* flexslider : fix 
 .flexslider .slides > li {
     display: inline-block !important;
     width: 33%;
     float: left;
 }
+*/
+
