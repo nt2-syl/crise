@@ -68,7 +68,7 @@ regions fullwidth
 
 }
 .footer_navigation {
-  background: #222;
+  background: #000;
 }
 
 /*.breadcrumb-content-inner .gva-breadcrumb-content .gva-block-breadcrumb .breadcrumb-style */
@@ -78,14 +78,6 @@ regions fullwidth
     margin-bottom: 45px;
     position: relative;
 }
-
-.top1 {
-}
-.top2 {
-}
-.top3 {
-}
-
 
 
 /* MENU PRINCIPAL (besoins)
@@ -297,4 +289,18 @@ ul.menu > li a:after {
   /* autres règles sidebar */
 }
 
+/* Region Page Bottom */
+
+.region-page-bottom {
+    .views-field-title {
+      font-weight: bold;
+    }
+    .views-row {
+        margin-bottom: 2em;
+    }
+}
+
+
 /* Accueil bloc recherche à développer */
+
+
