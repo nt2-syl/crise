@@ -119,7 +119,6 @@ regions fullwidth
 /**
 * blocs headers
 */
-
 #block-crise-main-menu,
 #block-besoins {
   float: right;
@@ -127,7 +126,8 @@ regions fullwidth
 #block-crise-formulaireexposeenvironnement-recherchepage-1,
 #block-crise-search {
   float: right;
-  width: 400px;
+  width: 25%;
+  margin-bottom: 0;
 }
 #block-reseauxsociaux {
   float: right;
