@@ -351,6 +351,9 @@ ul.menu > li a:after {
   -moz-transition: all 0.35s;
   -ms-transition: all 0.35s;
 }
-.path-recherche .region-sidebar-first {
+/* Visible sur
+Recherche, Modeles, Services, Ref Biblio
+*/
+.region-sidebar-first {
   padding: 0;
 }
