@@ -145,9 +145,12 @@ regions fullwidth
     padding-bottom: 0 !important;
     margin: 0 !important;
     border-bottom: none !important;
+    float: left;
 }
 #block-addtoanybuttons-2 {
   margin-bottom: 0;
+  display: inline-block;
+  float: right;
 }
 
 /* Région Aide/Alertes */
@@ -184,12 +187,6 @@ ul.menu > li a:after {
 
 
 /* Noeuds*/
-/*add2any float right */
-#block-addtoanybuttons-2  {
-  display: inline-block;
-  float: right;
-}
-
 .content .field {
   margin-bottom: 2em;
 }
