@@ -315,12 +315,39 @@ ul.menu > li a:after {
   margin-bottom: 2em;
 }
 /* TODO: Exceptions */
-/* Source: edubiz/home-2 : Our Services */
+/* Source: edubiz/home-2 : Our Services
+* .widget.gsc-icon-box .highlight_content .title
+*/
 .views-field-title,
-.widget.gsc-icon-box .highlight_content .title {
+.views-field-title-1,
+.views-field-name {
     font-size: 16px;
     font-family: "Poppins",sans-serif;
     font-weight: 600;
     color: #222;
     margin-bottom: 3px;
-} 
+}
+/* Sur: 
+ Moteur Recherche - Titres
+ Glossaire - Titres
+*/
+
+/* Moteur Recherche - Surtitres 
+* Source : Menu principal - liens
+* .navigation .gva_menu > li > a {
+*/
+.views-field-type-1 {
+  display: block;
+  position: relative;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 22px 12px;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  text-align: center;
+  color: #656565;
+}
