@@ -363,3 +363,24 @@ Recherche, Modeles, Services, Ref Biblio
 .region-sidebar-first {
   padding: 0;
 }
+
+
+.region-copyright {
+  text-align: center;
+}
+
+/* Responsive @media */
+/* mobile */
+@media (max-width: 460px) {}
+/* col-xs // 0-768 */
+@media (max-width: 768px) {}
+/* col-sm // 768-992 */
+@media (min-width: 768px) and (max-width: 992px) {}
+/* col-md // 992-1200 */
+@media (max-width: 1200px) {}
+/* col-lg 1200+ */
+@media (min-width: 1200px) {}
+/* écrans larges */
+@media all and (min-width: 1200px) and (max-width: 9999px) {}
+
+
