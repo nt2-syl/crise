@@ -342,12 +342,15 @@ ul.menu > li a:after {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 22px 12px;
+  padding: 0;
+  text-align: left;
+  color: #656565;
   -webkit-transition: all 0.35s;
   -o-transition: all 0.35s;
   transition: all 0.35s;
   -moz-transition: all 0.35s;
   -ms-transition: all 0.35s;
-  text-align: center;
-  color: #656565;
+}
+.path-recherche .region-sidebar-first {
+  padding: 0;
 }
