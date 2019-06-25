@@ -336,7 +336,9 @@ ul.menu > li a:after {
 * Source : Menu principal - liens
 * .navigation .gva_menu > li > a {
 */
-.views-field-type-1 {
+.views-field-type,
+.views-field-type-1,
+.views-field-bundle {
   display: block;
   position: relative;
   font-size: 12px;
