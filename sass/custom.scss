@@ -409,6 +409,19 @@ Recherche, Modeles, Services, Ref Biblio
   margin: 0 auto 30px;
 }
 
+/* Icones dans Fil Ariane, sur Besoin */
+.region-breadcrumb .block-contenufield {
+  float: left;
+  padding-right: 30px;
+}
+/* Logo */
+.logo {
+  max-width: 300px;
+}
+.name {
+  display: none;
+}
+
 /* Responsive @media */
 /* mobile */
 @media (max-width: 460px) {}
