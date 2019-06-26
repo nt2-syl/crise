@@ -403,6 +403,11 @@ Recherche, Modeles, Services, Ref Biblio
 
 }
 
+/* Ne pas rendre les images flexslider responsive à 100% (elles sont plus petites) */
+.flexslider .slides img {
+  width: auto;
+  margin: 0 auto 30px;
+}
 
 /* Responsive @media */
 /* mobile */
