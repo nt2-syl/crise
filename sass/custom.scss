@@ -421,6 +421,20 @@ Recherche, Modeles, Services, Ref Biblio
 .name {
   display: none;
 }
+/* TEMP recherche entete sur 1 ligne */
+#block-crise-formulaireexposeenvironnement-recherchepage-1 {
+    float: right;
+    width: 35%;
+    margin-bottom: 0;
+}
+.region-top-navigation .views-exposed-form .form-item {
+    padding-right: 20px;
+    width: 40%;
+    float: right;
+}
+.region-top-navigation #edit-actions {
+  float: right;
+}
 
 /* Responsive @media */
 /* mobile */
@@ -436,4 +450,6 @@ Recherche, Modeles, Services, Ref Biblio
 /* écrans larges */
 @media all and (min-width: 1200px) and (max-width: 9999px) {}
 
-/**/
+
+
+
