@@ -233,7 +233,7 @@ ul.menu > li a:after {
 
 
 
-/*.sidebae #86BC42*/
+/*.sidebar #86BC42*/
 
 /* Taxos listes dans la sidebar */
 .item-list ul {
@@ -310,6 +310,16 @@ ul.menu > li a:after {
     }
 }
 
+
+/* Footer */
+#footer .block-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 10px 0 10px;
+}
 
 /* Accueil bloc recherche à développer */
 
@@ -435,6 +445,9 @@ Recherche, Modeles, Services, Ref Biblio
 .region-top-navigation #edit-actions {
   float: right;
 }
+
+
+
 
 /* Responsive @media */
 /* mobile */
