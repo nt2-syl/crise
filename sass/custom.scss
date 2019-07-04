@@ -147,6 +147,15 @@ regions fullwidth
     border-bottom: none !important;
     float: left;
 }
+.page-title,
+.page-header {
+    font-size: 18px;
+    float: right;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
 #block-addtoanybuttons-2 {
   margin-bottom: 0;
   display: inline-block;
@@ -423,6 +432,7 @@ Recherche, Modeles, Services, Ref Biblio
 #block-contenufield {
   float: left;
   padding-right: 30px;
+  margin-bottom: 0;
 }
 /* Logo */
 .logo {
