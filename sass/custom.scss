@@ -559,8 +559,9 @@ ul {
     padding-left: 30px;
 }
 
-
-.field--label {
+/* Label des champs, label des EVA */
+.field--label,
+.region-page-bottom h2.block-title {
     font-size: 14px;
     font-weight: 700;
     font-family: "Poppins",sans-serif;
