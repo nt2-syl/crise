@@ -559,6 +559,20 @@ ul {
     padding-left: 30px;
 }
 
+
+.field--label {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Poppins",sans-serif;
+    border-bottom: 1px solid #86BC42;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+
 /* Responsive @media */
 /* mobile */
 @media (max-width: 460px) {}
