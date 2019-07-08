@@ -5,6 +5,34 @@
 
 @import "compass/reset";
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: local("☺"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("fonts/glyphicons-halflings-regular.eot");
+  src: url("fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("fonts/glyphicons-halflings-regular.woff") format("woff"), url("fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+        font-size: 14px;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-twitter::before {
+    content: "\f099";
+}
+
+
 /**
 * Éléments principaux
 **/
@@ -45,6 +73,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 p {
   margin-bottom: 1em;
 }
+
+
+
 
 /* .menu--besoins */
 .nav > li,
@@ -142,6 +173,17 @@ p {
 .views-exposed-form .form-item input {
     width: 165px;/*temp*/
 }
+
+#block-reseauxsociaux {
+	
+}
+ul.list-social li {
+    display: inline;
+    padding: 0 10px;
+    list-style: none;
+}
+
+
 
 /* Barre Grise (region Breadcrumb) */
 .page-header {
@@ -595,6 +637,14 @@ ul {
     color: #222;
     letter-spacing: 1px;
 }
+/* Champ Document, sur Service */
+.field--name-field-document {
+  .icon,
+  .file-link,
+  .file-size {
+    padding-right: 20px;
+  }
+}
 
 
 /* Responsive @media */
@@ -610,7 +660,5 @@ ul {
 @media (min-width: 1200px) {}
 /* écrans larges */
 @media all and (min-width: 1200px) and (max-width: 9999px) {}
-
-
 
 
