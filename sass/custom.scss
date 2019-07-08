@@ -661,6 +661,25 @@ ul {
 }
 
 
+/*PAGER - VOIR RECHERCHE */
+
+
+nav.pager-nav {
+    clear: both;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+    background-color: #86BC42;
+    border-color: #86BC42;
+}
+.pagination > li {
+    display: inline-block;
+}
+
+
+
 /* Responsive @media */
 /* mobile */
 @media (max-width: 460px) {}
