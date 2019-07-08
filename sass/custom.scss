@@ -629,7 +629,9 @@ ul {
 
 /* Label des champs, label des EVA */
 .field--label,
-.region-page-bottom h2.block-title {
+.region-page-bottom h2.block-title,
+.path-frontpage .block-title,
+.field-group-accordion-wrapper h3 {
     font-size: 14px;
     font-weight: 700;
     font-family: "Poppins",sans-serif;
@@ -640,6 +642,14 @@ ul {
     color: #222;
     letter-spacing: 1px;
 }
+.path-frontpage .block-title {
+  text-align: center;
+  color: #000;
+  border: none;
+  font-size: 22px;
+}
+
+
 /* Champ Document, sur Service */
 .field--name-field-document {
   .icon,
