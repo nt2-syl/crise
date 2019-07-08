@@ -5,6 +5,10 @@
 
 @import "compass/reset";
 
+/**
+* Éléments principaux
+**/
+
 /* Liens principaux */
 a {
     color: #262C38;
@@ -48,10 +52,10 @@ p {
   display: inline-block;
 }
 
-/* 
-regions fullwidth
+/**
+* Regions 
 */
-
+/* Fullwidth */
 .fullwidth {
   width: 100%;
   background: #fff;
@@ -60,7 +64,7 @@ regions fullwidth
   margin: 0 auto;
   padding: 0px 0px;
 }
-/*.topbar */
+/*.Topbar */
 .top_navigation {
     background: none;
     border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -72,7 +76,6 @@ regions fullwidth
 
 }
 
-
 /*.breadcrumb-content-inner .gva-breadcrumb-content .gva-block-breadcrumb .breadcrumb-style */
 .title_breadcrumb {
     background-color: #F6F6F6;
@@ -83,8 +86,8 @@ regions fullwidth
 
 
 /* MENU PRINCIPAL (besoins)
-.navigation .gva_menu li a = .menu--besoins
-*/
+.navigation .gva_menu li a similaire à .menu--besoins */
+
 .menu--besoins li a,
 .menu--main li a {
     text-align: left !important;
@@ -195,7 +198,7 @@ ul.menu > li a:after {
 }
 
 
-/* Noeuds*/
+/* Noeuds - Règles générales */
 .content .field {
   margin-bottom: 2em;
 }
@@ -238,10 +241,6 @@ ul.menu > li a:after {
     }
 
 }
-
-
-
-
 
 
 /* Taxos listes dans la sidebar */
@@ -320,7 +319,9 @@ ul.menu > li a:after {
 }
 
 
-/* Footer */
+/**
+* Footer 
+*/
 #footer .block-title {
   font-size: 14px;
   font-weight: 700;
@@ -329,6 +330,16 @@ ul.menu > li a:after {
   color: #fff;
   padding: 10px 0 10px;
 }
+.footer a {
+  color: #86bc42;
+}
+.footer a.btn {
+  color: #fff;
+}
+.footer a.btn:hover {
+  color: #86bc42;
+}
+
 
 /* Accueil bloc recherche à développer */
 
@@ -434,6 +445,8 @@ Recherche, Modeles, Services, Ref Biblio
   padding-right: 30px;
   margin-bottom: 0;
 }
+
+
 /* Logo */
 .logo {
   max-width: 300px;
