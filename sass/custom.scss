@@ -175,14 +175,17 @@ p {
 }
 
 #block-reseauxsociaux {
-	
 }
 ul.list-social li {
     display: inline;
     padding: 0 10px;
     list-style: none;
+    font-size: 24px;
 }
-
+/* Remplacer icone Refresh par Loupe en CSS */
+.glyphicon-refresh::before {
+    content: "\e003";
+}
 
 
 /* Barre Grise (region Breadcrumb) */
