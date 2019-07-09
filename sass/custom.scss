@@ -160,6 +160,26 @@ p {
 }
 
 /**
+* Menu secondaire 
+*/
+.menu--menu-secondaire li {
+  display: inline-block;
+}
+#block-crise-main-menu, #block-besoins {
+  float: right;
+}
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+}
+.navbar {
+  border-radius: 0;
+  float: right;
+}
+
+
+
+/**
 * blocs headers
 */
 #block-besoins {
