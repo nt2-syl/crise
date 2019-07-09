@@ -843,3 +843,11 @@ nav.pager-nav {
 @media (min-width: 1200px) {}
 /* écrans larges */
 @media all and (min-width: 1200px) and (max-width: 9999px) {}
+
+
+/*  Bootstrap Clearfix */
+@media (min-width:767px){
+  .col-sm-6:nth-child(2n+1){
+    clear: left;
+  }
+}
