@@ -200,7 +200,7 @@ ul.list-social li {
 }
 .page-title,
 .page-header {
-    font-size: 18px;
+    font-size: 22px;
     float: left;
     margin-bottom: 0;
     margin-top: 0;
@@ -636,7 +636,7 @@ ul {
 .region-page-bottom h2.block-title,
 .path-frontpage .block-title,
 .field-group-accordion-wrapper h3 {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     font-family: "Poppins",sans-serif;
     border-bottom: 1px solid #86BC42;
@@ -652,8 +652,10 @@ ul {
   text-align: center;
   color: #000;
   border: none;
-  font-size: 22px;
+  font-size: 25px;
+  font-weight: 600
   padding-bottom: 30px;
+  text-transform: initial;
 }
 
 
