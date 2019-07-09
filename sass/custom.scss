@@ -686,6 +686,71 @@ nav.pager-nav {
   padding-left: 0;
 }
 
+
+/* Accueil - bloc Besoins (flexslider carousel) */
+#flexslider-1 {
+  .views-field-title {
+    text-align:center;
+    a:hover {
+      color: #86BC42;
+    }
+  }
+  .views-field-field-image {
+    text-align:center;
+  }
+  .views-field-body {
+    text-align:center;
+    font-size: 15px;
+  }
+  .widget.gsc-icon-box .highlight_content,
+  .views-field-title {
+     margin-top: 5px; 
+     margin-bottom: 30px;
+  }
+  .widget.gsc-icon-box.top-center .highlight_content,
+  .views-field-title {
+    text-align: center;
+  }
+  .widget.gsc-icon-box .highlight_content .title,
+  .views-field-title a {
+    font-size: 16px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 3px;
+  }
+  .widget.gsc-icon-box.top-center .title,
+  .views-field-title a {
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+  }
+  .widget.gsc-icon-box.top-center .title:after,
+  .views-field-title a:after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: #222;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25px;
+    z-index: 1;
+  }
+  .slides img {
+    width: 77px;
+    height: 77px;
+  }
+
+}
+
+.accueil_besoins {
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
 /* Responsive @media */
 /* mobile */
 @media (max-width: 460px) {}
