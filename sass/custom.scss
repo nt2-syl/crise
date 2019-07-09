@@ -840,6 +840,7 @@ nav.pager-nav {
 }
 div.region-content #edit-crise-facet {
   display: block;
+}
 
 /* Glossaire - Bonifications */
 .path-glossaire {
@@ -858,16 +859,41 @@ div.region-content #edit-crise-facet {
   }
 }
 
+
+
 /* Liens Read More*/
 .view-node a {
     font-family: "Poppins",sans-serif;
     text-transform: uppercase;
     font-size: 12px;
+  font-family: "Poppins",sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.view-node a i {
+    font-size: 13px;
+    position: relative;
+    top: 1px;
+    margin-left: 2px;
+}
+[class^="gv-icon"], [class*=" gv-icon"] {
+    font-family: 'gva-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.gv-icon-165:before {
+    content: "\e9a4";
 }
 
 
 /* Contact - Bonifications */
-/* TODO*/
+/* TODO */
 
 /* TODO : fleches custom flexslider - accueil besoins, accueil groupe */
 
