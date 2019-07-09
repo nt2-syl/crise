@@ -786,6 +786,13 @@ nav.pager-nav {
   background-color: #000;
 }
 
+/* Hide crise facet select by default, but show for expoesd form in block in content region */
+#edit-crise-facet {
+  display: none;
+}
+div.region-content #edit-crise-facet {
+  display: block;
+}
 
 /* TODO : fleches flexslider - accueil besoins, accueil groupe */
 
