@@ -702,6 +702,15 @@ nav.pager-nav {
     text-align:center;
     font-size: 15px;
   }
+  .slides img {
+    width: 77px;
+    height: 77px;
+  }
+}
+
+/*Accueil Besoins + Accueil Groupes */
+#flexslider-1,
+#flexslider-2 {
   .widget.gsc-icon-box .highlight_content,
   .views-field-title {
      margin-top: 5px; 
@@ -738,18 +747,37 @@ nav.pager-nav {
     margin-left: -25px;
     z-index: 1;
   }
-  .slides img {
-    width: 77px;
-    height: 77px;
-  }
-
 }
 
-.accueil_besoins {
-  h2 {
-    margin-bottom: 30px;
+#flexslider-2 {
+  .views-field-title {
+    text-align:left;
+  }
+  .views-field-title a:after {
+    left: 0;
+    margin-left: 0;
+    color: #86BC42;
   }
 }
+
+
+.accueil_besoins,
+.accueil_groupes {
+  h2.block-title {  margin-bottom: 30px;}
+  h2.block-title:after {
+    content: '';
+    width: 10%;
+    height: 5px;
+    background: #86BC42;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    z-index: 1;
+  }
+}
+
+
+/* TODO : fleches flexslider - accueil besoins, accueil groupe */
 
 /* Responsive @media */
 /* mobile */
