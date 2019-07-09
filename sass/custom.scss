@@ -212,6 +212,27 @@ ul.list-social li {
 }
 
 
+/* Recherche - Blocs de recherche*/
+.path-recherche {
+  .views-exposed-form {
+    width: 83%;
+    float: left;
+  }
+  #block-reinitialiserrecherche {
+    float: left;
+    display: inline-block;
+  }
+  #block-textepresentationrecherchegenerale {
+   clear: both; 
+ }
+ #edit-search-api-fulltext {
+   width: 555px;
+ }
+}
+/* TODO - version responsive en % */
+
+
+
 /* Barre Grise (region Breadcrumb) */
 .page-header {
     padding-bottom: 0 !important;
