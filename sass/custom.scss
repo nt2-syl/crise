@@ -114,7 +114,10 @@ p {
     margin-bottom: 45px;
     position: relative;
 }
-
+/* Exceptions */
+.path-frontpage .title_breadcrumb {
+  display: none;
+}
 
 /* MENU PRINCIPAL (besoins)
 .navigation .gva_menu li a similaire à .menu--besoins */
