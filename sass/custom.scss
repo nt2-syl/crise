@@ -78,13 +78,15 @@ p {
 
 
 /* .menu--besoins */
-.nav > li,
-.nav > li > a {
-  display: inline-block;
+.menu--besoins {
+  .nav > li,
+  .nav > li > a {
+    display: inline-block;
+  }
 }
 
 /**
-* Regions 
+* Regions
 */
 /* Fullwidth */
 .fullwidth {
@@ -160,7 +162,6 @@ p {
 /**
 * blocs headers
 */
-#block-crise-main-menu,
 #block-besoins {
   float: right;
 }
@@ -343,8 +344,8 @@ ul.menu > li a:after {
         -ms-transition: all 0.35s;
         color: #86BC42;
       }
-      a:hover, 
-      a:focus, 
+      a:hover,
+      a:focus,
       a:active {
         color: #86BC42;
         padding-left: 40px;
@@ -368,7 +369,7 @@ ul.menu > li a:after {
 
 
 /**
-* Footer 
+* Footer
 */
 #footer .block-title {
   font-size: 14px;
@@ -409,12 +410,12 @@ ul.menu > li a:after {
     color: #222;
     margin-bottom: 3px;
 }
-/* Sur: 
+/* Sur:
  Moteur Recherche - Titres
  Glossaire - Titres
 */
 
-/* Moteur Recherche - Surtitres 
+/* Moteur Recherche - Surtitres
 * Source : Menu principal - liens
 * .navigation .gva_menu > li > a {
 */
@@ -448,7 +449,7 @@ Recherche, Modeles, Services, Ref Biblio
 }
 
 
-/* Souligné Custom des titres de section dans le thème Edubiz */ 
+/* Souligné Custom des titres de section dans le thème Edubiz */
 .heading-line {
   position: relative;
   display: block;
@@ -713,7 +714,7 @@ nav.pager-nav {
 #flexslider-2 {
   .widget.gsc-icon-box .highlight_content,
   .views-field-title {
-     margin-top: 5px; 
+     margin-top: 5px;
      margin-bottom: 30px;
   }
   .widget.gsc-icon-box.top-center .highlight_content,
@@ -776,6 +777,10 @@ nav.pager-nav {
   }
 }
 
+.navbar-toggle .icon-bar {
+  background-color: #000;
+}
+
 
 /* TODO : fleches flexslider - accueil besoins, accueil groupe */
 
@@ -792,5 +797,3 @@ nav.pager-nav {
 @media (min-width: 1200px) {}
 /* écrans larges */
 @media all and (min-width: 1200px) and (max-width: 9999px) {}
-
-

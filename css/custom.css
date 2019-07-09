@@ -3,7 +3,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,63 +25,94 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: local("☺"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("fonts/glyphicons-halflings-regular.eot");
+  src: url("fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("fonts/glyphicons-halflings-regular.woff") format("woff"), url("fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+/* line 22, ../sass/custom.scss */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 14px;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 31, ../sass/custom.scss */
+.fa-twitter::before {
+  content: "\f099";
+}
+
+/**
+* Éléments principaux
+**/
 /* Liens principaux */
-/* line 9, ../sass/custom.scss */
+/* line 41, ../sass/custom.scss */
 a {
   color: #262C38;
   text-decoration: none;
 }
 
-/* line 13, ../sass/custom.scss */
+/* line 45, ../sass/custom.scss */
 a:hover, a:focus {
   color: #86BC42;
   text-decoration: none;
 }
 
-/* line 17, ../sass/custom.scss */
+/* line 49, ../sass/custom.scss */
 a:hover, a:focus, a:active {
   -webkit-transition: all 0.35s;
   -o-transition: all 0.35s;
@@ -93,7 +124,7 @@ a:hover, a:focus, a:active {
 }
 
 /* Default fonts */
-/* line 28, ../sass/custom.scss */
+/* line 60, ../sass/custom.scss */
 body {
   font-family: "Roboto",sans-serif;
   font-size: 16px;
@@ -102,7 +133,7 @@ body {
   font-weight: 400;
 }
 
-/* line 35, ../sass/custom.scss */
+/* line 67, ../sass/custom.scss */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Poppins",sans-serif;
   font-weight: 600;
@@ -110,30 +141,36 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #262C38;
 }
 
+/* line 73, ../sass/custom.scss */
+p {
+  margin-bottom: 1em;
+}
+
 /* .menu--besoins */
-/* line 42, ../sass/custom.scss */
-.nav > li,
-.nav > li > a {
+/* line 82, ../sass/custom.scss */
+.menu--besoins .nav > li,
+.menu--besoins .nav > li > a {
   display: inline-block;
 }
 
-/* 
-regions fullwidth
+/**
+* Regions
 */
-/* line 51, ../sass/custom.scss */
+/* Fullwidth */
+/* line 92, ../sass/custom.scss */
 .fullwidth {
   width: 100%;
   background: #fff;
 }
 
-/* line 55, ../sass/custom.scss */
+/* line 96, ../sass/custom.scss */
 .fullwidth_inner {
   margin: 0 auto;
   padding: 0px 0px;
 }
 
-/*.topbar */
-/* line 60, ../sass/custom.scss */
+/*.Topbar */
+/* line 101, ../sass/custom.scss */
 .top_navigation {
   background: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -142,13 +179,8 @@ regions fullwidth
   margin-top: -1px;
 }
 
-/* line 70, ../sass/custom.scss */
-.footer_navigation {
-  background: #222;
-}
-
 /*.breadcrumb-content-inner .gva-breadcrumb-content .gva-block-breadcrumb .breadcrumb-style */
-/* line 75, ../sass/custom.scss */
+/* line 113, ../sass/custom.scss */
 .title_breadcrumb {
   background-color: #F6F6F6;
   padding: 40px 0 30px;
@@ -156,16 +188,23 @@ regions fullwidth
   position: relative;
 }
 
-/* MENU PRINCIPAL
-.navigation .gva_menu li a = .menu--besoins
-*/
-/* line 94, ../sass/custom.scss */
-.menu--besoins li a {
+/* Exceptions */
+/* line 120, ../sass/custom.scss */
+.path-frontpage .title_breadcrumb {
+  display: none;
+}
+
+/* MENU PRINCIPAL (besoins)
+.navigation .gva_menu li a similaire à .menu--besoins */
+/* line 127, ../sass/custom.scss */
+.menu--besoins li a,
+.menu--main li a {
   text-align: left !important;
 }
 
-/* line 97, ../sass/custom.scss */
-.menu--besoins > li > a {
+/* line 131, ../sass/custom.scss */
+.menu--besoins > li > a,
+.menu--main > li > a {
   display: block;
   position: relative;
   font-size: 12px;
@@ -181,38 +220,756 @@ regions fullwidth
   color: #656565;
 }
 
-/* line 113, ../sass/custom.scss */
-.menu--besoins > li:hover a {
+/* line 148, ../sass/custom.scss */
+.menu--besoins > li:hover a,
+.menu--main > li:hover a {
   color: #86BC42 !important;
 }
 
 /* todo: active trail à activer */
-/* line 117, ../sass/custom.scss */
-.menu--besoins > li.menu-item--active-trail > a {
+/* line 153, ../sass/custom.scss */
+.menu--besoins > li.menu-item--active-trail > a,
+.menu--main > li.menu-item--active-trail > a {
   color: #86BC42 !important;
+}
+
+/* line 158, ../sass/custom.scss */
+.menu--menu-secondaire li {
+  list-style: none;
 }
 
 /**
 * blocs headers
 */
-/* line 124, ../sass/custom.scss */
+/* line 165, ../sass/custom.scss */
 #block-besoins {
   float: right;
 }
 
-/* line 127, ../sass/custom.scss */
+/* line 168, ../sass/custom.scss */
+#block-crise-formulaireexposeenvironnement-recherchepage-1,
 #block-crise-search {
   float: right;
+  width: 25%;
+  margin-bottom: 0;
 }
 
-/* line 130, ../sass/custom.scss */
+/* line 174, ../sass/custom.scss */
 #block-reseauxsociaux {
   float: right;
 }
 
-/*temp*/
-/* line 136, ../sass/custom.scss */
+/* line 177, ../sass/custom.scss */
+.views-exposed-form .form-item input {
+  width: 165px;
+  /*temp*/
+}
+
+/* line 183, ../sass/custom.scss */
+ul.list-social li {
+  display: inline;
+  padding: 0 10px;
+  list-style: none;
+  font-size: 24px;
+}
+
+/* Remplacer icone Refresh par Loupe en CSS */
+/* line 190, ../sass/custom.scss */
+.glyphicon-refresh::before {
+  content: "\e003";
+}
+
+/* Barre Grise (region Breadcrumb) */
+/* line 196, ../sass/custom.scss */
+.page-header {
+  padding-bottom: 0 !important;
+  margin: 0 !important;
+  border-bottom: none !important;
+  float: left;
+}
+
+/* line 202, ../sass/custom.scss */
+.page-title,
+.page-header {
+  font-size: 18px;
+  float: left;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* line 211, ../sass/custom.scss */
+#block-addtoanybuttons-2 {
+  margin-bottom: 0;
+  display: inline-block;
+  float: right;
+}
+
+/* Région Aide/Alertes */
+/* line 218, ../sass/custom.scss */
 .alert-info {
   background: none;
   border: none;
+  padding: 0;
 }
+
+/* line 223, ../sass/custom.scss */
+.alert-info .icon {
+  display: none;
+}
+
+/* Menus */
+/* Retirer puces CSS sur items de menu */
+/* line 230, ../sass/custom.scss */
+ul.menu > li a:after {
+  display: none;
+}
+
+/* line 234, ../sass/custom.scss */
+#block-menusecondaire-2 {
+  display: inline-block;
+}
+
+/* Régions (suite) */
+/* line 239, ../sass/custom.scss */
+.page_bottom {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 243, ../sass/custom.scss */
+.footer,
+.copyright,
+.footer_navigation {
+  background: #000;
+}
+
+/* Noeuds - Règles générales */
+/* line 251, ../sass/custom.scss */
+.content .field {
+  margin-bottom: 2em;
+}
+
+/* line 254, ../sass/custom.scss */
+.field--label {
+  font-weight: bold;
+}
+
+/* Sidebars */
+/* Titres des blocs dans la sidebar */
+/* line 260, ../sass/custom.scss */
+.well,
+.region-sidebar-first,
+.region-sidebar-second {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  /* titre des blocs sidebar */
+}
+/* line 273, ../sass/custom.scss */
+.well .block .block-title,
+.region-sidebar-first .block .block-title,
+.region-sidebar-second .block .block-title {
+  background: none;
+  position: relative;
+  margin: 0 0 10px;
+  color: #86BC42;
+  border-bottom: 1px solid #86BC42;
+  z-index: 1;
+  /*span*/
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 1px;
+  color: #222;
+  padding: 10px 0 10px;
+  z-index: 9;
+}
+
+/* Taxos listes dans la sidebar */
+/* line 296, ../sass/custom.scss */
+.item-list ul {
+  overflow: hidden;
+  padding: 0;
+}
+
+/* line 300, ../sass/custom.scss */
+.item-list ul li.view-list-item {
+  margin: 0 0 30px;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+/* line 306, ../sass/custom.scss */
+.region-sidebar-second,
+.region-sidebar-first {
+  /* autres règles sidebar */
+}
+/* line 308, ../sass/custom.scss */
+.region-sidebar-second .field--type-entity-reference,
+.region-sidebar-first .field--type-entity-reference {
+  border: none;
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+  border: none !important;
+  /* Liens Taxos Sidebar */
+}
+/* line 314, ../sass/custom.scss */
+.region-sidebar-second .field--type-entity-reference a,
+.region-sidebar-first .field--type-entity-reference a {
+  padding: 10px 10px 10px 20px;
+  display: block;
+  border: 1px solid #EEEEEE;
+  background: #F6F6F6;
+  color: #bbbbbb;
+  text-transform: none;
+  font-size: 13px;
+  overflow: hidden;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  position: relative;
+}
+/* line 330, ../sass/custom.scss */
+.region-sidebar-second .field--type-entity-reference a:after,
+.region-sidebar-first .field--type-entity-reference a:after {
+  content: "\f178";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  font-family: "FontAwesome";
+  z-index: 1;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: hidden;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  color: #86BC42;
+}
+/* line 347, ../sass/custom.scss */
+.region-sidebar-second .field--type-entity-reference a:hover,
+.region-sidebar-second .field--type-entity-reference a:focus,
+.region-sidebar-second .field--type-entity-reference a:active,
+.region-sidebar-first .field--type-entity-reference a:hover,
+.region-sidebar-first .field--type-entity-reference a:focus,
+.region-sidebar-first .field--type-entity-reference a:active {
+  color: #86BC42;
+  padding-left: 40px;
+}
+
+/* Region Page Bottom */
+/* line 362, ../sass/custom.scss */
+.region-page-bottom .views-field-title {
+  font-weight: bold;
+}
+/* line 365, ../sass/custom.scss */
+.region-page-bottom .views-row {
+  margin-bottom: 2em;
+}
+
+/**
+* Footer
+*/
+/* line 374, ../sass/custom.scss */
+#footer .block-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 10px 0 10px;
+}
+
+/* line 382, ../sass/custom.scss */
+.footer a {
+  color: #86bc42;
+}
+
+/* line 385, ../sass/custom.scss */
+.footer a.btn {
+  color: #fff;
+}
+
+/* line 388, ../sass/custom.scss */
+.footer a.btn:hover {
+  color: #86bc42;
+}
+
+/* Accueil bloc recherche à développer */
+/* Vues + Listes - règles générales */
+/* line 397, ../sass/custom.scss */
+.views-row {
+  margin-bottom: 2em;
+}
+
+/* TODO: Exceptions */
+/* Source: edubiz/home-2 : Our Services
+* .widget.gsc-icon-box .highlight_content .title
+*/
+/* line 404, ../sass/custom.scss */
+.views-field-title,
+.views-field-title-1,
+.views-field-name {
+  font-size: 16px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 3px;
+}
+
+/* Sur:
+ Moteur Recherche - Titres
+ Glossaire - Titres
+*/
+/* Moteur Recherche - Surtitres
+* Source : Menu principal - liens
+* .navigation .gva_menu > li > a {
+*/
+/* line 422, ../sass/custom.scss */
+.views-field-type,
+.views-field-type-1,
+.views-field-bundle {
+  display: block;
+  position: relative;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0;
+  text-align: left;
+  color: #656565;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+}
+
+/* Visible sur
+Recherche, Modeles, Services, Ref Biblio
+*/
+/* line 442, ../sass/custom.scss */
+.region-sidebar-first {
+  padding: 0;
+}
+
+/* line 447, ../sass/custom.scss */
+.region-copyright {
+  text-align: center;
+}
+
+/* Souligné Custom des titres de section dans le thème Edubiz */
+/* line 453, ../sass/custom.scss */
+.heading-line {
+  position: relative;
+  display: block;
+  text-align: center;
+  height: 10px;
+  line-height: 5px;
+}
+/* line 460, ../sass/custom.scss */
+.heading-line span {
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: inline-block;
+  margin: 0 5px;
+}
+/* line 471, ../sass/custom.scss */
+.heading-line span.one {
+  background: #5EB4E7;
+  margin-left: 0;
+}
+/* line 475, ../sass/custom.scss */
+.heading-line span.second {
+  background: #F8C44F;
+}
+/* line 478, ../sass/custom.scss */
+.heading-line span.three {
+  background: #F49626;
+  margin-right: 0;
+}
+
+/* Ne pas rendre les images flexslider responsive à 100% (elles sont plus petites) */
+/* line 486, ../sass/custom.scss */
+.flexslider .slides img {
+  width: auto;
+  margin: 0 auto 30px;
+}
+
+/* Icones dans Fil Ariane, sur Besoin */
+/* line 492, ../sass/custom.scss */
+#block-contenufield {
+  float: left;
+  padding-right: 30px;
+  margin-bottom: 0;
+}
+
+/* Logo */
+/* line 500, ../sass/custom.scss */
+.logo {
+  max-width: 300px;
+}
+
+/* line 503, ../sass/custom.scss */
+.name {
+  display: none;
+}
+
+/* TEMP recherche entete sur 1 ligne */
+/* line 507, ../sass/custom.scss */
+#block-crise-formulaireexposeenvironnement-recherchepage-1 {
+  float: right;
+  width: 35%;
+  margin-bottom: 0;
+}
+
+/* line 512, ../sass/custom.scss */
+.region-top-navigation .views-exposed-form .form-item {
+  padding-right: 20px;
+  width: 40%;
+  float: right;
+}
+
+/* line 517, ../sass/custom.scss */
+.region-top-navigation #edit-actions {
+  float: right;
+}
+
+/**
+* Typographie
+*/
+/* line 526, ../sass/custom.scss */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #262C38;
+}
+
+/* line 532, ../sass/custom.scss */
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+/* line 536, ../sass/custom.scss */
+h4, .h4, h5, .h5, h6, .h6 {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+/* line 540, ../sass/custom.scss */
+h4, h5 {
+  line-height: 1.4;
+}
+
+/* line 543, ../sass/custom.scss */
+h1, .h1 {
+  font-size: 32px;
+}
+
+/* line 546, ../sass/custom.scss */
+h2, .h2 {
+  font-size: 28px;
+}
+
+/* line 549, ../sass/custom.scss */
+h3, .h3 {
+  font-size: 22px;
+}
+
+/* line 553, ../sass/custom.scss */
+h4, .h4 {
+  font-size: 18px;
+}
+
+/* line 556, ../sass/custom.scss */
+h5, .h5 {
+  font-size: 16px;
+}
+
+/* line 559, ../sass/custom.scss */
+.margin-bottom-30 {
+  margin-bottom: 30px !important;
+}
+
+/* line 562, ../sass/custom.scss */
+.text-white {
+  color: #fff !important;
+}
+
+/* line 565, ../sass/custom.scss */
+.bg-theme {
+  background: #86BC42;
+}
+
+/* line 568, ../sass/custom.scss */
+.bg-black {
+  background: #333333;
+}
+
+/* line 571, ../sass/custom.scss */
+.dropcap {
+  display: block;
+  float: left;
+  font-size: 40px;
+  line-height: 34px;
+  color: #444;
+  margin: 6px 8px 0 0;
+}
+
+/* line 579, ../sass/custom.scss */
+.dropcap.border-dropcap {
+  border: 2px solid #444;
+  width: 46px;
+  height: 46px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  margin: 8px 12px 0 0;
+}
+
+/* line 594, ../sass/custom.scss */
+.dropcap.circle-dropcap {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid #444;
+  width: 46px;
+  height: 46px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  margin: 8px 12px 0 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* line 620, ../sass/custom.scss */
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+/* line 624, ../sass/custom.scss */
+ul li {
+  list-style: inherit;
+}
+
+/* line 629, ../sass/custom.scss */
+ul {
+  margin: 0;
+  padding-left: 30px;
+}
+
+/* Label des champs, label des EVA */
+/* line 635, ../sass/custom.scss */
+.field--label,
+.region-page-bottom h2.block-title,
+.path-frontpage .block-title,
+.field-group-accordion-wrapper h3 {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Poppins",sans-serif;
+  border-bottom: 1px solid #86BC42;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+/* line 649, ../sass/custom.scss */
+.path-frontpage .block-title,
+.path-recherche .region-header .block-title {
+  text-align: center;
+  color: #000;
+  border: none;
+  font-size: 22px;
+}
+
+/* Champ Document, sur Service */
+/* line 660, ../sass/custom.scss */
+.field--name-field-document .icon,
+.field--name-field-document .file-link,
+.field--name-field-document .file-size {
+  padding-right: 20px;
+}
+
+/*PAGER - VOIR RECHERCHE */
+/* line 671, ../sass/custom.scss */
+nav.pager-nav {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 677, ../sass/custom.scss */
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+  background-color: #86BC42;
+  border-color: #86BC42;
+}
+
+/* line 681, ../sass/custom.scss */
+.pagination > li {
+  display: inline-block;
+}
+
+/* facettes */
+/* line 686, ../sass/custom.scss */
+.facets-widget-links ul {
+  padding-left: 0;
+}
+
+/* Accueil - bloc Besoins (flexslider carousel) */
+/* line 693, ../sass/custom.scss */
+#flexslider-1 .views-field-title {
+  text-align: center;
+}
+/* line 695, ../sass/custom.scss */
+#flexslider-1 .views-field-title a:hover {
+  color: #86BC42;
+}
+/* line 699, ../sass/custom.scss */
+#flexslider-1 .views-field-field-image {
+  text-align: center;
+}
+/* line 702, ../sass/custom.scss */
+#flexslider-1 .views-field-body {
+  text-align: center;
+  font-size: 15px;
+}
+/* line 706, ../sass/custom.scss */
+#flexslider-1 .slides img {
+  width: 77px;
+  height: 77px;
+}
+
+/*Accueil Besoins + Accueil Groupes */
+/* line 715, ../sass/custom.scss */
+#flexslider-1 .widget.gsc-icon-box .highlight_content,
+#flexslider-1 .views-field-title,
+#flexslider-2 .widget.gsc-icon-box .highlight_content,
+#flexslider-2 .views-field-title {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+/* line 720, ../sass/custom.scss */
+#flexslider-1 .widget.gsc-icon-box.top-center .highlight_content,
+#flexslider-1 .views-field-title,
+#flexslider-2 .widget.gsc-icon-box.top-center .highlight_content,
+#flexslider-2 .views-field-title {
+  text-align: center;
+}
+/* line 724, ../sass/custom.scss */
+#flexslider-1 .widget.gsc-icon-box .highlight_content .title,
+#flexslider-1 .views-field-title a,
+#flexslider-2 .widget.gsc-icon-box .highlight_content .title,
+#flexslider-2 .views-field-title a {
+  font-size: 16px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 3px;
+}
+/* line 732, ../sass/custom.scss */
+#flexslider-1 .widget.gsc-icon-box.top-center .title,
+#flexslider-1 .views-field-title a,
+#flexslider-2 .widget.gsc-icon-box.top-center .title,
+#flexslider-2 .views-field-title a {
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+/* line 739, ../sass/custom.scss */
+#flexslider-1 .widget.gsc-icon-box.top-center .title:after,
+#flexslider-1 .views-field-title a:after,
+#flexslider-2 .widget.gsc-icon-box.top-center .title:after,
+#flexslider-2 .views-field-title a:after {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background: #222;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -25px;
+  z-index: 1;
+}
+
+/* line 754, ../sass/custom.scss */
+#flexslider-2 .views-field-title {
+  text-align: left;
+}
+/* line 757, ../sass/custom.scss */
+#flexslider-2 .views-field-title a:after {
+  left: 0;
+  margin-left: 0;
+  color: #86BC42;
+}
+
+/* line 767, ../sass/custom.scss */
+.accueil_besoins h2.block-title,
+.accueil_groupes h2.block-title {
+  margin-bottom: 30px;
+}
+/* line 768, ../sass/custom.scss */
+.accueil_besoins h2.block-title:after,
+.accueil_groupes h2.block-title:after {
+  content: '';
+  width: 10%;
+  height: 5px;
+  background: #86BC42;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  z-index: 1;
+}
+
+/* line 780, ../sass/custom.scss */
+.navbar-toggle .icon-bar {
+  background-color: #000;
+}
+
+/* TODO : fleches flexslider - accueil besoins, accueil groupe */
+/* Responsive @media */
+/* mobile */
+/* col-xs // 0-768 */
+/* col-sm // 768-992 */
+/* col-md // 992-1200 */
+/* col-lg 1200+ */
+/* écrans larges */
