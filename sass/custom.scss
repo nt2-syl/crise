@@ -319,10 +319,12 @@ ul.menu > li a:after {
 /* Separateur Trois Points*/
 .accueil_besoins,
 .accueil_groupes,
-.region-page-bottom {
+.region-page-bottom,
+.view-contenus-modele {
   h2.block-title,
   .view-header h3 {  
     padding-bottom: 30px;
+    margin-bottom: 30px;
   }
   h2.block-title:after,
   .view-header h3:after {
