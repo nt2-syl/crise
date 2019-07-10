@@ -338,6 +338,9 @@ ul.menu > li a:after {
     }
 
 }
+.page-node-type-connaissance .region-sidebar-second {
+  padding:0;
+}
 
 
 /* Taxos listes dans la sidebar */
@@ -891,11 +894,26 @@ div.region-content #edit-crise-facet {
     content: "\e9a4";
 }
 
+/**/
+.block-views-blockbloc-autres-connaissances-block-1 {
+  background: #86BC42;
+  color: #fff;
+  padding: 20px;
+}
+.region-sidebar-second .block-views-blockbloc-autres-connaissances-block-1 {
+.block-title,
+.views-field-title {
+  color: #fff;
+}
+  a {
+    background: #86BC42;
+    color: #fff;
+  }
+}
 
-/* Contact - Bonifications */
-/* TODO */
-
+/* TODO: Contact - Bonifications */
 /* TODO : fleches custom flexslider - accueil besoins, accueil groupe */
+/* TODO: fleches, motscles */
 
 /* Responsive @media */
 /* mobile */
