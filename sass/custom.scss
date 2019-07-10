@@ -587,6 +587,22 @@ ul.menu > li a:after {
     color: #222;
     margin-bottom: 3px;
 }
+/* Exception : Ref Biblio */
+.view-contenus-vs-biblio {
+  font-size: 16px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 3px;
+
+  .views-field-title {
+    font-size: 15px;
+    font-weight: normal;
+
+  }
+}
+
+
 /* Sur:
  Moteur Recherche - Titres
  Glossaire - Titres
@@ -834,7 +850,12 @@ ul {
   padding-bottom: 30px;
   text-transform: initial;
 }
-
+/**exceptions: Ref Biblio */
+.path-bibcite .field--label {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 
 /* Champ Document, sur Service */
 .field--name-field-document {
