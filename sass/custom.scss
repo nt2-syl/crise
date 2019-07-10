@@ -322,7 +322,7 @@ ul.menu > li a:after {
 .region-page-bottom {
   h2.block-title,
   .view-header h3 {  
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
   h2.block-title:after,
   .view-header h3:after {
@@ -338,8 +338,12 @@ ul.menu > li a:after {
 }
 
 .region-page-bottom .view-header h3::after {
-  width: 20%;
-  left: 50%;
+  width: 40px;
+  left: 45px;
+}
+.region-page-bottom .view-header h3.noicons::after {
+  width: 40px;
+  left: 0;
 }
 
 /* Titre content bottom */
