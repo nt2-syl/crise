@@ -336,6 +336,12 @@ ul.menu > li a:after {
     z-index: 1;
   }
 }
+
+.region-page-bottom .view-header h3::after {
+  width: 20%;
+  left: 50%;
+}
+
 /* Titre content bottom */
 .widget.gsc-icon-box .highlight_content .title,
 .views-field-field-modele,
@@ -376,7 +382,7 @@ ul.menu > li a:after {
 .widget.gsc-icon-box.right .highlight-icon, .widget.gsc-icon-box.left .highlight-icon {
     display: table-cell;
     vertical-align: top;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 .widget.gsc-icon-box.right .highlight_content, .widget.gsc-icon-box.left .highlight_content {
     display: table-cell;
