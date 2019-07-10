@@ -303,6 +303,119 @@ ul.menu > li a:after {
   font-weight: bold;
 }
 
+
+/* Region Content Bottom */
+
+.widget.gsc-icon-box .highlight_content .title {
+    font-size: 16px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 3px;
+}
+.widget.gsc-icon-box .highlight_content .desc {
+    font-size: 15px;
+}
+/* Separateur Trois Points*/
+.accueil_besoins,
+.accueil_groupes,
+.region-page-bottom {
+  h2.block-title,
+  .view-header h3 {  
+    margin-bottom: 30px;
+  }
+  h2.block-title:after,
+  .view-header h3:after {
+    content: '';
+    width: 10%;
+    height: 5px;
+    background: url("../images/edubiz_separator.gif") no-repeat center center;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    z-index: 1;
+  }
+}
+/* Titre content bottom */
+.widget.gsc-icon-box .highlight_content .title,
+.views-field-field-modele,
+.views-field-field-service,
+.views-field-field-contenu-connexe {
+    font-size: 16px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 3px;
+}
+.widget.gsc-icon-box .highlight_content .desc,
+.region-page-bottom .views-field-body {
+    font-size: 15px;
+}
+
+
+
+.widget.gsc-icon-box.left {
+    text-align: left;
+}
+.widget.gsc-icon-box.right, 
+.widget.gsc-icon-box.left {
+    display: table;
+}
+.widget.gsc-icon-box {
+    margin-bottom: 30px;
+    position: relative;
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+}
+.widget.gsc-icon-box.left .highlight-icon {
+    padding-right: 15px;
+}
+.widget.gsc-icon-box.right .highlight-icon, .widget.gsc-icon-box.left .highlight-icon {
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 10px;
+}
+.widget.gsc-icon-box.right .highlight_content, .widget.gsc-icon-box.left .highlight_content {
+    display: table-cell;
+    vertical-align: top;
+}
+.widget.gsc-icon-box .highlight_content {
+    margin-top: 5px;
+}
+
+
+.widget.gsc-icon-box .highlight-icon .icon-container .icon {
+    position: relative;
+    z-index: 11;
+}
+[class^="gv-icon"], [class*=" gv-icon"] {
+    font-family: 'gva-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.gv-icon-78:before {
+    content: "\e94d";
+}
+.gv-icon-146:before {
+    content: "\e991";
+}
+.gv-icon-467:before {
+    content: "\ead2";
+}
+
+
+
+
+
 /* Sidebars */
 /* Titres des blocs dans la sidebar */
 .well,
@@ -814,22 +927,6 @@ nav.pager-nav {
     left: 0;
     margin-left: 0;
     color: #86BC42;
-  }
-}
-
-
-.accueil_besoins,
-.accueil_groupes {
-  h2.block-title {  margin-bottom: 30px;}
-  h2.block-title:after {
-    content: '';
-    width: 10%;
-    height: 5px;
-    background: url("../images/edubiz_separator.gif") no-repeat center center;
-    position: absolute;
-    bottom: 0;
-    left: 45%;
-    z-index: 1;
   }
 }
 
