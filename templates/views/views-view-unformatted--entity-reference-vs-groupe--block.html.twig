@@ -23,9 +23,7 @@
 <div class="tabbable tabs-left">
   <ul class="nav nav-tabs nav-stacked">
     {% for row in rows %}
-      {# The linktext isn't quite right : this is getting the current node, not
-      the node throuh the reference of the row #}
-      {% set linktext = row['content']['#row']._entity.label %}
+      {% set linktext = row['content']['#row']._relationship_entities['field_groupe'].label %}
       {% set linkid = "tab-" ~ row['content']['#view'].dom_id ~ "-" ~ row['content']['#row'].index %}
       {% set listclass = row['content']['#row'].index == 0 ? 'active' %}
       <li class="{{listclass}}"><a href="#{{ linkid }}" data-toggle="tab">{{ linktext }}</a></li>
