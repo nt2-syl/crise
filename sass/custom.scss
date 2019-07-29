@@ -1086,8 +1086,12 @@ div.region-content #edit-crise-facet {
   }
 }
 
+/* Cacher le titre du bloc en double sur Noeud Besoin */
+.block-views-blockentity-reference-vs-besoin-block-1 h2.block-title {
+  display: none;
+}
+
 /* TODO: Contact - Bonifications */
-/* TODO : fleches custom flexslider - accueil besoins, accueil groupe */
 /* TODO: fleches, motscles */
 
 /* Responsive @media */
