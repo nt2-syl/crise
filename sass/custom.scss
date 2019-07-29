@@ -244,7 +244,8 @@ ul.list-social li {
  }
 }
 /* Mettre le formulaire pleine largeur, réparti entre 3 éléments:  15%/70%/15% */
-#views-exposed-form-environnement-recherche-page-1 {
+#views-exposed-form-environnement-recherche-page-1,
+.block-views-exposed-filter-blockenvironnement-recherche-page-1 {
   .form-item-crise-facet {
         width: 15%;
   }
