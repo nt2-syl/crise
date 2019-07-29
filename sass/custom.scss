@@ -173,7 +173,9 @@ p {
   display: inline-block;
 }
 #block-crise-main-menu, #block-besoins {
-  float: right;
+  float: none;
+  margin: 0 auto;
+  width: 100%;
 }
 .navbar-default {
   background-color: #fff;
@@ -181,7 +183,6 @@ p {
 }
 .navbar {
   border-radius: 0;
-  float: right;
 }
 
 
@@ -250,7 +251,15 @@ ul.list-social li {
   }
 }
 
-
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 8px;
+    border: 1px solid #86bc42;
+    margin-right: 8px;
+    text-align: center;
+    background: #86bc42;
+}
 
 /* Barre Grise (region Breadcrumb) */
 .page-header {
