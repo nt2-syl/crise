@@ -314,6 +314,23 @@ ul.menu > li a:after {
 .field--label {
   font-weight: bold;
 }
+/* Si on utilise les 3 points sous un titre, utiliser le titre comme point de référence */
+h3.no-icons {
+  position: relative;
+}
+/* Theming Collapsiblock */
+.field--name-field-ref-biblio {
+  .field-view {
+    margin-bottom: 2em;
+  }
+}
+.field-group-accordion-wrapper {
+  margin-bottom: 2em;
+  .ui-state-active {
+    background-color: #86bc42;
+    border: #86bc42;
+  }
+}
 
 
 /* Region Content Bottom */
