@@ -966,6 +966,13 @@ nav.pager-nav {
   }
 }
 
+#flexslider-1 .widget.gsc-icon-box .highlight_content .title, 
+#flexslider-1 .views-field-title a, 
+#flexslider-2 .widget.gsc-icon-box .highlight_content .title, 
+#flexslider-2 .views-field-title a {
+  display: block;
+}
+
 .navbar-toggle .icon-bar {
   background-color: #000;
 }
