@@ -92,7 +92,7 @@ p {
 * Regions
 */
 .region-content {
-  margin-bottom: 90px;
+  margin-bottom: 2em;
 }
 
 /* Fullwidth */
@@ -244,7 +244,6 @@ ul.list-social li {
  }
 }
 /* Mettre le formulaire pleine largeur, réparti entre 3 éléments:  15%/70%/15% */
-
 .block-views-exposed-filter-blockenvironnement-recherche-page-1 {
   .form-item-crise-facet {
         width: 15%;
@@ -259,14 +258,15 @@ ul.list-social li {
   .form-inline .input-group, .navbar-form .input-group {
     width: 100%;
   }
-
 }
+/* Variante pour le champ apparaissant sur la page Recherche */
 #views-exposed-form-environnement-recherche-page-1 {
   .form-type-search-api-autocomplete {
     width: 85%;
     float: left;
   }
 }
+/* Ne pas montrer une loupe supplémentaire sur le bouton Rechercher */
 #edit-submit-environnement-recherche .glyphicon {
   display: none;
 }
@@ -335,7 +335,7 @@ ul.menu > li a:after {
 
 /* Régions (suite) */
 .page_bottom {
-  padding-top: 50px;
+  padding-top: 0;
   padding-bottom: 50px;
 }
 .footer,
@@ -405,6 +405,11 @@ h3.no-icons {
   }
 }
 
+/* Appliquer cadre sur tous les contenus associés en bas de page */
+.region-page-bottom .views-row {
+  padding: 1em;
+  border: 1px solid #86BC42;
+}
 .region-page-bottom .view-header h3::after {
   width: 40px;
   left: 45px;
@@ -931,10 +936,12 @@ ul {
   .icon,
   .file-link,
   .file-size {
-    padding-right: 20px;
+    padding-right: 10px;
   }
 }
-
+.file-size {
+  font-size: 10px;
+}
 
 /*PAGER - VOIR RECHERCHE */
 
@@ -1146,8 +1153,18 @@ div.region-content #edit-crise-facet {
   .views-field-view-node a {
     border: 1px solid #86BC42;
     border-radius: 8px;
+    padding: 4px 8px;
   }
 }
+
+/* Références bibliographiques */
+.glyphicon.text-primary {
+  color: #86BC42;
+}
+.bibcite-links ul {
+  padding-left: 0;
+}
+
 
 /* TODO: Contact - Bonifications */
 /* TODO: fleches, motscles */
