@@ -894,6 +894,12 @@ nav.pager-nav {
 
 
 /* Accueil - bloc Besoins (flexslider carousel) */
+/* Taille des flèches */
+.flexslider:hover .flex-direction-nav .flex-next:hover,
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  font-size: 24px;
+}
+
 #flexslider-1 {
   .views-field-title {
     text-align:center;
