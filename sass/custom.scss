@@ -252,13 +252,13 @@ ul.list-social li {
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #fff;
+    color: #86bc42;
     padding: 3px 8px;
     border-radius: 8px;
     border: 1px solid #86bc42;
     margin-right: 8px;
     text-align: center;
-    background: #86bc42;
+    background: #fff;
 }
 
 /* Barre Grise (region Breadcrumb) */
@@ -1098,6 +1098,18 @@ div.region-content #edit-crise-facet {
 /* Cacher le titre du bloc en double sur Noeud Besoin */
 .block-views-blockentity-reference-vs-besoin-block-1 h2.block-title {
   display: none;
+}
+
+/* Mise en page des Vertical Tabs */
+.tabbable {
+  .nav-stacked {
+    width: 20%;
+    float: left;
+  }
+  .tab-content {
+    width: 80%;
+    float: left;
+  }
 }
 
 /* TODO: Contact - Bonifications */
