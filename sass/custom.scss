@@ -250,11 +250,14 @@ ul.list-social li {
         width: 15%;
   }
   .form-type-search-api-autocomplete {
-     width: 70%;
+     width: 69%;
   }
   // valider ailleurs
   .form-actions {
     width: 15%;
+  }
+  .form-inline .input-group, .navbar-form .input-group {
+    width: 100%;
   }
 }
 
