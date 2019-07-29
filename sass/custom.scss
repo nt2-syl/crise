@@ -244,7 +244,7 @@ ul.list-social li {
  }
 }
 /* Mettre le formulaire pleine largeur, réparti entre 3 éléments:  15%/70%/15% */
-#views-exposed-form-environnement-recherche-page-1,
+
 .block-views-exposed-filter-blockenvironnement-recherche-page-1 {
   .form-item-crise-facet {
         width: 15%;
@@ -259,6 +259,21 @@ ul.list-social li {
   .form-inline .input-group, .navbar-form .input-group {
     width: 100%;
   }
+
+}
+#views-exposed-form-environnement-recherche-page-1 {
+  .form-type-search-api-autocomplete {
+    width: 85%;
+    float: left;
+  }
+}
+#edit-submit-environnement-recherche .glyphicon {
+  display: none;
+}
+
+/* Ne pas montrer la loupe du thème sur formulaire Recherche */
+.input-group-addon {
+  display: none;
 }
 
 .navbar-default .navbar-nav > li > a {
