@@ -405,6 +405,11 @@ h3.no-icons {
   }
 }
 
+/* Appliquer cadre sur tous les contenus associés en bas de page */
+.region-page-bottom .views-row {
+  padding: 1em;
+  border: 1px solid #86BC42;
+}
 .region-page-bottom .view-header h3::after {
   width: 40px;
   left: 45px;
