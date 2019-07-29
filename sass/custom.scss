@@ -275,6 +275,10 @@ ul.list-social li {
 .input-group-addon {
   display: none;
 }
+.input-group .form-control:first-child {
+  border-bottom-right-radius: auto;
+  border-top-right-radius: auto;
+}
 
 .navbar-default .navbar-nav > li > a {
     color: #86bc42;
