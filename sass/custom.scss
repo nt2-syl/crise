@@ -236,7 +236,19 @@ ul.list-social li {
    width: 555px;
  }
 }
-/* TODO - version responsive en % */
+/* Mettre le formulaire pleine largeur, réparti entre 3 éléments:  15%/70%/15% */
+#views-exposed-form-environnement-recherche-page-1 {
+  .form-item-crise-facet {
+        width: 15%;
+  }
+  .form-type-search-api-autocomplete {
+     width: 70%;
+  }
+  // valider ailleurs
+  .form-actions {
+    width: 15%;
+  }
+}
 
 
 
