@@ -244,7 +244,6 @@ ul.list-social li {
  }
 }
 /* Mettre le formulaire pleine largeur, réparti entre 3 éléments:  15%/70%/15% */
-
 .block-views-exposed-filter-blockenvironnement-recherche-page-1 {
   .form-item-crise-facet {
         width: 15%;
@@ -259,14 +258,15 @@ ul.list-social li {
   .form-inline .input-group, .navbar-form .input-group {
     width: 100%;
   }
-
 }
+/* Variante pour le champ apparaissant sur la page Recherche */
 #views-exposed-form-environnement-recherche-page-1 {
   .form-type-search-api-autocomplete {
     width: 85%;
     float: left;
   }
 }
+/* Ne pas montrer une loupe supplémentaire sur le bouton Rechercher */
 #edit-submit-environnement-recherche .glyphicon {
   display: none;
 }
@@ -931,10 +931,12 @@ ul {
   .icon,
   .file-link,
   .file-size {
-    padding-right: 20px;
+    padding-right: 10px;
   }
 }
-
+.file-size {
+  font-size: 10px;
+}
 
 /*PAGER - VOIR RECHERCHE */
 
@@ -1146,8 +1148,18 @@ div.region-content #edit-crise-facet {
   .views-field-view-node a {
     border: 1px solid #86BC42;
     border-radius: 8px;
+    padding: 4px 8px;
   }
 }
+
+/* Références bibliographiques */
+.glyphicon.text-primary {
+  color: #86BC42;
+}
+.bibcite-links ul {
+  padding-left: 0;
+}
+
 
 /* TODO: Contact - Bonifications */
 /* TODO: fleches, motscles */
