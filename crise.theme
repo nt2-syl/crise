@@ -45,5 +45,4 @@ function crise_preprocess_page(&$variables) {
       );
     }
   }
-  kint($variables);
 }
