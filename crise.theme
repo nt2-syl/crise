@@ -14,3 +14,36 @@ function crise_theme_suggestions_input_alter(&$suggestions, array $variables) {
     $suggestions[] = 'input__' . $element['#type'] . '__' . $suggestion_suffix;
   }
 }
+
+/**
+ * Implements template_preprocess_page().
+ */
+function crise_preprocess_page(&$variables) {
+  $entities = [];
+  foreach (\Drupal::routeMatch()->getParameters() as $param) {
+    if ($param instanceof \Drupal\Core\Entity\EntityInterface) {
+      $entities[] = $param;
+    }
+  }
+  $variables['crise_flags'] = array();
+  if ($entities) {
+    $entity = $entities[0];
+    // Get all possible flags for this entity type.
+    $flag_service = \Drupal::service('flag');
+    $flags = $flag_service->getAllFlags($entity->getEntityTypeID(), $entity->bundle());
+    foreach ($flags as $flag) {
+      $flag_type_plugin = $flag->getFlagTypePlugin();
+      $flag_link = $flag
+        ->getLinkTypePlugin()
+        ->getAsLink($flag, $entity);
+      $flag_url = $flag_link->getUrl();
+
+      $variables['crise_flags']["flag_{$flag->id()}"] = array(
+        '#title' => $flag_link->getText(),
+        '#type' => 'link',
+        '#url' => \Drupal\Core\Url::fromRoute($flag_url->getRouteName(), $flag_url->getRouteParameters()),
+      );
+    }
+  }
+  kint($variables);
+}

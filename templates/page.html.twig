@@ -82,6 +82,11 @@
         {% if page.breadcrumb %}
           {% block breadcrumb %}
             {{ page.breadcrumb }}
+            {% if crise_flags is not empty %}
+              <span class="crise-flags">
+                {{ crise_flags }}
+              </span>
+            {% endif %}
           {% endblock %}
         {% endif %}
     </div>
