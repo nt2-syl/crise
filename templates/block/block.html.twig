@@ -47,24 +47,24 @@
 #}
 {# Similar to https://www.drupal.org/project/drupal/issues/953034 #}
 {% set content_rendered = content|render %}
-{% if content_rendered|striptags|trim ? true : false %}
-{%
-  set classes = [
-    'block',
-    'block-' ~ configuration.provider|clean_class,
-    'block-' ~ plugin_id|clean_class,
-    'clearfix',
-  ]
-%}
-<section{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {% if label %}
-    <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
-  {% endif %}
-  {{ title_suffix }}
+{% if content_rendered|striptags('<img><i>')|trim is empty ? true : false %}
+  {%
+    set classes = [
+      'block',
+      'block-' ~ configuration.provider|clean_class,
+      'block-' ~ plugin_id|clean_class,
+      'clearfix',
+    ]
+  %}
+  <section{{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {% if label %}
+      <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
+    {% endif %}
+    {{ title_suffix }}
 
-  {% block content %}
-    {{ content_rendered }}
-  {% endblock %}
-</section>
+    {% block content %}
+      {{ content_rendered }}
+    {% endblock %}
+  </section>
 {% endif %}
