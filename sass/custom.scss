@@ -1165,6 +1165,66 @@ div.region-content #edit-crise-facet {
   padding-left: 0;
 }
 
+/* Quicktabs */
+.quicktabs-wrapper {
+  padding: 40px 0 0;
+}
+ul.quicktabs-tabs {
+  margin: 0;
+  padding: 0 0 40px;
+  text-align: center;
+}
+ul.quicktabs-tabs li a {
+  padding: 6px 20px 5px;
+}
+ul.quicktabs-tabs li.active a {
+  border: 1px solid #222;
+  border-radius: 20px;
+}
+
+/* Création Compte Utilisateur */
+
+#group-questionnaire .control-label {
+  padding-left: 0;
+}
+.panel .panel-body {
+  padding: 0;
+}
+#user-register-form {
+  .form-wrapper {
+    padding: 0;
+  }
+  #edit-account {
+    padding-bottom: 1em;
+  }
+  .form-wrapper {
+    padding: 0;
+    border-bottom: 0;
+  }
+}
+/* 18px pour les sections */
+.panel .panel-heading .panel-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+/* 16px pour les titres de champs (defaut) */
+.fieldset-legend {
+  font-weight: bold;
+}
+
+/* cases à cocher */
+.checkbox input[type="checkbox"] {
+  position: relative;
+  margin-right: 1em;
+} 
+.checkbox label {
+  padding-left: 0;
+}
+/* titre sections */
+
+
+/* Profil Utilisateur*/
+
 
 /* TODO: Contact - Bonifications */
 /* TODO: fleches, motscles */
