@@ -47,7 +47,7 @@
 #}
 {# Similar to https://www.drupal.org/project/drupal/issues/953034 #}
 {% set content_rendered = content|render %}
-{% if content_rendered|striptags('<img><i>')|trim is empty ? false : true %}
+{% if content_rendered|striptags('<img><i><span>')|trim ? true : false %}
   {%
     set classes = [
       'block',
