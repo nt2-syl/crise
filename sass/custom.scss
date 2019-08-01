@@ -209,22 +209,25 @@ p {
   float: right;
 }
 .views-exposed-form .form-item input {
-    width: 165px;/*temp*/
+  width: 165px;/*temp*/
 }
 
 #block-reseauxsociaux {
 }
 ul.list-social li {
-    display: inline;
-    padding: 0 10px;
-    list-style: none;
-    font-size: 24px;
+  display: inline;
+  padding: 0 10px;
+  list-style: none;
+  font-size: 24px;
 }
 /* Remplacer icone Refresh par Loupe en CSS */
 .glyphicon-refresh::before {
-    content: "\e003";
+  content: "\e003";
 }
 
+.user-logged-in #block-collapsiblesearch {
+  top: 47px;
+}
 
 /* Recherche - Blocs de recherche*/
 .path-recherche {
@@ -1238,6 +1241,7 @@ ul.quicktabs-tabs li.active a {
   }
 
 }
+
 
 
 
