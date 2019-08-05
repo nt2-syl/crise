@@ -1327,6 +1327,79 @@ ul.quicktabs-tabs li.active a {
   margin-top: 4px;
 }
 
+/**/
+/* Intégration profil */
+
+
+.panel-default > .panel-heading {
+  border-color: 1px solid #86BC42;
+}
+/* Niveau 1 : Panneau et Titre de blocs */ 
+.panel .panel-heading .panel-title,
+.path-user .region-content .block-title {
+  font-size: 14px;
+  padding-right: 20px;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #262C38;
+  text-transform: initial;
+}
+.panel-body .field--type-entity-reference {
+  margin-bottom: 2em;
+}
+
+.path-user {
+
+  #bootstrap-panel {
+    padding:0;
+  }
+
+  /*Niveau 2 : Field label */
+  .field--label {
+      font-size: 16px;
+      font-family: "Poppins",sans-serif;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 3px;
+      text-transform: initial;
+  }
+  /* Niveau 3 : texte defaut */
+  .field--item,
+  #block-views-block-favorisation-contenu-block-1 .views-field-title,
+  #block-views-block-favorisation-medias-block-1 .views-field-name,
+  #block-views-block-favorisation-ref-biblio-block-1 .views-field-title,
+  #quicktabs-suggestions_contenu .views-field-title,
+  #block-views-block-medias-profil-taxo-type-groupe-block-1 .views-field-name {
+    color: #657184;
+    text-decoration: none;
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #657184;
+    font-weight: 400;
+  }
+  #quicktabs-suggestions_contenu {
+    padding-top:0;
+  }
+  #quicktabs-container-suggestions_contenu .views-field-name,
+  #block-views-block-medias-profil-taxo-type-groupe-block-1 .views-field-name-1 { 
+  /* Niveau 4 small */
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Poppins",sans-serif;
+    border-bottom: none;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    color: #222;
+    letter-spacing: 1px
+  }
+}
+
 /* TODO: Contact - Bonifications */
 /* TODO: fleches, motscles */
 
