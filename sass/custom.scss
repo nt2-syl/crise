@@ -1244,8 +1244,18 @@ ul.quicktabs-tabs li.active a {
 }
 
 
-
-
+/* Flags */
+.crise-flags a {
+  text-indent: -9999px;
+  height: 25px;
+  width: 25px;
+  background: rgb(1, 102, 255);
+  display: block;
+  float: right;
+  border-radius: 4px;
+  margin-right: 4px;
+  margin-top: 4px;
+}
 
 /* TODO: Contact - Bonifications */
 /* TODO: fleches, motscles */
