@@ -38,8 +38,10 @@
 **/
 
 /* Liens principaux */
-a {
-    color: #262C38;
+a,
+.ui-widget-content a {
+/* Même gris que le texte par défaut */
+    color: #657184;
     text-decoration: none;
 }
 a:hover, a:focus {
@@ -1243,6 +1245,74 @@ ul.quicktabs-tabs li.active a {
 
 }
 
+/**
+* collapsiblock
+*/
+.ui-helper-reset {
+  line-height: 1.8;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.field-group-accordion-wrapper .ui-state-active {
+  background-color: transparent;
+  border: none;
+}
+.ui-accordion .ui-accordion-header {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin: 2px 0 0 0;
+  padding: .5em .5em .5em .7em;
+  font-size: 100%;
+}
+.field-group-accordion-wrapper h3, .path-user .region-content .block-title {
+  letter-spacing: 0;
+  color: #222;
+  background: #fff;
+  line-height: 28px;
+  font-weight: 700;
+}
+.ui-accordion h3 {
+  font-size: 14px;
+  text-transform: initial;
+}
+.field-group-accordion-wrapper h3 {
+  text-transform: initial;
+  letter-spacing: 0;
+  font-size: 14px;
+}
+.field-group-accordion-wrapper  {
+  padding: 0;
+}
+.field-group-accordion-wrapper .ui-state-active {
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+.ui-state-default,
+.ui-state-hover {
+  border: 1px solid #86BC42;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+  color: #222;
+}
+.field-group-accordion-wrapper .ui-state-active {
+  background: transparent;
+  border: 1px solid #86BC42;
+}
+.ui-widget-content {
+  border: 1px solid #86BC42;
+}
+/* bouton ouvert doit être en noir et non en blanc */
+.ui-state-active .ui-icon, 
+.ui-button:active .ui-icon{
+    background-image: url("images/ui-icons_444444_256x240.png");
+}
+.ui-icon, 
+.ui-widget-content .ui-icon {
+   background-image: url("images/ui-icons_444444_256x240.png") !important;
+}
 
 /* Flags */
 .crise-flags a {
