@@ -250,9 +250,20 @@ ul.list-social li {
    clear: both;
  }
  #edit-search-api-fulltext {
-   width: 555px;
+   width: auto;
  }
+ .region-top-navigation #edit-search-api-fulltext {
+   width: 50%;
+ }
+ .region-header #edit-search-api-fulltext {
+   width: 100%;
+   border-radius: 20px;
+ }
+
 }
+
+
+
 /* Mettre le formulaire pleine largeur, réparti entre 3 éléments:  15%/70%/15% */
 .block-views-exposed-filter-blockenvironnement-recherche-page-1 {
   .form-item-crise-facet {
@@ -280,6 +291,8 @@ ul.list-social li {
 #edit-submit-environnement-recherche .glyphicon {
   display: none;
 }
+
+
 
 /* Ne pas montrer la loupe du thème sur formulaire Recherche */
 .input-group-addon {
@@ -315,12 +328,24 @@ ul.list-social li {
     margin-top: 0;
 }
 
+/* recherche - reveler bouton dans Top Navigation*/
+#crisecustom-search-form #edit-actions {
+    /*display: none;*/
+    display: block;
+}
+#crisecustom-search-form #edit-actions #edit-submit {
+  
+}
+
 
 #block-addtoanybuttons-2 {
   margin-bottom: 0;
   display: inline-block;
   float: right;
 }
+
+
+
 
 /* Région Aide/Alertes */
 .alert-info {
@@ -1383,6 +1408,10 @@ ul.quicktabs-tabs li.active a {
   margin-right: 4px;
   margin-top: 4px;
 }
+/* Apparaît sous Noeud Modèle */
+.main-container .flag {
+  display: none;
+}
 
 /**/
 /* Intégration profil */
@@ -1467,7 +1496,8 @@ ul.quicktabs-tabs li.active a {
 
 
 /* ENLEVER BOUTON DE SEARCH BUTTON */
-#edit-submit--2.button {
+#edit-submit--2.button,
+#crisecustom-search-form #edit-actions #edit-submit {
   background: transparent;
   color: #000;
   overflow: hidden;
@@ -1488,6 +1518,7 @@ ul.quicktabs-tabs li.active a {
   width: 30px;
   height: 30px;
   background: #eee;
+  z-index: 10;
 }
 
 /* TODO: Contact - Bonifications */
