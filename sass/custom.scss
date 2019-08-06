@@ -1265,6 +1265,13 @@ ul.quicktabs-tabs li.active a {
   position: relative;
   margin-right: 1em;
 } 
+.path-user .form-radio {
+  margin-right: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+
 .checkbox label {
   padding-left: 0;
 }
@@ -1273,8 +1280,12 @@ ul.quicktabs-tabs li.active a {
 
 /* Profil Utilisateur*/
 .path-user {
+  nav.tabs {
+    text-align: center;
+  }
   .nav-tabs {
     margin-bottom: 2em;
+    display: inline-block;
   }
   .nav-tabs > li > a {
       padding: 6px 20px 5px;
@@ -1284,6 +1295,11 @@ ul.quicktabs-tabs li.active a {
     border-radius: 20px;
   }
 
+}
+/* hide block-quicktabssuggestionsdecontenu on /user/register */
+
+.tabs--primary {
+  text-align: center;
 }
 
 /**
@@ -1377,12 +1393,13 @@ ul.quicktabs-tabs li.active a {
 }
 /* Niveau 1 : Panneau et Titre de blocs */ 
 .panel .panel-heading .panel-title,
-.path-user .region-content .block-title {
+.path-user .region-content .block-title,
+#edit-account .control-label {
   font-size: 14px;
   padding-right: 20px;
   font-size: 22px;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-family: "Poppins",sans-serif;
   font-weight: 600;
   line-height: 1.1;
@@ -1440,6 +1457,13 @@ ul.quicktabs-tabs li.active a {
     letter-spacing: 1px
   }
 }
+
+
+#user-register-form .form-wrapper#edit-actions {
+    border-bottom: none;
+    text-align: center;
+}
+
 
 /* TODO: Contact - Bonifications */
 /* TODO: fleches, motscles */
