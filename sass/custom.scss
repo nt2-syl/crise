@@ -1522,7 +1522,16 @@ ul.quicktabs-tabs li.active a {
 }
 */
 
-/* TODO: Contact - Bonifications */
+
+
+
+/* Contact - Bonifications */
+.contact-message-form .js-form-item-mail {
+    height: auto;
+    line-height: auto;
+    padding-left: 0;
+background: transparent;
+   } 
 /* TODO: fleches, motscles */
 
 /* Responsive @media */
