@@ -1152,7 +1152,43 @@ div.region-content #edit-crise-facet {
     width: 80%;
     float: left;
   }
+  li {
+    background: #dff0d8;
+font-weight: 400;
+padding: 4px 18px !important;
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: 0;
+
+  }
 }
+
+.tabbable_title_wrapper {
+  bottom: 30px;
+left: 0;
+padding: 0 25px;
+position: absolute;
+right: 0;
+text-decoration: none;
+text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.tabbable_body,
+.tabbable_title {
+  color: #fff;
+display: block;
+font-size: 24px;
+font-weight: bold;
+line-height: 24px;
+text-decoration: none;
+cursor: hand;
+text-align: center;
+}
+
+.tabbable_title {
+  font-size: 36px;
+}
+
 
 /* Glossaire */
 .view-glossaire {
@@ -1358,7 +1394,7 @@ ul.quicktabs-tabs li.active a {
     padding:0;
   }
 
-  /*Niveau 2 : Field label */
+  /* Niveau 2 : Field label */
   .field--label {
       font-size: 16px;
       font-family: "Poppins",sans-serif;
@@ -1424,3 +1460,5 @@ ul.quicktabs-tabs li.active a {
     clear: left;
   }
 }
+
+/*  Vertical Tabs*/
