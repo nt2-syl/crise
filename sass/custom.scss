@@ -1152,10 +1152,10 @@ div.region-content #edit-crise-facet {
     width: 80%;
     float: left;
   }
-  li {
+  .nav-tabs > li > a {
     background: #dff0d8;
 font-weight: 400;
-padding: 4px 18px !important;
+padding: 0px 0px;
 font-size: 12px;
 text-transform: uppercase;
 letter-spacing: 0;
@@ -1174,19 +1174,20 @@ text-shadow: 0.1em 0.1em 0.2em black;
 }
 
 .tabbable_body,
-.tabbable_title {
+.tabbable_title a {
   color: #fff;
 display: block;
-font-size: 24px;
-font-weight: bold;
-line-height: 24px;
+font-size: 20px;
+font-weight: normal;
+line-height: 20px;
 text-decoration: none;
 cursor: hand;
 text-align: center;
 }
 
 .tabbable_title {
-  font-size: 36px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 
