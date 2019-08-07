@@ -214,11 +214,12 @@ p {
 #block-collapsiblesearch {
   width: auto;
   position: absolute;
-  right: 15%;
+  right: 0;
   top: 5px;
 }
 #block-reseauxsociaux {
-  float: right;
+    float: right;
+    padding-right: 30px;
 }
 .views-exposed-form .form-item input {
   /*width: 165px;*/
@@ -315,6 +316,12 @@ border-top-right-radius: 30px;
 #views-exposed-form-environnement-recherche-page-1 {
   .form-type-search-api-autocomplete {
     width: 85%;
+    float: left;
+  }
+}
+.path-frontpage #views-exposed-form-environnement-recherche-page-1 {
+  .form-type-search-api-autocomplete {
+    width: 70%;
     float: left;
   }
 }
@@ -855,6 +862,10 @@ Recherche, Modeles, Services, Ref Biblio
 }
 .region-top-navigation #edit-actions {
   float: right;
+}
+/* Contenir le champ recherche (#block-collapsiblesearch) */
+.region-top-navigation {
+  position: relative;
 }
 
 
