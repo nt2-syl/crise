@@ -19,7 +19,8 @@
 }
 
 
-.fa {
+.fa,
+.crise-flags a {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
         font-size: 14px;
@@ -28,10 +29,13 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.fa-twitter::before {
+.fa-twitter::before
     content: "\f099";
 }
-
+/* fa-flag */
+.crise-flags a {
+    content: "\f024";
+}
 
 /**
 * Éléments principaux
@@ -187,7 +191,7 @@ p {
 .navbar {
   border-radius: 0;
 }
-
+.navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
   background-color: transparent;
@@ -216,28 +220,24 @@ p {
   float: right;
 }
 .views-exposed-form .form-item input {
-  width: 165px;/*temp*/
+  /*width: 165px;*/
 }
 
 #block-reseauxsociaux {
 }
+
 ul.list-social li {
   display: inline;
   padding: 0 10px;
   list-style: none;
   font-size: 24px;
 }
-/* Slogan */
-.navbar-text {
-  float: left;
-  clear: both;
-  position: absolute;
-  top: 120px;
-  left: 114px;
+/* Slogan V2 (Bloc) */
+#block-textepresentationsite p {
+  padding-left: 96px;
   font-weight: normal;
   font-style: italic;
 }
-
 
 
 /* Remplacer icone Refresh par Loupe en CSS */
@@ -318,6 +318,7 @@ ul.list-social li {
 
 .navbar-default .navbar-nav > li > a {
     color: #86bc42;
+
     padding: 3px 8px;
     border-radius: 8px;
     border: 1px solid #86bc42;
@@ -1050,6 +1051,13 @@ nav.pager-nav {
   }
 }
 
+.flex-direction-nav a:before {
+  line-height: 1;
+}
+.flex-direction-nav a {
+  top:10%;
+}
+
 /*Accueil Besoins + Accueil Groupes */
 #flexslider-1,
 #flexslider-2 {
@@ -1429,12 +1437,18 @@ ul.quicktabs-tabs li.active a {
   margin-right: 4px;
   margin-top: 4px;
 }
+
+
 /* Apparaît sous Noeud Modèle */
 .main-container .flag {
   display: none;
 }
 .path-user .main-container .flag {
   display: block;
+}
+
+.region-breadcrum .crise-flags a:after {
+    content: "\f099";
 }
 
 /**/
