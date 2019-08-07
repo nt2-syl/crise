@@ -224,6 +224,13 @@ p {
   /*width: 165px;*/
 }
 
+/* Temporaire - Réduire bouton en double */
+#block-collapsiblesearch .btn {
+  border-radius: 0;
+  border: none;
+  padding: 0;
+}
+
 #block-reseauxsociaux {
 }
 
