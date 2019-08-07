@@ -451,10 +451,16 @@ h3.no-icons {
   .views-row {
     min-height: 200px;
 
-    div.service_wrapper {
-      margin: 0 10px 20px;
+    .pagebottom_wrapper {
+      margin: 0;
       border: 1px solid #86BC42;
       padding: 20px;
+      min-height: 200px;
+    }
+    .pagebottom_image,
+    .pagebottom_service,
+    .pagebottom_modele {
+      
     }
   }
   .view-header h3::after {
