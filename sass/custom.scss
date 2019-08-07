@@ -29,7 +29,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.fa-twitter::before
+.fa-twitter::before {
     content: "\f099";
 }
 /* fa-flag */
@@ -392,7 +392,10 @@ ul.menu > li a:after {
 .footer_navigation  {
   background: #000;
 }
-
+#block-footercopyright-2 p {
+    vertical-align: middle;
+    padding-top: 15px;
+}
 
 /* Noeuds - Règles générales */
 .content .field {
