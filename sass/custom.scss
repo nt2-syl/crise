@@ -115,7 +115,7 @@ p {
 /*.Topbar */
 .top_navigation {
     background: none;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: none;
     font-size: 12px;
     padding: 0;
     margin-top: -1px;
@@ -364,15 +364,6 @@ border-top-right-radius: 30px;
     float: left;
     margin-bottom: 0;
     margin-top: 0;
-}
-
-/* recherche - reveler bouton dans Top Navigation*/
-#crisecustom-search-form #edit-actions {
-    /*display: none;*/
-    display: block;
-}
-#crisecustom-search-form #edit-actions #edit-submit {
-  
 }
 
 
@@ -1589,6 +1580,13 @@ a[href*="unflag"]::before {
 }
 */
 
+/* Ne pas montrer bouton original */
+#crisecustom-search-form #edit-actions {
+    display: none;
+}
+#crisecustom-search-form #edit-actions #edit-submit {
+  
+}
 
 
 
