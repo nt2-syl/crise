@@ -20,7 +20,7 @@
 
 
 .fa,
-.crise-flags a {
+.crise-flags a::before {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
         font-size: 14px;
@@ -33,9 +33,10 @@
     content: "\f099";
 }
 /* fa-flag */
-.crise-flags a {
+.region-breadcrumb .crise-flags a::before {
     content: "\f024";
 }
+
 
 /**
 * Éléments principaux
@@ -392,7 +393,7 @@ ul.menu > li a:after {
 .footer_navigation  {
   background: #000;
 }
-#block-footercopyright-2 p {
+#block-footercopyright-2 img {
     vertical-align: middle;
     padding-top: 15px;
 }
@@ -1430,7 +1431,6 @@ ul.quicktabs-tabs li.active a {
 
 /* Flags */
 .crise-flags a {
-  text-indent: -9999px;
   height: 25px;
   width: 25px;
   background: rgb(1, 102, 255);
@@ -1439,6 +1439,16 @@ ul.quicktabs-tabs li.active a {
   border-radius: 4px;
   margin-right: 4px;
   margin-top: 4px;
+  font-size: 0;
+}
+.crise-flags a::before {
+  content: "\f024";
+  font-size: 20px;
+  text-indent: 0;
+  color: #fff;
+}
+a[href*="unflag"]::before {
+  color: #86bc42;
 }
 
 
@@ -1450,14 +1460,10 @@ ul.quicktabs-tabs li.active a {
   display: block;
 }
 
-.region-breadcrum .crise-flags a:after {
-    content: "\f099";
-}
 
-/**/
+
+
 /* Intégration profil */
-
-
 .panel-default > .panel-heading {
   border-color: 1px solid #86BC42;
 }
