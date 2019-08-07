@@ -440,19 +440,33 @@ h3.no-icons {
   }
 }
 
-/* Appliquer cadre sur tous les contenus associés en bas de page */
-.region-page-bottom .views-row {
-  padding: 1em;
-  border: 1px solid #86BC42;
+
+/* Region Page Bottom */
+
+.region-page-bottom {
+  .views-field-title {
+    font-weight: bold;
+  }
+  /* Appliquer cadre sur tous les contenus associés en bas de page */
+  .views-row {
+    min-height: 200px;
+
+    div.service_wrapper {
+      margin: 0 10px 20px;
+      border: 1px solid #86BC42;
+      padding: 20px;
+    }
+  }
+  .view-header h3::after {
+    width: 40px;
+    left: 45px;
+  }
+  .view-header h3.noicons::after {
+    width: 40px;
+    left: 0;
+  }
 }
-.region-page-bottom .view-header h3::after {
-  width: 40px;
-  left: 45px;
-}
-.region-page-bottom .view-header h3.noicons::after {
-  width: 40px;
-  left: 0;
-}
+
 
 /* Titre content bottom */
 .widget.gsc-icon-box .highlight_content .title,
@@ -469,8 +483,6 @@ h3.no-icons {
 .region-page-bottom .views-field-body {
     font-size: 15px;
 }
-
-
 
 .widget.gsc-icon-box.left {
     text-align: left;
@@ -638,16 +650,6 @@ h3.no-icons {
   /* autres règles sidebar */
 }
 
-/* Region Page Bottom */
-
-.region-page-bottom {
-    .views-field-title {
-      font-weight: bold;
-    }
-    .views-row {
-        margin-bottom: 2em;
-    }
-}
 
 
 /**
@@ -1535,6 +1537,19 @@ ul.quicktabs-tabs li.active a {
     padding-left: 0;
 background: transparent;
    } 
+
+/**
+* Modèle associé + Services associés sur Besoins
+*/
+.view-entity-reference-vs-besoin {
+  .view-content {
+    text-align:center;
+  }
+  img {
+    margin:0 auto;
+  }
+} 
+
 /* TODO: fleches, motscles */
 
 /* Responsive @media */
