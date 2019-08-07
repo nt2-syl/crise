@@ -227,6 +227,19 @@ ul.list-social li {
   list-style: none;
   font-size: 24px;
 }
+/* Slogan */
+.navbar-text {
+  float: left;
+  clear: both;
+  position: absolute;
+  top: 120px;
+  left: 114px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+
 /* Remplacer icone Refresh par Loupe en CSS */
 .glyphicon-refresh::before {
   content: "\e003";
@@ -460,7 +473,7 @@ h3.no-icons {
     .pagebottom_image,
     .pagebottom_service,
     .pagebottom_modele {
-      
+
     }
   }
   .view-header h3::after {
