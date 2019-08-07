@@ -327,9 +327,14 @@ border-top-right-radius: 30px;
 }
 
 /* Ne pas montrer une loupe supplémentaire sur le bouton Rechercher */
-#edit-submit-environnement-recherche .glyphicon {
-  /*display: none;*/
+#edit-submit-environnement-recherche .glyphicon {}
+
+/* Ne pas montrer loupe supplémentaire sur Accueil Recherche Facette (main-container) et sur Recherche (region header) */
+.main-container #edit-submit-environnement-recherche .glyphicon,
+.region-header  #edit-submit-environnement-recherche .glyphicon  {
+  display: none;
 }
+
 /* Form */
 #views-exposed-form-environnement-recherche-page-1 {
   
