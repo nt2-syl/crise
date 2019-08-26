@@ -1377,7 +1377,8 @@ ul.quicktabs-tabs li.active a {
   display: inline-block;
   position: relative;
 }
-.checkbox label {
+.checkbox label,
+.radio label {
   padding-left: 0;
 }
 /* S'inscrire: Boutons Radio */
