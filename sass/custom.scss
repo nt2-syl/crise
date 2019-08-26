@@ -124,7 +124,8 @@ ul.js-facets-checkbox-links {
 * Déclarer les endroits ou la classe btn ne peut s'ajouter automatiquement
 */
 .btn, 
-.path-user .view-header a {
+.path-user .view-header a,
+.navbar-default .navbar-nav > li > a {
     background: #86BC42;
     color: #fff;
     overflow: hidden;
@@ -152,7 +153,9 @@ ul.js-facets-checkbox-links {
     border: 2px solid #86BC42;
 }
 .btn:hover, 
-.path-user .view-header a:hover {
+.path-user .view-header a:hover,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a.is-active {
     color: #86BC42;
     background: #fff;
 }
@@ -419,14 +422,14 @@ border-top-right-radius: 30px;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #86bc42;
-
+ padding: 2px 6px;
+/*    color: #86bc42;
     padding: 3px 8px;
     border-radius: 8px;
     border: 1px solid #86bc42;
     margin-right: 8px;
     text-align: center;
-    background: #fff;
+    background: #fff;*/
 }
 
 /* Barre Grise (region Breadcrumb) */
