@@ -119,8 +119,43 @@ ul.js-facets-checkbox-links {
   }
 }
 
-
-
+/**
+* Boutons par défaut
+* Déclarer les endroits ou la classe btn ne peut s'ajouter automatiquement
+*/
+.btn, 
+.path-user .view-header a {
+    background: #86BC42;
+    color: #fff;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 9px 24px 9px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    border: 2px solid #86BC42;
+}
+.btn:hover, 
+.path-user .view-header a:hover {
+    color: #86BC42;
+    background: #fff;
+}
 
 /**
 * Regions
@@ -1677,13 +1712,13 @@ background: transparent;
   margin-bottom:0;
 }
 #block-quicktabssuggestionsdecontenu {
-  padding-top: 30px;
-  margin-top: 30px;
+  padding-top: 60px;
+  margin-top: 60px;
   border-top: 2px solid #86BC42;
 }
 #block-views-block-medias-profil-taxo-type-groupe-block-1 {
-    padding-bottom: 30px;
-  margin-bottom: 30px;
+    padding-bottom: 60px;
+  margin-bottom: 60px;
   border-bottom: 2px solid #86BC42;
 }
 
