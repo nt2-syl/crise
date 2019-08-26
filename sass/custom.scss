@@ -1547,7 +1547,8 @@ ul.quicktabs-tabs li.active a {
 .crise-flags a::before {
   content: "\f024";
   font-size: 20px;
-  text-indent: 0;
+  text-indent: 2px;
+  line-height: 25px;
   color: #fff;
 }
 a[href*="unflag"]::before {
