@@ -1333,7 +1333,6 @@ div.region-content #edit-crise-facet {
 .tabbable_title a {
   color: #fff;
   display: block;
-  font-size: 20px;
   font-weight: normal;
   font-weight: bold;  
   line-height: 20px;
@@ -1341,10 +1340,10 @@ div.region-content #edit-crise-facet {
   cursor: hand;
   text-align: center;
 }
-.tabbable_title {
+.tabbable_title a{
   font-size: 32px;
 }
-.tabbable_body {
+.tabbable_body a {
   font-size: 16px;
 }
 
