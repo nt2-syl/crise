@@ -41,6 +41,7 @@
 /**
 * Éléments principaux
 **/
+i,
 em {
   font-style: italic;
 }
@@ -68,6 +69,17 @@ a:hover, a:focus, a:active {
     outline: none !important;
     color: #86BC42;
 }
+.field--name-body a {
+  color: #86BC42;
+}
+.field--name-body {
+  a:hover, 
+  a:focus, 
+  a:active {
+    text-decoration: underline;
+  }
+}
+
 
 /* Default fonts */
 body {
