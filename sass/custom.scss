@@ -364,9 +364,12 @@ ul.list-social li {
 
 
 /* Accueil - Recherche avec facette */
-/* Mettre le formulaire pleine largeur, réparti entre 3 éléments:  15%/70%/15% */
+/* Mettre le formulaire pleine largeur, réparti entre 3 éléments:  15%/70%/15% 
+
+contextual-region block block-views block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 clearfix
+*/
 .block-views-exposed-filter-blockenvironnement-recherche-page-1,
-.block-views-exposed-filter-block-environnement-recherche-bibliographie-page-1 {
+.block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 {
   .form-item-crise-facet {
         width: 15%;
         float: left;
