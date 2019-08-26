@@ -1745,6 +1745,11 @@ video {
   width: 100%;
   height: auto;
 }
+/* Forcer la hauteur sur Chrome */
+audio {
+  height: 40px;
+}
+
 .path-media .field--name-field-media-image {
   padding-bottom:2em;
 }
