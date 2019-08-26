@@ -1320,7 +1320,7 @@ div.region-content #edit-crise-facet {
 }
 
 .tabbable_title_wrapper {
-  bottom: 30px;
+  top: 33%;
   left: 0;
   padding: 0 25px;
   position: absolute;
@@ -1335,15 +1335,17 @@ div.region-content #edit-crise-facet {
   display: block;
   font-size: 20px;
   font-weight: normal;
+  font-weight: bold;  
   line-height: 20px;
   text-decoration: none;
   cursor: hand;
   text-align: center;
 }
-
 .tabbable_title {
+  font-size: 32px;
+}
+.tabbable_body {
   font-size: 16px;
-  font-weight: bold;
 }
 
 
