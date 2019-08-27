@@ -332,8 +332,7 @@ ul.list-social li {
 }
 
 /* Recherche - Blocs de recherche*/
-.path-recherche,
-.path-bibliographie {
+.path-recherche {
   .views-exposed-form {
     width: 83%;
     float: left;
@@ -362,6 +361,10 @@ ul.list-social li {
   text-transform: uppercase;
 }
 
+.path-bibliographie #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493 {
+  float: left;
+  display: inline-block;
+}
 
 
 /* Accueil - Recherche avec facette */
