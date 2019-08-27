@@ -112,12 +112,12 @@ ul.js-facets-checkbox-links {
 }
 
 /* .menu--besoins */
-.menu--besoins {
+/*.menu--besoins {
   .nav > li,
   .nav > li > a {
     display: inline-block;
   }
-}
+}*/
 
 /**
 * Boutons par défaut
@@ -212,6 +212,12 @@ ul.js-facets-checkbox-links {
 /* MENU PRINCIPAL (besoins)
 .navigation .gva_menu li a similaire à .menu--besoins */
 
+#block-crise-main-menu {
+  float: left;
+}
+
+
+/*
 .menu--besoins li a,
 .menu--main li a {
     text-align: left !important;
@@ -237,7 +243,10 @@ ul.js-facets-checkbox-links {
 .menu--main > li:hover a {
     color: #86BC42 !important;
 }
+*/
+
 /* todo: active trail à activer */
+/*
 .menu--besoins > li.menu-item--active-trail > a,
 .menu--main > li.menu-item--active-trail > a {
     color: #86BC42 !important;
@@ -246,31 +255,37 @@ ul.js-facets-checkbox-links {
 .menu--menu-secondaire li {
   list-style: none;
 }
-
+*/
 /**
 * Menu secondaire
 */
-.menu--menu-secondaire li {
-  display: inline-block;
+
+ul.menu.menu--menu-secondaire > li {
+    display: inline-block;
 }
+
+/*
 #block-crise-main-menu, #block-besoins {
   float: none;
   margin: 0 auto;
   width: 100%;
-}
+}*/
+
 .navbar-default {
   background-color: transparent;
   border-color: #fff;
+  margin-bottom:0;
 }
 .navbar {
   border-radius: 0;
 }
+/*
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
   background-color: transparent;
   color: #222;
-}
+}*/
 
 /**
 * blocs headers
@@ -290,10 +305,7 @@ ul.js-facets-checkbox-links {
   right: 0;
   top: 5px;
 }
-#block-reseauxsociaux {
-    float: right;
-    padding-right: 30px;
-}
+
 .views-exposed-form .form-item input {
   /*width: 165px;*/
 }
@@ -306,6 +318,26 @@ ul.js-facets-checkbox-links {
 }
 
 #block-reseauxsociaux {
+/*padding-right: 0;
+clear: none;
+text-align: right;*/
+padding-right: 0;
+clear: none;
+position:absolute;
+right: 0;
+top:0;
+}
+
+/* Bloc recherche */
+#block-collapsiblesearch {
+ /* top: 47px;*/
+ width: auto;
+position: absolute;
+right: 60px;
+top: 6px;
+}
+.user-logged-in #block-collapsiblesearch {
+ /* top: 47px;*/
 }
 
 ul.list-social li {
@@ -315,11 +347,18 @@ ul.list-social li {
   font-size: 24px;
 }
 /* Slogan V2 (Bloc) */
-#block-textepresentationsite p {
+#block-textepresentationsite {
+  margin-bottom:0;
+  float:left;
+  display:inline-block;
+  clear:left;
+  margin-top: -40px;
+  p {
   padding-left: 96px; /* Taille du logo */
   font-weight: normal;
   font-style: italic;
   font-size: 16px;
+}
 }
 
 
@@ -328,9 +367,7 @@ ul.list-social li {
   content: "\e003";
 }
 
-.user-logged-in #block-collapsiblesearch {
-  top: 47px;
-}
+
 
 /* Recherche - Blocs de recherche*/
 .path-recherche {
@@ -1790,7 +1827,34 @@ audio {
 /* mobile */
 @media (max-width: 460px) {}
 /* col-xs // 0-768 */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+
+/* Faire flotter le menu à droite sur mobile seulement (desktop, à gauche)*/
+  #block-crise-main-menu {
+    position: relative;
+    padding-right: 90px;
+    float: right;
+  }
+
+  /* donner pleine largeur aux items du menu secondaire*/
+  ul.menu.menu--menu-secondaire > li {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.menu--menu-secondaire > li > a {
+  width: 100%;
+}
+/* rendre menu primaire pleine largeur */
+#block-crise-main-menu {
+  float: none;
+}
+/* Annuler l'enchassement du slogan */
+#block-textepresentationsite {
+  margin-top: 0;
+}
+
+}
 /* col-sm // 768-992 */
 @media (min-width: 768px) and (max-width: 992px) {}
 /* col-md // 992-1200 */
