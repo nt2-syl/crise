@@ -20,28 +20,30 @@
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
-<div class="tabbable tabs-left">
-  <ul class="nav nav-tabs nav-stacked">
-    {% for row in rows %}
-      {% set linktext = row['content']['#row']._entity.fields.title.value %}
-      {% set linkid = "tab-" ~ row['content']['#view'].dom_id ~ "-" ~ row['content']['#row'].index %}
-      {% set listclass = row['content']['#row'].index == 0 ? 'active' %}
-      <li class="{{listclass}}"><a href="#{{ linkid }}" data-toggle="tab">{{ linktext }}</a></li>
-    {% endfor %}
-  </ul>
-  <div class="tab-content">
-    {% for row in rows %}
-      {% set linkid = "tab-" ~ row['content']['#view'].dom_id ~ "-" ~ row['content']['#row'].index %}
-      {%
-        set row_classes = [
-          default_row_class ? 'views-row',
-          'tab-pane',
-          row['content']['#row'].index == 0 ? 'active',
-        ]
-      %}
-      <div id="{{linkid}}" {{ row.attributes.addClass(row_classes) }}>
-        {{- row.content -}}
-      </div>
-    {% endfor %}
+<div class="container">
+  <div class="tabbable tabs-left row no-gutter">
+    <ul class="nav nav-tabs nav-stacked col-sm-4">
+      {% for row in rows %}
+        {% set linktext = row['content']['#row']._entity.fields.title.value %}
+        {% set linkid = "tab-" ~ row['content']['#view'].dom_id ~ "-" ~ row['content']['#row'].index %}
+        {% set listclass = row['content']['#row'].index == 0 ? 'active' %}
+        <li class="{{listclass}}"><a href="#{{ linkid }}" data-toggle="tab">{{ linktext }}</a></li>
+      {% endfor %}
+    </ul>
+    <div class="tab-content col-sm-8">
+      {% for row in rows %}
+        {% set linkid = "tab-" ~ row['content']['#view'].dom_id ~ "-" ~ row['content']['#row'].index %}
+        {%
+          set row_classes = [
+            default_row_class ? 'views-row',
+            'tab-pane',
+            row['content']['#row'].index == 0 ? 'active',
+          ]
+        %}
+        <div id="{{linkid}}" {{ row.attributes.addClass(row_classes) }}>
+          {{- row.content -}}
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>

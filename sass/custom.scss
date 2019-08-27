@@ -1326,13 +1326,15 @@ div.region-content #edit-crise-facet {
 
 /* Mise en page des Vertical Tabs */
 .tabbable {
+  background-color:#dff0d8;
+  
   .nav-stacked {
-    width: 20%;
-    float: left;
+/*    width: 20%;
+    float: left;*/
   }
   .tab-content {
-    width: 80%;
-    float: left;
+/*    width: 80%;
+    float: left;*/
   }
   .nav-tabs > li > a {
     background: #dff0d8;
@@ -1342,7 +1344,10 @@ div.region-content #edit-crise-facet {
     text-transform: uppercase;
     letter-spacing: 0;
     border: 1px solid #86BC42;
-    line-height: 1.83;
+    line-height: 1.7;
+  }
+  .views-row {
+    margin-bottom: 0;
   }
 }
 
@@ -1801,4 +1806,11 @@ audio {
   }
 }
 
-/*  Vertical Tabs*/
+
+
+/* Utilities */
+/* Remove gutter with a class : https://stackoverflow.com/a/19563497 */
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
