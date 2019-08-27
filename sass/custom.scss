@@ -208,6 +208,12 @@ ul.js-facets-checkbox-links {
 .path-frontpage .title_breadcrumb {
   display: none;
 }
+/* Laisser un espace pour Flag et Add2Any */
+.region-breadcrumb {
+  h1 {
+    width: 80%;
+  }
+}
 
 /* MENU PRINCIPAL (besoins)
 .navigation .gva_menu li a similaire à .menu--besoins */
@@ -1897,3 +1903,11 @@ audio {
     padding-right:0;
     padding-left:0;
 }
+
+/*
+temp - Exception pour Page Recherche - Faire de la place pour  bouton réinitialiser 
+.path-recherche .views-exposed-form form {
+  width: 94%;
+}
+
+*/
