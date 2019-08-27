@@ -401,7 +401,8 @@ contextual-region block block-views block-views-exposed-filter-blockenvironnemen
     float: left;
   }
 }
-.path-frontpage #views-exposed-form-environnement-recherche-page-1 {
+.path-frontpage #views-exposed-form-environnement-recherche-page-1,
+#views-exposed-form-environnement-recherche-page-1 {
   .form-type-search-api-autocomplete {
     width: 70%;
     float: left;
