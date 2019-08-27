@@ -443,8 +443,8 @@ contextual-region block block-views block-views-exposed-filter-blockenvironnemen
   border-top-right-radius: auto;
 }
 
-.navbar-default .navbar-nav > li > a {
- padding: 2px 6px;
+.menu--menu-secondaire > li > a {
+ padding: 2px 6px !important;
  letter-spacing: 0;
  margin-right: 8px !important;
 
@@ -455,6 +455,7 @@ contextual-region block block-views block-views-exposed-filter-blockenvironnemen
     margin-right: 8px;
     text-align: center;
     background: #fff;*/
+
 }
 
 /* Barre Grise (region Breadcrumb) */
