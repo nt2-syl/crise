@@ -256,6 +256,18 @@ ul.js-facets-checkbox-links {
   list-style: none;
 }
 */
+
+
+/* aligner items menu principal avec le slogan */
+.navbar-default .navbar-nav > li > a {
+  color: #777;
+  padding-left: 0;
+}
+.region-main-navigation {
+  text-align:center;
+}
+
+
 /**
 * Menu secondaire
 */
@@ -286,6 +298,11 @@ ul.menu.menu--menu-secondaire > li {
   background-color: transparent;
   color: #222;
 }*/
+.region-main-navigation {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
 
 /**
 * blocs headers
