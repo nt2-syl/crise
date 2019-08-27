@@ -125,7 +125,7 @@ ul.js-facets-checkbox-links {
 */
 .btn, 
 .path-user .view-header a,
-.navbar-default .navbar-nav > li > a {
+.menu--menu-secondaire > li > a {
     background: #86BC42;
     color: #fff;
     overflow: hidden;
@@ -167,6 +167,7 @@ ul.js-facets-checkbox-links {
 .open > .btn-primary.dropdown-toggle {
     border-color: #86BC42;
 }
+
 
 /**
 * Regions
@@ -258,7 +259,7 @@ ul.js-facets-checkbox-links {
   width: 100%;
 }
 .navbar-default {
-  background-color: #fff;
+  background-color: transparent;
   border-color: #fff;
 }
 .navbar {
