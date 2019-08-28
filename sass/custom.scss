@@ -211,7 +211,7 @@ ul.js-facets-checkbox-links {
 /* Laisser un espace pour Flag et Add2Any */
 .region-breadcrumb {
   h1 {
-    width: 80%;
+    width: 75%;
   }
 }
 
@@ -403,20 +403,60 @@ ul.list-social li {
     display: inline-block;
   }
   #block-textepresentationrecherchegenerale {
-   clear: both;
- }
- #edit-search-api-fulltext {
-   width: auto;
- }
- .region-top-navigation #edit-search-api-fulltext {
-   width: 50%;
- }
- .region-header #edit-search-api-fulltext {
-   width: 100%;
-   border-radius: 20px;
- }
+     clear: both;
+   }
+   #edit-search-api-fulltext {
+     width: auto;
+   }
+   .region-top-navigation #edit-search-api-fulltext {
+     width: 50%;
+   }
+   .region-header #edit-search-api-fulltext {
+     width: 100%;
+     border-radius: 20px;
+   }
 
 }
+
+
+.path-bibliographie {
+  
+  /*#block-reinitialiserrecherche {
+    float: left;
+    display: inline-block;
+  }
+  #block-textepresentationrecherchegenerale {
+     clear: both;
+   }
+   #edit-search-api-fulltext {
+     width: auto;
+   }
+   .region-top-navigation #edit-search-api-fulltext {
+     width: 50%;
+   }
+   .region-header #edit-search-api-fulltext {
+     width: 100%;
+     border-radius: 20px;
+   }*/
+
+}
+
+#block-views-exposed-filter-block-environnement-recherche-bibliographie-page-1 {
+  width: 83%;
+  float: left;
+
+  .glyphicon-search::before {
+    display:none;
+  }
+
+}
+
+/* doit apparaitre après les autres champs recherche
+.block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 .form-type-search-api-autocomplete {
+  width: 83%;
+}*/
+
+
 
 .facet-item__value {
   text-transform: uppercase;
@@ -475,6 +515,11 @@ contextual-region block block-views block-views-exposed-filter-blockenvironnemen
     float: left;
   }
 }
+
+.block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 .form-type-search-api-autocomplete {
+    width: 83% !important;
+}
+
 
 /* Ne pas montrer une loupe supplémentaire sur le bouton Rechercher */
 #edit-submit-environnement-recherche .glyphicon {}
