@@ -440,7 +440,7 @@ ul.list-social li {
    }*/
 
 }
-
+/* Liste Ref Biblio */
 #block-views-exposed-filter-block-environnement-recherche-bibliographie-page-1 {
   width: 83%;
   float: left;
@@ -450,6 +450,15 @@ ul.list-social li {
   }
 
 }
+/* Liste Taxonomies */
+#block-formulaireexposeenvironnement-recherchepage-1-2 {
+  width: 83%;
+  float: left;
+   #edit-search-api-fulltext {
+     border-radius: 20px;
+   }
+}
+
 
 /* doit apparaitre après les autres champs recherche
 .block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 .form-type-search-api-autocomplete {
