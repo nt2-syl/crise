@@ -644,6 +644,10 @@ ul.menu > li a:after {
 .footer-third #block-footerlogos {
   width: 100%;
 }
+#block-footercopyright-2 img {
+  max-width: 33%;
+}
+
 
 
 /* Noeuds - Règles générales */
@@ -715,7 +719,7 @@ h3.no-icons {
   }
   /* Appliquer cadre sur tous les contenus associés en bas de page */
   .views-row {
-    min-height: 200px;
+    /*min-height: 200px;*/
 
     .pagebottom_wrapper {
       margin: 0;
