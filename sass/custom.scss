@@ -633,6 +633,19 @@ ul.menu > li a:after {
     padding-top: 15px;
 }
 
+.footer-first {
+  width: 50%;
+  float:left;
+}
+.footer-second {
+  width: 50%;
+  float:left;
+}
+.footer-third #block-footerlogos {
+  width: 100%;
+}
+
+
 /* Noeuds - Règles générales */
 .content .field {
   margin-bottom: 2em;
