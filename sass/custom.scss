@@ -69,10 +69,11 @@ a:hover, a:focus, a:active {
     outline: none !important;
     color: #86BC42;
 }
-.page .field--name-body a {
-  color: #86BC42;
-}
-.page .field--name-body {
+.page .field--name-body,
+.page .field--name-field-citation {
+  a {
+    color: #86BC42;
+  }
   a:hover, 
   a:focus, 
   a:active {
