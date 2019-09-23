@@ -87,6 +87,9 @@ a:hover, a:focus, a:active {
    .field--name-body a.btn {
     color: #fff;
   }
+  .field--name-body a.btn:hover {
+    color: #86BC42;
+  }
 }
 
 /* Default fonts */
@@ -449,16 +452,19 @@ ul.list-social li {
    }*/
 
 }
+#block-views-exposed-filter-block-environnement-recherche-bibliographie-page-1,
+#edit-submit-environnement-recherche-bibliographie {
+  .glyphicon-search::before {
+    display:none;
+  }
+}
+
 /* Liste Ref Biblio */
 #block-views-exposed-filter-block-environnement-recherche-bibliographie-page-1 {
   width: 83%;
   float: left;
-
-  .glyphicon-search::before {
-    display:none;
-  }
-
 }
+
 /* Liste Taxonomies */
 #block-formulaireexposeenvironnement-recherchepage-1-2 {
   width: 83%;
