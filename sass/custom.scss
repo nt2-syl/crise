@@ -1933,7 +1933,15 @@ audio {
 
 /* Responsive @media */
 /* mobile */
-@media (max-width: 460px) {}
+@media (max-width: 460px) {
+  /* donner pleine largeur aux items du menu secondaire*/
+  ul.menu.menu--menu-secondaire > li {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+}
 /* col-xs // 0-768 */
 @media (max-width: 768px) {
 
@@ -1944,12 +1952,7 @@ audio {
     float: right;
   }
 
-  /* donner pleine largeur aux items du menu secondaire*/
-  ul.menu.menu--menu-secondaire > li {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-}
+
 .menu--menu-secondaire > li > a {
   width: 100%;
 }
