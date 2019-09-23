@@ -212,7 +212,7 @@ ul.js-facets-checkbox-links {
 /* Laisser un espace pour Flag et Add2Any */
 .region-breadcrumb {
   h1 {
-    width: 75%;
+    width: 70%;
   }
 }
 
@@ -586,11 +586,16 @@ contextual-region block block-views block-views-exposed-filter-blockenvironnemen
     margin-bottom: 0;
     margin-top: 0;
 }
-
-
+/*
+Module Add2Any - Ajoute les boutons de partage dans la barre du titre
+Addtoany2 = ChampInteret, GroupeEnjeu
+Addtoany5 = Medias
+*/
+#block-addtoanybuttons-1,
 #block-addtoanybuttons-2,
 #block-addtoanybuttons-3,
-#block-addtoanybuttons-4 {
+#block-addtoanybuttons-4,
+#block-addtoanybuttons-5 {
   margin-bottom: 0;
   display: inline-block;
   float: right;
