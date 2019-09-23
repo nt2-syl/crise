@@ -452,9 +452,14 @@ ul.list-social li {
    }*/
 
 }
-#block-views-exposed-filter-block-environnement-recherche-bibliographie-page-1,
-#edit-submit-environnement-recherche-bibliographie {
+#block-views-exposed-filter-block-environnement-recherche-bibliographie-page-1 {
   .glyphicon-search::before {
+    display:none;
+  }
+}
+
+#edit-submit-environnement-recherche-bibliographie {
+  .glyphicon {
     display:none;
   }
 }
