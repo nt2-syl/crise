@@ -81,9 +81,12 @@ a:hover, a:focus, a:active {
   }
 }
 /*Exceptions: 
-- Bouton Recherche dans le corps de Recherche */
-.path-recherche .field--name-body a.btn {
-  color: #fff;
+- Bouton Réinitialiser dans le corps de Recherche */
+.path-recherche,
+.path-bibliographie {
+   .field--name-body a.btn {
+    color: #fff;
+  }
 }
 
 /* Default fonts */
