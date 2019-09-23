@@ -80,7 +80,11 @@ a:hover, a:focus, a:active {
     text-decoration: underline;
   }
 }
-
+/*Exceptions: 
+- Bouton Recherche dans le corps de Recherche */
+.path-recherche .field--name-body a.btn {
+  color: #fff;
+}
 
 /* Default fonts */
 body {
@@ -126,7 +130,8 @@ ul.js-facets-checkbox-links {
 */
 .btn, 
 .path-user .view-header a,
-.menu--menu-secondaire > li > a {
+.menu--menu-secondaire > li > a,
+.path-taxonomy .links a {
     background: #86BC42;
     color: #fff;
     overflow: hidden;
@@ -589,6 +594,7 @@ contextual-region block block-views block-views-exposed-filter-blockenvironnemen
 /*
 Module Add2Any - Ajoute les boutons de partage dans la barre du titre
 Addtoany2 = ChampInteret, GroupeEnjeu
+Addtoany4 = BibCite
 Addtoany5 = Medias
 */
 #block-addtoanybuttons-1,
@@ -2001,12 +2007,6 @@ audio {
 
 
 /*  Bootstrap Clearfix */
-@media (min-width:767px){
-  .col-sm-6:nth-child(2n+1){
-    clear: left;
-  }
-}
-
 
 
 /* Utilities */
