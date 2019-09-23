@@ -1625,12 +1625,12 @@ ul.quicktabs-tabs li.active a {
   .nav-tabs > li > a {
       padding: 6px 20px 5px;
   }
-  li.active a {
+  .nav-tabs li.active a {
     border: 1px solid #222;
     border-radius: 20px;
   }
-
 }
+
 /* hide block-quicktabssuggestionsdecontenu on /user/register */
 
 .tabs--primary {
