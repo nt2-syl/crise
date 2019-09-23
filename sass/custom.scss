@@ -1879,12 +1879,13 @@ background: transparent;
 } 
 
 /* Taxonomie Listes */
+/* Le bouton en savoir plus est en position:absolute en bas (car il apparait avant dans le html) */
+/* TODO: changer l'ordre de sortie html dans le résumé affiché */
 .path-taxonomy {
   ul.links {
-/*    display: block;*/
     clear: both;
     position: absolute;
-    bottom: 0;
+    bottom: -40px;
     left: 0;
     font-weight: bold;
   }
