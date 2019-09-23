@@ -634,20 +634,7 @@ ul.menu > li a:after {
     padding-top: 15px;
 }
 
-.footer-first {
-  width: 50%;
-  float:left;
-}
-.footer-second {
-  width: 50%;
-  float:left;
-}
-.footer-third #block-footerlogos {
-  width: 100%;
-}
-#block-footercopyright-2 img {
-  max-width: 33%;
-}
+
 
 
 
@@ -948,6 +935,10 @@ h3.no-icons {
 }
 .footer a.btn:hover {
   color: #86bc42;
+}
+/* Voir aussi responsive < 768px pour alignement du footer*/
+#block-footercopyright-2 img {
+  max-width: 33%;
 }
 
 
@@ -1606,7 +1597,9 @@ ul.quicktabs-tabs li.active a {
 .path-user .field--type-entity-reference legend {
   display: none;
 }
-
+.path-user .field--item {
+  color: #fff;
+}
 
 
 /* Profil Utilisateur*/
@@ -1767,7 +1760,7 @@ a[href*="unflag"]::before {
   }
 
   /* Niveau 2 : Field label */
-  .field--label {
+  .user-register-form .field--label {
       font-size: 16px;
       font-family: "Poppins",sans-serif;
       font-weight: 600;
@@ -1776,7 +1769,7 @@ a[href*="unflag"]::before {
       text-transform: initial;
   }
   /* Niveau 3 : texte defaut */
-  .field--item,
+  .user-register-form .field--item,
   #block-views-block-favorisation-contenu-block-1 .views-field-title,
   #block-views-block-favorisation-medias-block-1 .views-field-name,
   #block-views-block-favorisation-ref-biblio-block-1 .views-field-title,
@@ -1957,7 +1950,41 @@ audio {
   margin-top: 0;
 }
 
+
 }
+
+/* Mobile  0-992px */
+@media (max-width: 460px)  {
+  /* Sur mobile, forcer l'alignement gauche-droite des blocs Boutons et Présentation*/
+  .footer-first {
+    width: 100%;
+    float:left;
+  }
+  .footer-second {
+    width: 100%;
+    float:left;
+  }
+  .footer-third #block-footerlogos {
+    width: 100%;
+  }
+}
+@media (min-width: 460px) and (max-width: 992px)  {
+  /* Sur mobile, forcer l'alignement gauche-droite des blocs Boutons et Présentation*/
+  .footer-first {
+    width: 50%;
+    float:left;
+  }
+  .footer-second {
+    width: 50%;
+    float:left;
+  }
+  .footer-third #block-footerlogos {
+    width: 100%;
+  }
+}
+/* Au-dessus de 992px, géré par Bootstrap */
+
+
 /* col-sm // 768-992 */
 @media (min-width: 768px) and (max-width: 992px) {}
 /* col-md // 992-1200 */
