@@ -1598,8 +1598,15 @@ ul.quicktabs-tabs li.active a {
     position: relative;
     margin-right: 1em;
 }
+/* Visible dans les conditions d'utilisation du site à la création du compte */
+.help-block {
+  color: #657184;
+}
+/* Titre des champs taxos en double */
+.path-user .field--type-entity-reference legend {
+  display: none;
+}
 
-/* titre sections */
 
 
 /* Profil Utilisateur*/
