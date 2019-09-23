@@ -1932,7 +1932,11 @@ audio {
 }
 
 
-/* Responsive @media */
+/*************************************************
+*
+* Responsive @media 
+*/
+
 /* mobile */
 @media (max-width: 460px) {
   /* donner pleine largeur aux items du menu secondaire*/
@@ -1965,7 +1969,16 @@ audio {
 #block-textepresentationsite {
   margin-top: 0;
 }
-
+/* 768px Safari Tablette : menu collé car le menu mobile n'est pas déclenché
+*
+* Compenser le padding du menu et du logo
+*/
+.navbar-collapse {
+  padding-left: 0px;
+}
+.logo {
+  padding-right: 15px;
+}
 
 }
 
