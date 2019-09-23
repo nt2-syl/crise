@@ -1079,7 +1079,7 @@ Recherche, Modeles, Services, Ref Biblio
 /* Logo */
 .logo {
   max-width: 80px; /* TEMP */
-  z-index: 3; /* Fixe un bug sur tablette */
+  z-index: 99; /* Fixe un bug sur tablette */
 }
 .name {
   display: none;
@@ -1978,6 +1978,7 @@ audio {
 }
 .logo {
   padding-right: 15px;
+  z-index: 98;/*test pour émulateur safari*/
 }
 
 }
