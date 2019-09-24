@@ -323,7 +323,7 @@ ul.menu.menu--menu-secondaire > li {
 
 
 /**
-* blocs headers
+* Blocs headers
 */
 #block-besoins {
   float: right;
@@ -430,7 +430,7 @@ ul.list-social li {
 
 }
 
-
+/* Bibliographie */
 .path-bibliographie {
   
   /*#block-reinitialiserrecherche {
@@ -1628,7 +1628,7 @@ ul.quicktabs-tabs li.active a {
 }
 
 
-/* Profil Utilisateur*/
+/* Profil Utilisateur */
 .path-user {
   nav.tabs {
     text-align: center;
@@ -1653,7 +1653,7 @@ ul.quicktabs-tabs li.active a {
 }
 
 /**
-* collapsiblock
+* Collapsiblock
 */
 .ui-helper-reset {
   line-height: 1.8;
@@ -1756,7 +1756,7 @@ a[href*="unflag"]::before {
 
 
 
-/* Intégration profil */
+/* Intégration profil Utilisateur */
 .panel-default > .panel-heading {
   border-color: 1px solid #86BC42;
 }
@@ -2037,6 +2037,10 @@ audio {
 @media (min-width: 1200px) {}
 /* écrans larges */
 @media all and (min-width: 1200px) and (max-width: 9999px) {}
+
+
+
+/* Varia */
 
 
 /*  Bootstrap Clearfix */
