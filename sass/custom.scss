@@ -1093,7 +1093,8 @@ Recherche, Modeles, Services, Ref Biblio
 /* Logo */
 .logo {
   max-width: 80px; /* TEMP */
-  z-index: 99; /* Fixe un bug sur tablette */
+  z-index: 999999; /* Fixe un bug sur tablette */
+  position: relative
 }
 .name {
   display: none;
