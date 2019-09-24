@@ -1403,7 +1403,7 @@ nav.pager-nav {
 }
 div.region-content #edit-crise-facet {
   display: block;
-  min-width: 100px;
+/*  min-width: 100px;*/
 }
 
 /* Glossaire - Bonifications */
@@ -2064,4 +2064,7 @@ temp - Exception pour Page Recherche - Faire de la place pour  bouton réinitial
 */
 #views-exposed-form-environnement-recherche-page-1 .form-type-search-api-autocomplete {
   width: 80%;
+}
+#crisecustom-search-form .form-group input.form-control {
+  max-width: 300px;
 }
