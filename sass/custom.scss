@@ -716,7 +716,10 @@ contextual-region block block-views block-views-exposed-filter-blockenvironnemen
 }
 
 
-
+#views-exposed-form-environnement-recherche-page-1 .views-exposed-form > div {
+  display: flex;
+  align-items: center;
+}
 
 
 /* Barre Grise (region Breadcrumb) */
