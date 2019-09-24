@@ -1,3 +1,6 @@
+
+
+
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -706,6 +709,13 @@ contextual-region block block-views block-views-exposed-filter-blockenvironnemen
 
 }
 
+#edit-search-api-fulltext,
+.block-views-exposed-filter-blockenvironnement-recherche-page-1 #edit-search-api-fulltext--2, .block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 #edit-search-api-fulltext--2 {
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+
 /* Barre Grise (region Breadcrumb) */
 .page-header {
     padding-bottom: 0 !important;
@@ -1092,7 +1102,9 @@ h3.no-icons {
   padding: 40px 0 0;
 }
 
-/* Vues + Listes - règles générales */
+/**
+* Vues + Listes - règles générales 
+*/
 .views-row {
   margin-bottom: 2em;
 }
@@ -2098,3 +2110,4 @@ audio {
 #crisecustom-search-form .form-group input.form-control {
   max-width: 300px;
 }
+
