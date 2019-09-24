@@ -321,7 +321,6 @@ ul.menu.menu--menu-secondaire > li {
   margin-bottom: 30px;
 }
 
-
 /**
 * Blocs headers
 */
@@ -1962,6 +1961,18 @@ audio {
     text-align: center;
   }
 
+  /* Sur cellulaire, passer pleine largeur, aligne à gauche*/
+  #block-textepresentationsite {
+      margin-bottom: 0;
+      float: none;
+      display: block;
+      clear: both;
+      margin-top: 0;
+  }
+  #block-textepresentationsite p {
+    padding-left: 0;
+  }
+
 }
 /* col-xs // 0-768 */
 @media (max-width: 768px) {
@@ -1982,9 +1993,9 @@ audio {
   float: none;
 }
 /* Annuler l'enchassement du slogan */
-#block-textepresentationsite {
+/* #block-textepresentationsite {
   margin-top: 0;
-}
+}*/
 /* 768px Safari Tablette : menu collé car le menu mobile n'est pas déclenché
 *
 * Compenser le padding du menu et du logo
@@ -1996,6 +2007,11 @@ audio {
   padding-right: 15px;
   z-index: 98;/*test pour émulateur safari*/
 }
+.navbar-nav {
+    margin: 0;
+}
+
+
 
 }
 
