@@ -626,18 +626,18 @@ contextual-region block block-views block-views-exposed-filter-blockenvironnemen
 .block-views-exposed-filter-blockenvironnement-recherche-page-1,
 .block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 {
   .form-item-crise-facet {
-        width: 15%;
-        float: left;
+      /*  width: 15%;
+        float: left;*/
   }
   .form-type-search-api-autocomplete {
-     width: 74%;
+/*     width: 74%;*/
   }
-  // valider ailleurs
+  /* valider ailleurs*/
   .form-actions {
-    width: 15%;
+   /* width: 15%;*/
   }
   .form-inline .input-group, .navbar-form .input-group {
-    width: 100%;
+  /*  width: 100%;*/
   }
   .views-exposed-form .form-item {
     padding-right: 0;
@@ -652,19 +652,19 @@ contextual-region block block-views block-views-exposed-filter-blockenvironnemen
 /* Variante pour le champ apparaissant sur la page Recherche */
 #views-exposed-form-environnement-recherche-page-1 {
   .form-type-search-api-autocomplete {
-    width: 85%;
-    float: left;
+   /* width: 85%;
+    float: left;*/
   }
 }
 .path-frontpage #views-exposed-form-environnement-recherche-page-1 {
   .form-type-search-api-autocomplete {
-    width: 70%;
-    float: left;
+   /* width: 70%;
+    float: left;*/
   }
 }
 
 .block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 .form-type-search-api-autocomplete {
-    width: 83% !important;
+  /*  width: 83% !important;*/
 }
 
 
