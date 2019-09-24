@@ -584,14 +584,14 @@ ul.list-social li {
 
 /* Liste Ref Biblio */
 #block-views-exposed-filter-block-environnement-recherche-bibliographie-page-1 {
-  width: 83%;
-  float: left;
+ /* width: 83%;
+  float: left;*/
 }
 
 /* Liste Taxonomies */
 #block-formulaireexposeenvironnement-recherchepage-1-2 {
-  width: 83%;
-  float: left;
+/*  width: 83%;
+  float: left; */
    #edit-search-api-fulltext {
      border-radius: 20px;
    }
@@ -2123,3 +2123,6 @@ audio {
  /* max-width: 300px;*/
 }
 
+.path-bibliographie .region-header {
+  display: flex;
+}
