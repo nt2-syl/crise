@@ -650,7 +650,7 @@ ul.menu > li a:after {
 }
 .footer,
 .copyright,
-.footer_navigation  {
+.footer_navigation {
   background: #000;
 }
 #block-footercopyright-2 img {
@@ -964,8 +964,12 @@ h3.no-icons {
 #block-footercopyright-2 img {
   max-width: 33%;
 }
-
-
+.copyright .copyright-inner {
+  padding: 0;
+}
+.footer .footer-center {
+  padding: 40px 0 0;
+}
 
 /* Vues + Listes - règles générales */
 .views-row {
@@ -1961,7 +1965,7 @@ audio {
     text-align: center;
   }
 
-  /* Sur cellulaire, passer pleine largeur, aligne à gauche*/
+  /* Sur cellulaire, passer pleine largeur, aligne à gauche */
   #block-textepresentationsite {
       margin-bottom: 0;
       float: none;
@@ -1993,9 +1997,6 @@ audio {
   float: none;
 }
 /* Annuler l'enchassement du slogan */
-/* #block-textepresentationsite {
-  margin-top: 0;
-}*/
 /* 768px Safari Tablette : menu collé car le menu mobile n'est pas déclenché
 *
 * Compenser le padding du menu et du logo
@@ -2044,8 +2045,15 @@ audio {
     width: 100%;
   }
 }
-/* Au-dessus de 992px, géré par Bootstrap */
 
+/* Au-dessus de 992px, géré par Bootstrap */
+@media (min-width: 992px) {
+  /* Tweaker l'alignement des blocs */
+    .footer-second {
+      margin-left: -30px;
+      margin-right: 30px;
+  }
+}
 
 /* col-sm // 768-992 */
 @media (min-width: 768px) and (max-width: 992px) {}
