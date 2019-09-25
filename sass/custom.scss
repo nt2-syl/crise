@@ -1500,13 +1500,19 @@ div.region-content #edit-crise-facet {
   padding: 20px;
 }
 .region-sidebar-second .block-views-blockbloc-autres-connaissances-block-1 {
-.block-title,
-.views-field-title {
-  color: #fff;
-}
-  a {
-    background: #86BC42;
+  .block-title,
+  .views-field-title {
     color: #fff;
+  }
+  .block-title {
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  a {
+    color: #fff;
+    line-height: 1;
+    font-weight: normal;
   }
 }
 
@@ -2236,4 +2242,23 @@ audio {
 #block-recherchetextepresentationgroupe,
 #block-recherchetextepresentationmodele {
   display: none;
+}
+
+/* Double ombre sur Recherche Header: la classe est appellée 2 fois */
+#crisecustom-search-form .form-group {
+  box-shadow:none;
+  border:none;
+}
+#crisecustom-search-form > .form-group {
+
+    float: right !important;
+    transition: all 0.35s, border-radius 0s;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;*/
+    box-shadow:none;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+
 }
