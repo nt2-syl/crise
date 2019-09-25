@@ -2191,6 +2191,25 @@ audio {
 }
 
 
+/* Structure du bloc Recherche sur Bibliographie (via Context)
+.path-bibliographie
+  .region-header
+    (input + submit)
+    #block-views-exposed-filter-block-environnement-recherche-bibliographie-page-1
+      .views-exposed-form
+        .views-exposed-form > div
+          (input)
+          .views-exposed-form .form-item
+            input
+          #edit-actions--2
+            button
+
+    (réinitialiser)
+    #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493
+      (texte du bloc)
+
+*/
+
 /* Recherche */
 .block-views-exposed-filter-blockenvironnement-recherche-page-1 .form-item-crise-facet {
   padding-right: 0;
