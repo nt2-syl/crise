@@ -2139,3 +2139,55 @@ audio {
   margin-left: 0.5em;
 }
 
+
+/* ACCUEIL - STRUCTURE DU BLOC RECHERCHE 
+.block.accueil_recherche_texte
+.block
+  .form
+    .views-exposed-form > div (PARENT)
+      .form-item-crise-facet
+        select-wrapper
+          #edit-crise-facet
+
+      .form-type-search-api-autocomplete
+        .input-group
+          input
+
+      #edit-actions--2    
+        #edit-submit-environnement-recherche
+*/
+
+
+/* Flex: élément englobant, sous le form */
+#views-exposed-form-environnement-recherche-page-1 > div  {
+  display:flex;
+}
+#views-exposed-form-environnement-recherche-page-1 {
+  /* flex: 75% à l'élément central via flex-basis*/
+  .form-type-search-api-autocomplete {
+      flex-basis: 75%;
+      padding: 0 10px;
+  }
+  /* supprimer bordure sur élément interne*/
+  .views-exposed-form .form-item input {
+    border: none;
+    border-radius: 0;
+  }
+  /* cadre */
+  .form-type-search-api-autocomplete {
+
+  }
+  /* donner 100% au parent de la balise input + rapporter bordure */
+  div.input-group {
+    width:100%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+  }
+
+
+
+}
+.block-views-exposed-filter-blockenvironnement-recherche-page-1 #edit-search-api-fulltext--2 {
+  border: none; /* double bordure*/
+  height: 45px;
+}
