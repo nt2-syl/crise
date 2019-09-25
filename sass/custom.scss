@@ -2184,10 +2184,20 @@ audio {
     border-radius: 30px;
   }
 
-
-
 }
 .block-views-exposed-filter-blockenvironnement-recherche-page-1 #edit-search-api-fulltext--2 {
   border: none; /* double bordure*/
   height: 45px;
+}
+
+
+/* Recherche */
+.block-views-exposed-filter-blockenvironnement-recherche-page-1 .form-item-crise-facet {
+  padding-right: 0;
+}
+#block-reinitialiserrecherche {
+  margin-top:0;
+}
+.path-recherche .block-views-exposed-filter-blockenvironnement-recherche-page-1 #edit-search-api-fulltext--2 {
+  height: 40px;
 }
