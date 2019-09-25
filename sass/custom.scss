@@ -2244,13 +2244,13 @@ audio {
   display: none;
 }
 
-/* Double ombre sur Recherche Header: la classe est appellée 2 fois */
+/* Double ombre sur Recherche Header: la classe est appellée 2 fois, une dans l'autre */
+/*
 #crisecustom-search-form .form-group {
   box-shadow:none;
   border:none;
 }
 #crisecustom-search-form > .form-group {
-
     float: right !important;
     transition: all 0.35s, border-radius 0s;
     width: 32px;
@@ -2262,3 +2262,4 @@ audio {
     border: 1px solid #ccc;
 
 }
+*/
