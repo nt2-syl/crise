@@ -793,7 +793,9 @@ Addtoany5 = Medias
   line-height: 20px;
   /* option: aligner top avec vertical-align: top; */
 }
-
+.user-logged-in .crise-flags {
+  display: none;
+}
 
 
 /* Région Aide/Alertes */
@@ -2315,3 +2317,5 @@ audio {
 
 }
 */
+
+
