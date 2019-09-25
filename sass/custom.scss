@@ -2033,7 +2033,7 @@ audio {
 *
 **************************************************/
 
-/* 1- mobile */
+/* 1- mobile - petits écran */
 
 @media (max-width: 460px) {
   /* donner pleine largeur aux items du menu secondaire*/
@@ -2056,7 +2056,23 @@ audio {
 
 }
 
-/* 2-Tablette et - // col-xs // 0-768 */
+/* 2- Mobile, excluant la tablette 768 */
+@media (max-width: 767px) {
+  /* Cacher description sur mobile*/
+  .path-frontpage #flexslider-1 .views-field-body {
+    display: none;
+  }
+/* Footer - Logo Footer pleine largeur et centré */
+  #block-footercopyright-2 img {
+    max-width: 100%;
+    display: block;
+    clear: both;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+}
+
+/* 3-Tablette et - // col-xs // 0-768 */
 @media (max-width: 768px) {
   /* Faire flotter le menu à droite sur mobile seulement (desktop, à gauche)*/
   #block-crise-main-menu {
@@ -2090,6 +2106,8 @@ audio {
     border-bottom: 2px solid #86BC42;
   }
 
+
+
 }
 
 /* Footer - 3 tailles à traiter */
@@ -2122,7 +2140,7 @@ audio {
   }
 }
 
-/* Au-dessus de 992px, géré par Bootstrap */
+/* 4- Au-dessus de 992px, géré par Bootstrap */
 @media (min-width: 992px) {
   /* Tweaker l'alignement des blocs */
     .footer-second {
