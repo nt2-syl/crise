@@ -1566,9 +1566,11 @@ div.region-content #edit-crise-facet {
 .tabbable_title a {
   font-size: 30px;
   padding-bottom: 0.75em;
+  line-height: 1;
 }
 .tabbable_body a {
   font-size: 15px;
+  line-height: 1.33;
 }
 
 
@@ -2219,4 +2221,19 @@ audio {
 }
 .path-recherche .block-views-exposed-filter-blockenvironnement-recherche-page-1 #edit-search-api-fulltext--2 {
   height: 40px;
+}
+
+
+/* Recherche Header: bordure*/
+#crisecustom-search-form .form-group:hover {
+  border-radius: 30px;
+  box-shadow: none;
+}
+/* Blocs de présentation - déplacer dans une autre région */
+#block-recherchetextepresentationbesoin,
+#block-recherchetextepresentationconnaissance,
+#block-recherchetextepresentationdefinition,
+#block-recherchetextepresentationgroupe,
+#block-recherchetextepresentationmodele {
+  display: none;
 }
