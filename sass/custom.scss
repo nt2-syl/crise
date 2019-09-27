@@ -1877,6 +1877,20 @@ a[href*="unflag"]::before {
   color: #262C38;
   text-transform: initial;
 }
+.panel .panel-heading .panel-title,
+.path-user .region-content .block-title,
+#edit-account .control-label {
+  border-bottom: 1px solid #86BC42;
+}
+/* Supprimer le soulignement de titre sur 2e niveau */
+.path-user .panel-body .field--label {
+  border-bottom: none;
+}
+/* Préférences, panel du bas - supprimer barre grise */
+.path-user .panel .panel-heading {
+  border: none;
+}
+
 .panel-body .field--type-entity-reference {
   margin-bottom: 2em;
 }
