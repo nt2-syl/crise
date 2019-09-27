@@ -793,8 +793,11 @@ Addtoany5 = Medias
   line-height: 20px;
   /* option: aligner top avec vertical-align: top; */
 }
-.user-logged-in .crise-flags {
+.crise-flags {
   display: none;
+}
+.user-logged-in .crise-flags {
+  display: block;
 }
 
 
