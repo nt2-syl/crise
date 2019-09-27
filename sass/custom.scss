@@ -2088,7 +2088,11 @@ audio {
     clear: both;
     margin: 0 auto;
     padding-bottom: 20px;
-}
+  }
+  /* Sur petits écrans, empiler les quicktabs, sinon ils tombent hors de l'affichage sur les tables responsive */
+  .path-user ul.quicktabs-tabs li {
+    display: block;
+  }
 }
 
 /* 3-Tablette et - // col-xs // 0-768 */
