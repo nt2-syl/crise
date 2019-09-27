@@ -205,7 +205,8 @@ ul.js-facets-checkbox-links {
 .btn:hover, 
 .path-user .view-header a:hover,
 .navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a.is-active {
+.navbar-default .navbar-nav > li > a.is-active,
+.navbar-default .navbar-nav > .active > a:hover {
     color: #86BC42;
     background: #fff;
 }
