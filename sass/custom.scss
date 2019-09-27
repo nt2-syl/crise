@@ -159,6 +159,19 @@ ul.js-facets-checkbox-links {
     margin-right: 10px;
   }
 }
+/*
+table > thead > tr > th, 
+table > thead > tr > td, 
+table > tbody > tr > th, 
+table > tbody > tr > td, 
+table > tfoot > tr > th, 
+table > tfoot > tr > td */
+/* Ajouter bordure gauche sur les tables du profil */
+.path-user table > tbody > tr > td {
+    border-color: #ddd;
+    border-width: 1px;
+    border-style: solid;
+}
 
 /* .menu--besoins */
 /*.menu--besoins {
