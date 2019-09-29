@@ -1579,6 +1579,9 @@ div.region-content #edit-crise-facet {
 .tabbable {
   background-color: #fff;
   border: 1px solid #86BC42;
+  /* Compenser l'effet no-gutter appliqué sur les colonnes internes */
+  margin-left: 0;
+  margin-right: 0;
   .nav-stacked {
 /*    width: 20%;
     float: left;*/
