@@ -2368,13 +2368,13 @@ audio {
   border-radius: 30px;
   box-shadow: none;
 }
-/* Blocs de présentation - déplacer dans une autre région */
+
 #block-recherchetextepresentationbesoin,
 #block-recherchetextepresentationconnaissance,
 #block-recherchetextepresentationdefinition,
 #block-recherchetextepresentationgroupe,
 #block-recherchetextepresentationmodele {
-  display: none;
+
 }
 
 /* Double ombre sur Recherche Header: la classe est appellée 2 fois, une dans l'autre */
