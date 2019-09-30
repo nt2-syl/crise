@@ -1292,7 +1292,7 @@ Recherche, Modeles, Services, Ref Biblio
     margin-bottom: 0;
     margin-top: -30px;
     padding-top: 15px;
-    margin-bottom: -15px;
+    margin-bottom: -21px;
     line-height: 1;
 /*    display: none; */
 }
@@ -2112,6 +2112,13 @@ audio {
   /* Sur petits écrans, empiler les quicktabs, sinon ils tombent hors de l'affichage sur les tables responsive */
   .path-user ul.quicktabs-tabs li {
     display: block;
+  }
+
+  /* Puisque les icônes ne se rapetissent pas, laisser près de la moitié de l'espace aux icônes */
+  .region-breadcrumb {
+    h1 {
+      width: 55%;
+    }
   }
 }
 
