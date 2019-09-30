@@ -813,7 +813,10 @@ Addtoany5 = Medias
 .user-logged-in .crise-flags {
   display: block;
 }
-
+/* Override vertical-align: middle */
+.addtoany_list > a, .addtoany_list a img, .addtoany_list a > span {
+    vertical-align: top;
+}
 
 /* Région Aide/Alertes */
 .alert-info {
