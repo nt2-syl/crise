@@ -2066,6 +2066,24 @@ audio {
 }
 
 
+/* Mobile Search Link - cacher sous 768 */
+#block-mobilesearchlink {
+  display: none;
+
+}
+#block-collapsiblesearch {
+  display: block;
+}
+#block-mobilesearchlink {
+  float: right;
+  position: absolute;
+  top: -50px;
+  right: 0;
+}
+
+
+
+
 /*************************************************
 *
 * Responsive @media 
@@ -2120,6 +2138,18 @@ audio {
       width: 55%;
     }
   }
+
+  /* Mobile Search Link - sous 768px remplace la recherche par une icone lien */
+#block-mobilesearchlink {
+  display: block;
+
+}
+#block-collapsiblesearch {
+  display: none;
+}
+
+
+
 }
 
 /* 3-Tablette et - // col-xs // 0-768 */
@@ -2365,10 +2395,13 @@ audio {
 
 }
 */
-
+/* Fix double bouton pour anonyme */
 #block-collapsiblesearch #edit-actions--2{
   display:none;
 }
 #block-collapsiblesearch .btn {
   display: none;
 }
+
+
+
