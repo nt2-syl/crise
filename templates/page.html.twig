@@ -147,6 +147,15 @@
         {% endblock %}
       {% endif %}
 
+      {# TopBar2 #}
+      {% if page.topbar2 %}
+        {% block topbar2 %}
+          <div class="col-sm-12 topbar2" role="heading">
+            {{ page.topbar2 }}
+          </div>
+        {% endblock %}
+      {% endif %}
+
       {# Sidebar First #}
       {% if page.sidebar_first %}
         {% block sidebar_first %}
