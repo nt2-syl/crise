@@ -850,13 +850,9 @@ ul.menu > li a:after {
   background: #000;
 }
 #block-footercopyright-2 img {
-    vertical-align: middle;
-    padding-top: 15px;
+  vertical-align: middle;
+  padding-top: 0;
 }
-
-
-
-
 
 /* Noeuds - Règles générales */
 .content .field {
@@ -1156,10 +1152,8 @@ h3.no-icons {
 .footer a.btn:hover {
   color: #86bc42;
 }
-/* Voir aussi responsive < 768px pour alignement du footer*/
-#block-footercopyright-2 img {
-  max-width: 33%;
-}
+
+
 .copyright .copyright-inner {
   padding: 0;
 }
