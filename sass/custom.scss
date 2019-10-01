@@ -2269,6 +2269,7 @@ audio {
 .path-bibliographie .region-header,
 .path-recherche .region-header {
   display: flex;
+  justify-content: space-between;
 }
 .path-bibliographie .region-header p,
 .path-recherche .region-header p {
