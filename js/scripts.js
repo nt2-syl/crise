@@ -1,4 +1,4 @@
 console.log('test Cedric');
 (function($) {
-  $('image-responsive').remove();
+  $('.image-responsive').remove();
 })(jQuery);
