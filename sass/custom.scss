@@ -1552,7 +1552,7 @@ div.region-content #edit-crise-facet {
     content: "\e9a4";
 }
 
-/**/
+/* Autres connaissances, sur noeud connaissances (bloc vert sidebar droite) */
 .block-views-blockbloc-autres-connaissances-block-1 {
   background: #86BC42;
   color: #fff;
@@ -1573,7 +1573,11 @@ div.region-content #edit-crise-facet {
     line-height: 1;
     font-weight: normal;
   }
+  /* Pour éviter de compresser la sidebar, on supprime exceptionnellement le padding sur cette colonne */
+    padding-left: 0;
+    padding-right: 0;
 }
+
 
 /* Cacher le titre du bloc en double sur Noeud Besoin */
 .block-views-blockentity-reference-vs-besoin-block-1 h2.block-title {
@@ -2426,4 +2430,6 @@ audio {
 .view-environnement-recherche-bibliographie .well {
   border: none;
 }
-
+.well_adjusted {
+  
+}
