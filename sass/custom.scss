@@ -2321,7 +2321,6 @@ audio {
   display:flex;
 }
 #views-exposed-form-environnement-recherche-page-1 {
-  /* flex: 75% à l'élément central via flex-basis*/
   .form-type-search-api-autocomplete {
      /* flex-basis: 75%;
       padding: 0 10px;*/
@@ -2379,6 +2378,14 @@ audio {
   height: 40px;
 }
 
+
+/* Recherche responsive - remplacer flex par block*/
+@media (max-width: 768px) {
+  .path-bibliographie .region-header, 
+  .path-recherche .region-header {
+      display: block;
+  }
+}
 
 /* Recherche Header: bordure*/
 #crisecustom-search-form .form-group:hover {
