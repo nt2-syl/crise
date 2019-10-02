@@ -2452,7 +2452,7 @@ audio {
 }
 
 
-/*@media (min-width: 992px) {
+@media (min-width: 992px) {
   .path-bibliographie .region-header, 
   .path-recherche .region-header {
     .views-exposed-form {
@@ -2460,9 +2460,9 @@ audio {
         width: 100%;
     }
     .views-exposed-form > div {
-      width: auto;
+     /* width: auto;
       float: none;
-      display: flex;
+      display: flex;*/
     }
 
     #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493 {
@@ -2471,7 +2471,7 @@ audio {
     }
   }
 }
-*/
+
 
 /* Forcer taille */
 
@@ -2489,7 +2489,7 @@ audio {
     width: 100%;
   }
   #views-exposed-form-environnement-recherche-page-1 .form-type-search-api-autocomplete {
-    width: 84%;
+    /*width: 84%;*/
   }
 }
 .path-bibliographie {
@@ -2501,7 +2501,7 @@ audio {
 
   }
   #views-exposed-form-environnement-recherche-bibliographie-page-1  .form-type-search-api-autocomplete {
-    width: 84%;
+    /*width: 84%;*/
   }
 }
 
@@ -2552,7 +2552,8 @@ table-cell
     width: 100%;
 
 }
-.path-recherche #views-exposed-form-environnement-recherche-page-1 > div {
+.path-recherche #views-exposed-form-environnement-recherche-page-1 > div,
+.path-bibliographie .views-exposed-form > div {
 
     display: table;
     flex-wrap: unset;
