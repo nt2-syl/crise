@@ -2208,8 +2208,9 @@ audio {
 @media (min-width: 460px) and (max-width: 992px)  {
   /* Sur mobile, forcer l'alignement gauche-droite des blocs Boutons et Présentation*/
   .footer-first {
-    width: 50%;
+    width: 33%;
     float:left;
+    min-width: 210px;
   }
   .footer-second {
     width: 50%;
@@ -2383,6 +2384,7 @@ audio {
 }
 
 /* Double ombre sur Recherche Header: la classe est appellée 2 fois, une dans l'autre */
+
 /*
 #crisecustom-search-form .form-group {
   box-shadow:none;
@@ -2400,6 +2402,7 @@ audio {
 
 }
 */
+
 /* Fix double bouton pour anonyme */
 #block-collapsiblesearch #edit-actions--2{
   display:none;
@@ -2408,17 +2411,12 @@ audio {
   display: none;
 }
 
-/* Encadrements
-.page-node-type-modele .view-eva .well*/
+/* Encadrements */
 .view .well {
   border: 1px solid #86BC42;
 }
 
-/* Listes responsive: dégager les blocs 
-.responsive .views-row:nth-of-type(2n+1) {
-    clear: left;
-}
-*/
+
 /* Pas de réécriture possible sur Bibliographie */
 .view-environnement-recherche-bibliographie .well {
   border: none;
