@@ -2141,21 +2141,20 @@ audio {
     }
   }
 
-  /* Mobile Search Link - sous 768px remplace la recherche par une icone lien */
-#block-mobilesearchlink {
-  display: block;
-
-}
-#block-collapsiblesearch {
-  display: none;
-}
-
-
 
 }
 
 /* 3-Tablette et - // col-xs // 0-768 */
 @media (max-width: 768px) {
+  /* Mobile Search Link - remplacer la recherche par une icone lien (ipad inclus) */
+  #block-mobilesearchlink {
+    display: block;
+  }
+  #block-collapsiblesearch {
+    display: none;
+  }
+
+
   /* Faire flotter le menu à droite sur mobile seulement (desktop, à gauche)*/
   #block-crise-main-menu {
     position: relative;
