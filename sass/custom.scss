@@ -2342,6 +2342,13 @@ audio {
   }
 
 }
+/* Flex-basis : ok sur accueil */
+.path-frontpage #views-exposed-form-environnement-recherche-page-1.form-type-search-api-autocomplete {
+  flex-basis: 75%;
+  padding: 0 10px;
+}
+
+
 .block-views-exposed-filter-blockenvironnement-recherche-page-1 #edit-search-api-fulltext--2 {
   border: none; /* double bordure*/
   height: 45px;
@@ -2414,7 +2421,7 @@ audio {
     margin-bottom: 0;
   }
   .region-topbar2 {
-    padding-bottom: 30px;
+    padding-top: 30px;
   }
 }
 
