@@ -2379,11 +2379,31 @@ audio {
 }
 
 
+
+@media (max-width: 992px) {
+  .path-bibliographie .region-header, 
+  .path-recherche .region-header {
+    .views-exposed-form {
+        display: flex;
+        width: 100%;
+    }
+    .views-exposed-form > div {
+      width: auto;
+      float: none;
+      display: flex;
+    }
+  }
+}
+
+
+
+
 /* Recherche responsive - remplacer flex par block*/
 @media (max-width: 767px) {
   .path-bibliographie .region-header, 
   .path-recherche .region-header {
       display: block !important;
+      justify-content: unset;
   }
   #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493, 
   #block-reinitialiserrecherche {
@@ -2398,22 +2418,6 @@ audio {
   }
 }
 
-
-@media (max-width: 992px) {
-  .path-bibliographie .region-header, 
-  .path-recherche .region-header {
-    .views-exposed-form {
-        display: flex;
-        width: 100%;
-    }
-    .views-exposed-form > div {
-      width: auto;
-      float: none;
-      display: flex;
-    }
-
-  }
-}
 
 
 @media (min-width: 992px) {
