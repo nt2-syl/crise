@@ -2236,6 +2236,13 @@ audio {
   }
 }
 
+@media (min-width: 768px) {
+  /* Listes responsive: dégager les blocs (annuler si 1 colonne seulement) */
+  .responsiveclear .views-row:nth-of-type(2n+1) {
+      clear: left;
+  }
+}
+
 /* col-sm // 768-992 */
 @media (min-width: 768px) and (max-width: 992px) {}
 /* col-md // 992-1200 */
@@ -2415,9 +2422,8 @@ audio {
 .view .well {
   border: 1px solid #86BC42;
 }
-
-
 /* Pas de réécriture possible sur Bibliographie */
 .view-environnement-recherche-bibliographie .well {
   border: none;
 }
+
