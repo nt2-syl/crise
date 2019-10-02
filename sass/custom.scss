@@ -2323,8 +2323,8 @@ audio {
 #views-exposed-form-environnement-recherche-page-1 {
   /* flex: 75% à l'élément central via flex-basis*/
   .form-type-search-api-autocomplete {
-      flex-basis: 75%;
-      padding: 0 10px;
+     /* flex-basis: 75%;
+      padding: 0 10px;*/
   }
   /* supprimer bordure sur élément interne*/
   .views-exposed-form .form-item input {
