@@ -2511,7 +2511,61 @@ over 768
 table-cell
 table-cell
 */
+@media (min-width: 768px) {
+  .path-bibliographie .region-header {
+      display: table;
+      justify-content: unset;
+  }
+  .path-bibliographie #block-views-exposed-filter-block-environnement-recherche-bibliographie-page-1 {
+      display: table-cell;
+      width: auto;
+  }
+  .path-bibliographie #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493 {
+    float: none;
+    display: table-cell;
+  }
 
+
+  /*  .path-recherche .region-header {
+      display: table;
+      justify-content: unset;
+  }
+  .path-recherche .block-views-exposed-filter-blockenvironnement-recherche-page-1 {
+      display: table-cell;
+      width: 100%;/*auto*/
+  }
+  .path-recherche #block-block-content-c94c37ff-4075-4c04-bab5-abfcce11692b {
+    float: none;
+    display: table-cell;
+  }*/
+
+.path-recherche .block-views-exposed-filter-blockenvironnement-recherche-page-1 {
+
+    display: table;
+    width: 100%;
+
+}
+.path-recherche .region-header .views-exposed-form {
+
+    display: flex; /* table*/
+    width: 100%;
+
+}
+.path-recherche #views-exposed-form-environnement-recherche-page-1 > div {
+
+    display: table;
+    flex-wrap: unset;
+    align-content: unset;
+    width: auto;
+
+}
+.path-recherche #views-exposed-form-environnement-recherche-page-1 .form-type-search-api-autocomplete {
+    width: auto;
+}
+
+
+
+}
 
 /* Recherche Header: bordure*/
 #crisecustom-search-form .form-group:hover {
