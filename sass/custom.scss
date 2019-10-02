@@ -1160,6 +1160,13 @@ h3.no-icons {
 .footer .footer-center {
   padding: 40px 0 0;
 }
+.copyright_left {
+  float:left;
+  padding-bottom: 20px; /* visible dessous */
+}
+.copyright_right {
+  padding-top: 21px; /* aligner texte avec image */
+}
 
 /**
 * Vues + Listes - règles générales 
