@@ -2393,6 +2393,43 @@ audio {
     width: 15%;
     margin-bottom: 0;
   }
+  .region-topbar2 {
+    padding-bottom: 30px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .path-bibliographie .region-header, 
+  .path-recherche .region-header {
+    .views-exposed-form {
+        display: flex;
+        width: 100%;
+    }
+    .views-exposed-form > div {
+      width: auto;
+      float: none;
+      display: flex;
+    }
+
+  }
+}
+
+
+@media (min-width: 992px) {
+  .path-bibliographie .region-header, 
+  .path-recherche .region-header {
+    .views-exposed-form {
+        display: flex;
+        width: 100%;
+    }
+    .views-exposed-form > div {
+      width: auto;
+      float: none;
+      display: flex;
+    }
+
+  }
 }
 
 /* Recherche Header: bordure*/
