@@ -2380,10 +2380,18 @@ audio {
 
 
 /* Recherche responsive - remplacer flex par block*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .path-bibliographie .region-header, 
   .path-recherche .region-header {
       display: block;
+  }
+  #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493, 
+  #block-reinitialiserrecherche {
+    margin: 0;
+  }
+  .block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 .form-actions {
+    width: 15%;
+    margin-bottom: 0;
   }
 }
 
@@ -2403,6 +2411,9 @@ audio {
   .block-title {
     border: none;
   }
+}
+.region-topbar2 {
+  clear: both;  
 }
 
 /* Double ombre sur Recherche Header: la classe est appellée 2 fois, une dans l'autre */
