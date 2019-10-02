@@ -661,12 +661,12 @@ ul.list-social li {
 }
 /* réinitialiser */
 .path-bibliographie #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493 {
-  float: left;
-  display: inline-block;
+/*  float: left;
+  display: inline-block;*/
 }
 /* bloc presentation section reference biblio */
 #block-block-content-c1ce5120-b8b3-43b7-89ef-432122f6504d {
-	clear: both;
+/*	clear: both;*/
 } 
 
 /* Accueil - Recherche avec facette */
@@ -2428,7 +2428,11 @@ audio {
       float: none;
       display: flex;
     }
-
+    /* réinitialiser*/
+    #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493 {
+      float: none;
+      display: flex;
+    }
   }
 }
 
