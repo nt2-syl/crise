@@ -2435,9 +2435,12 @@ audio {
   padding: 0 10px;
 }
 @media (max-width: 767px) {
-  .path-frontpage .region-header {
+  #block-views-exposed-filter-block-environnement-recherche-page-1 {
     display: block !important;
     justify-content: unset;
+  }
+  .path-frontpage #views-exposed-form-environnement-recherche-page-1 > div {
+    display: block;
   }
 }
 
