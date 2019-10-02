@@ -2427,6 +2427,36 @@ audio {
 
 
 
+/* Recherche responsive accueil  - remplacer flex par block*/
+
+/* Flex-basis : ok sur accueil */
+.path-frontpage #views-exposed-form-environnement-recherche-page-1.form-type-search-api-autocomplete {
+  flex-basis: 75%;
+  padding: 0 10px;
+}
+@media (max-width: 767px) {
+  .path-frontpage {
+    .path-bibliographie .region-header, 
+    .path-recherche .region-header {
+        display: block !important;
+        justify-content: unset;
+    }
+    #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493, 
+    #block-reinitialiserrecherche {
+      margin: 0;
+    }
+    .block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 .form-actions {
+      width: 15%;
+      margin-bottom: 0;
+    }
+    .region-topbar2 {
+      padding-top: 30px;
+    }
+  }    
+}
+
+
+
 @media (min-width: 992px) {
   .path-bibliographie .region-header, 
   .path-recherche .region-header {
