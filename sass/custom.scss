@@ -2414,8 +2414,12 @@ audio {
   border: 1px solid #86BC42;
 }
 
-/* Listes responsive: dégager les blocs */
+/* Listes responsive: dégager les blocs 
 .responsive .views-row:nth-of-type(2n+1) {
     clear: left;
 }
-
+*/
+/* Pas de réécriture possible sur Bibliographie */
+.view-environnement-recherche-bibliographie .well {
+  border: none;
+}
