@@ -1573,9 +1573,7 @@ div.region-content #edit-crise-facet {
     line-height: 1;
     font-weight: normal;
   }
-  /* Pour éviter de compresser la sidebar, on supprime exceptionnellement le padding sur cette colonne */
-    padding-left: 0;
-    padding-right: 0;
+
 }
 
 
@@ -2237,6 +2235,13 @@ audio {
 @media (max-width: 992px) {
   .views-exposed-form > div {
       width: 100%;
+  }
+  /* Si la Sidebar est trop petite, compenser en modifiant le texte */
+  .region-sidebar-second .block-views-blockbloc-autres-connaissances-block-1 {
+    .block-title,
+    .views-field-title {
+      font-size: 12px;
+    }
   }
 }
 
