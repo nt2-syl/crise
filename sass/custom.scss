@@ -1166,6 +1166,7 @@ h3.no-icons {
 }
 .copyright_right {
   padding-top: 21px; /* aligner texte avec image */
+  padding-bottom: 20px; /* visible sur mobile */
 }
 
 /**
@@ -2373,8 +2374,12 @@ audio {
 #block-recherchetextepresentationconnaissance,
 #block-recherchetextepresentationdefinition,
 #block-recherchetextepresentationgroupe,
-#block-recherchetextepresentationmodele {
-
+#block-recherchetextepresentationmodele,
+#block-accueilrecherchetexte,
+#block-bibliographietextepresentation {
+  .block-title {
+    border: none;
+  }
 }
 
 /* Double ombre sur Recherche Header: la classe est appellée 2 fois, une dans l'autre */
