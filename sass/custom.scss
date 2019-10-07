@@ -1698,6 +1698,9 @@ ul.quicktabs-tabs li.active a {
     padding: 0;
     border-bottom: 0;
   }
+   .form-item {
+    margin-bottom: 30px;
+  }
 }
 /* 18px pour les sections */
 .panel .panel-heading .panel-title {
@@ -2222,6 +2225,18 @@ audio {
   }
 }
 
+/* Footer - option supplémentaire (pleine largeur) pour petits écrans */
+@media (max-width: 640px) {
+  .copyright_left {
+      width: 100%;
+  }
+  .copyright_right {
+    clear: both;
+  }
+}
+
+
+
 /* 4- Au-dessus de 992px, géré par Bootstrap */
 @media (min-width: 992px) {
   /* Tweaker l'alignement des blocs */
@@ -2230,6 +2245,14 @@ audio {
       margin-right: 30px;
   }
 }
+
+
+
+
+
+
+
+
 /* Annuler règle Bootstrap sur la recherche */
 @media (max-width: 992px) {
   .views-exposed-form > div {
@@ -2243,6 +2266,9 @@ audio {
     }
   }
 }
+
+
+
 
 @media (min-width: 768px) {
   /* Listes responsive: dégager les blocs (annuler si 1 colonne seulement) */
@@ -2646,3 +2672,12 @@ table-cell
 .well_adjusted {
   
 }
+
+
+.is-active,
+.active-trail:hover .is-active {
+  color: #86BC42;
+  text-decoration: none;
+   background-color: #eeeeee;
+}
+
