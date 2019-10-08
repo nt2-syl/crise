@@ -338,7 +338,9 @@ ul, ol {
 ul li {
     list-style: inherit;
 }
-
+.field--name-body li {
+  list-style: initial;
+}
 
 ul {
     margin: 0;
