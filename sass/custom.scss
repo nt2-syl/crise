@@ -2123,6 +2123,16 @@ audio {
   #block-textepresentationsite p {
     padding-left: 0;
   }
+  /* Sur les petits écrans, éviter le dépassement du texte */
+  .tabbable_title_wrapper {
+    top: 5%;
+  }
+  .tabbable_title a {
+    font-size: 20px;
+  }
+  .tabbable_body a {
+    font-size: 12px;
+  }
 
 }
 
