@@ -1,0 +1,3139 @@
+@charset "UTF-8";
+/**
+* 1.0 General
+* 1.1 Typographie
+* Regions
+* 2.1 Menu secondaire
+* 2.2 Blocs headers 
+* 2.3 Recherche - Blocs de recherche
+* 2.4 Barre Grise (region Breadcrumb) 
+* 2.5 Région Aide/Alertes 
+* 2.6 Menus 
+* 2.7 Noeuds - Règles générales 
+* 2.8 Region Content Bottom 
+* 2.9 Region Page Bottom 
+* 2.10 Sidebars 
+* 2.11 Footer 
+* Fonctionnalités
+* 3 Vues + Listes - règles générales 
+* 3.1 Label des champs, label des EVA 
+* 3.2 Glossaire - Bonifications 
+* 3.3 Liens Read More
+* 3.4 Vertical Tabs 
+* 3.5 Quicktabs 
+* 3.6 Création Compte Utilisateur 
+* 3.7 Profil Utilisateur
+* 3.8 Collapsiblock
+* 3.9 Flags
+* 3.10 Intégration profil Utilisateur 
+* 3.11 Contact - Bonifications 
+* 3.12 Modèle associé + Services associés sur Besoin
+* 3.13 Taxonomie Listes 
+* 3.14 Profil Usager (Doublon) 
+* 3.15 Médias 
+* 4 Responsive @media 
+* 5 Varia 
+*/
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: local("☺"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("fonts/glyphicons-halflings-regular.eot");
+  src: url("fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("fonts/glyphicons-halflings-regular.woff") format("woff"), url("fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+/* line 60, ../sass/custom.scss */
+.fa,
+.crise-flags a::before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 14px;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 70, ../sass/custom.scss */
+.fa-twitter::before {
+  content: "\f099";
+}
+
+/* fa-flag */
+/* line 74, ../sass/custom.scss */
+.region-breadcrumb .crise-flags a::before {
+  content: "\f024";
+}
+
+/**
+* Éléments principaux
+**/
+/* line 82, ../sass/custom.scss */
+i,
+em {
+  font-style: italic;
+}
+
+/* line 86, ../sass/custom.scss */
+strong {
+  font-weight: bold;
+}
+
+/* Liens principaux */
+/* line 91, ../sass/custom.scss */
+a,
+.ui-widget-content a {
+  /* Même gris que le texte par défaut */
+  color: #657184;
+  text-decoration: none;
+}
+
+/* line 97, ../sass/custom.scss */
+a:hover, a:focus {
+  color: #86BC42;
+  text-decoration: none;
+}
+
+/* line 101, ../sass/custom.scss */
+a:hover, a:focus, a:active {
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  outline: none !important;
+  color: #86BC42;
+}
+
+/* line 112, ../sass/custom.scss */
+.field--name-body a,
+.field--name-field-citation a {
+  color: #86BC42;
+}
+/* line 115, ../sass/custom.scss */
+.field--name-body a:hover,
+.field--name-body a:focus,
+.field--name-body a:active,
+.field--name-field-citation a:hover,
+.field--name-field-citation a:focus,
+.field--name-field-citation a:active {
+  text-decoration: underline;
+}
+
+/*Exceptions: 
+- Bouton Réinitialiser dans le corps de Recherche */
+/* line 125, ../sass/custom.scss */
+.path-recherche .field--name-body a.btn,
+.path-bibliographie .field--name-body a.btn {
+  color: #fff;
+}
+/* line 128, ../sass/custom.scss */
+.path-recherche .field--name-body a.btn:hover,
+.path-bibliographie .field--name-body a.btn:hover {
+  color: #86BC42;
+}
+
+/* Default fonts */
+/* line 134, ../sass/custom.scss */
+body {
+  font-family: "Roboto",sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #657184;
+  font-weight: 400;
+}
+
+/* line 141, ../sass/custom.scss */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #262C38;
+}
+
+/* line 147, ../sass/custom.scss */
+p {
+  margin-bottom: 1em;
+}
+
+/* line 150, ../sass/custom.scss */
+.block-title {
+  clear: both;
+}
+
+/*ul {
+  padding-left: 30px;
+}*/
+/* line 156, ../sass/custom.scss */
+ul.js-facets-checkbox-links {
+  padding-left: 0;
+}
+/* line 158, ../sass/custom.scss */
+ul.js-facets-checkbox-links input[type="radio"], ul.js-facets-checkbox-links input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/*
+table > thead > tr > th, 
+table > thead > tr > td, 
+table > tbody > tr > th, 
+table > tbody > tr > td, 
+table > tfoot > tr > th, 
+table > tfoot > tr > td */
+/* Ajouter bordure gauche sur les tables du profil */
+/* line 170, ../sass/custom.scss */
+.path-user table > tbody > tr > td {
+  border-color: #ddd;
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* .menu--besoins */
+/*.menu--besoins {
+  .nav > li,
+  .nav > li > a {
+    display: inline-block;
+  }
+}*/
+/**
+* Boutons par défaut
+* Déclarer les endroits ou la classe btn ne peut s'ajouter automatiquement
+*/
+/* line 188, ../sass/custom.scss */
+.btn,
+.path-user .view-header a,
+.menu--menu-secondaire > li > a,
+.path-taxonomy .links a {
+  background: #86BC42;
+  color: #fff;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 9px 24px 9px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  border: 2px solid #86BC42;
+}
+
+/* line 218, ../sass/custom.scss */
+.btn:hover,
+.path-user .view-header a:hover,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a.is-active,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #86BC42;
+  background: #fff;
+}
+
+/* line 227, ../sass/custom.scss */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .btn-primary.dropdown-toggle {
+  border-color: #86BC42;
+}
+
+/**
+* Typographie
+*/
+/* line 240, ../sass/custom.scss */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #262C38;
+}
+
+/* line 246, ../sass/custom.scss */
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+/* line 250, ../sass/custom.scss */
+h4, .h4, h5, .h5, h6, .h6 {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+/* line 254, ../sass/custom.scss */
+h4, h5 {
+  line-height: 1.4;
+}
+
+/* line 257, ../sass/custom.scss */
+h1, .h1 {
+  font-size: 32px;
+}
+
+/* line 260, ../sass/custom.scss */
+h2, .h2 {
+  font-size: 28px;
+}
+
+/* line 263, ../sass/custom.scss */
+h3, .h3 {
+  font-size: 22px;
+}
+
+/* line 267, ../sass/custom.scss */
+h4, .h4 {
+  font-size: 18px;
+}
+
+/* line 270, ../sass/custom.scss */
+h5, .h5 {
+  font-size: 16px;
+}
+
+/* line 273, ../sass/custom.scss */
+.margin-bottom-30 {
+  margin-bottom: 30px !important;
+}
+
+/* line 276, ../sass/custom.scss */
+.text-white {
+  color: #fff !important;
+}
+
+/* line 279, ../sass/custom.scss */
+.bg-theme {
+  background: #86BC42;
+}
+
+/* line 282, ../sass/custom.scss */
+.bg-black {
+  background: #333333;
+}
+
+/* line 285, ../sass/custom.scss */
+.dropcap {
+  display: block;
+  float: left;
+  font-size: 40px;
+  line-height: 34px;
+  color: #444;
+  margin: 6px 8px 0 0;
+}
+
+/* line 293, ../sass/custom.scss */
+.dropcap.border-dropcap {
+  border: 2px solid #444;
+  width: 46px;
+  height: 46px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  margin: 8px 12px 0 0;
+}
+
+/* line 308, ../sass/custom.scss */
+.dropcap.circle-dropcap {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid #444;
+  width: 46px;
+  height: 46px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  margin: 8px 12px 0 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* line 334, ../sass/custom.scss */
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+/* line 338, ../sass/custom.scss */
+ul li {
+  list-style: inherit;
+}
+
+/* line 341, ../sass/custom.scss */
+.field--name-body li {
+  list-style: initial;
+}
+
+/* line 345, ../sass/custom.scss */
+ul {
+  margin: 0;
+  padding-left: 30px;
+}
+
+/**
+* Regions
+*/
+/* line 354, ../sass/custom.scss */
+.region-content {
+  margin-bottom: 2em;
+}
+
+/* Fullwidth */
+/* line 359, ../sass/custom.scss */
+.fullwidth {
+  width: 100%;
+  background: #fff;
+}
+
+/* line 363, ../sass/custom.scss */
+.fullwidth_inner {
+  margin: 0 auto;
+  padding: 0px 0px;
+}
+
+/*.Topbar */
+/* line 368, ../sass/custom.scss */
+.top_navigation {
+  background: none;
+  border-bottom: none;
+  font-size: 12px;
+  padding: 0;
+  margin-top: -1px;
+}
+
+/*.breadcrumb-content-inner .gva-breadcrumb-content .gva-block-breadcrumb .breadcrumb-style */
+/* line 380, ../sass/custom.scss */
+.title_breadcrumb {
+  background-color: #F6F6F6;
+  padding: 30px 0;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+/* Exceptions */
+/* line 387, ../sass/custom.scss */
+.path-frontpage .title_breadcrumb {
+  display: none;
+}
+
+/* Laisser un espace pour Flag et Add2Any */
+/* line 392, ../sass/custom.scss */
+.region-breadcrumb h1 {
+  width: 70%;
+}
+
+/* MENU PRINCIPAL (besoins)
+.navigation .gva_menu li a similaire à .menu--besoins */
+/* line 400, ../sass/custom.scss */
+#block-crise-main-menu {
+  float: left;
+}
+
+/*
+.menu--besoins li a,
+.menu--main li a {
+    text-align: left !important;
+}
+.menu--besoins > li > a,
+.menu--main > li > a {
+    display: block;
+    position: relative;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 22px 12px;
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    text-align: center;
+    color: #656565;
+}
+
+.menu--besoins > li:hover a,
+.menu--main > li:hover a {
+    color: #86BC42 !important;
+}
+*/
+/* todo: active trail à activer */
+/*
+.menu--besoins > li.menu-item--active-trail > a,
+.menu--main > li.menu-item--active-trail > a {
+    color: #86BC42 !important;
+}
+
+.menu--menu-secondaire li {
+  list-style: none;
+}
+*/
+/* aligner items menu principal avec le slogan */
+/* line 447, ../sass/custom.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #777;
+  padding-left: 0;
+}
+
+/* line 451, ../sass/custom.scss */
+.region-main-navigation {
+  text-align: center;
+}
+
+/**
+* Menu secondaire
+*/
+/* line 460, ../sass/custom.scss */
+ul.menu.menu--menu-secondaire > li {
+  display: inline-block;
+  padding: 0;
+  /* enlève 6px */
+}
+
+/*
+#block-crise-main-menu, #block-besoins {
+  float: none;
+  margin: 0 auto;
+  width: 100%;
+}*/
+/* line 472, ../sass/custom.scss */
+.navbar-default {
+  background-color: transparent;
+  border-color: #fff;
+  margin-bottom: 0;
+}
+
+/* line 477, ../sass/custom.scss */
+.navbar {
+  border-radius: 0;
+}
+
+/*
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: #222;
+}*/
+/* line 487, ../sass/custom.scss */
+.region-main-navigation {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+/* line 491, ../sass/custom.scss */
+.alert {
+  margin-bottom: 0;
+}
+
+/**
+* Blocs headers
+*/
+/* line 497, ../sass/custom.scss */
+#block-besoins {
+  float: right;
+}
+
+/* line 500, ../sass/custom.scss */
+#block-crise-formulaireexposeenvironnement-recherchepage-1,
+#block-crise-search {
+  float: right;
+  width: 25%;
+  margin-bottom: 0;
+}
+
+/* line 506, ../sass/custom.scss */
+#block-collapsiblesearch {
+  width: auto;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+/* line 513, ../sass/custom.scss */
+.views-exposed-form .form-item input {
+  /*width: 165px;*/
+}
+
+/* Temporaire - Réduire bouton en double */
+/* line 518, ../sass/custom.scss */
+#block-collapsiblesearch .btn {
+  /*  border-radius: 0;
+    border: none;
+    padding: 0;*/
+}
+
+/* line 524, ../sass/custom.scss */
+#block-reseauxsociaux {
+  /*padding-right: 0;
+  clear: none;
+  text-align: right;*/
+  padding-right: 0;
+  clear: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Bloc recherche */
+/* line 536, ../sass/custom.scss */
+#block-collapsiblesearch {
+  /* top: 47px;*/
+  width: auto;
+  position: absolute;
+  right: 60px;
+  top: 6px;
+}
+
+/* line 543, ../sass/custom.scss */
+.user-logged-in #block-collapsiblesearch {
+  /* top: 47px;*/
+}
+
+/* line 547, ../sass/custom.scss */
+ul.list-social li {
+  display: inline;
+  padding: 0 10px;
+  list-style: none;
+  font-size: 24px;
+}
+
+/* Slogan V2 (Bloc) */
+/* line 554, ../sass/custom.scss */
+#block-textepresentationsite {
+  margin-bottom: 0;
+  float: left;
+  display: inline-block;
+  clear: left;
+  margin-top: -40px;
+}
+/* line 560, ../sass/custom.scss */
+#block-textepresentationsite p {
+  padding-left: 96px;
+  /* Taille du logo */
+  font-weight: normal;
+  font-style: italic;
+  font-size: 16px;
+}
+
+/* Remplacer icone Refresh par Loupe en CSS */
+/* line 570, ../sass/custom.scss */
+.glyphicon-refresh::before {
+  content: "\e003";
+}
+
+/* Recherche - Blocs de recherche*/
+/* line 577, ../sass/custom.scss */
+.path-recherche {
+  /*.views-exposed-form {
+    width: 83%;
+    float: left;
+  }
+  #block-reinitialiserrecherche {
+    float: left;
+    display: inline-block;
+  }
+  
+  #block-textepresentationrecherchegenerale {
+     clear: both;
+   }
+   #edit-search-api-fulltext {
+     width: auto;
+   }
+   .region-top-navigation #edit-search-api-fulltext {
+     width: 50%;
+   }
+   .region-header #edit-search-api-fulltext {
+     width: 100%;
+     border-radius: 20px;
+   }*/
+}
+
+/* Bibliographie */
+/* line 604, ../sass/custom.scss */
+.path-bibliographie {
+  /*#block-reinitialiserrecherche {
+    float: left;
+    display: inline-block;
+  }
+  #block-textepresentationrecherchegenerale {
+     clear: both;
+   }
+   #edit-search-api-fulltext {
+     width: auto;
+   }
+   .region-top-navigation #edit-search-api-fulltext {
+     width: 50%;
+   }
+   .region-header #edit-search-api-fulltext {
+     width: 100%;
+     border-radius: 20px;
+   }*/
+}
+
+/* line 626, ../sass/custom.scss */
+#block-views-exposed-filter-block-environnement-recherche-bibliographie-page-1 .glyphicon-search::before {
+  display: none;
+}
+
+/* line 632, ../sass/custom.scss */
+#edit-submit-environnement-recherche-bibliographie .glyphicon {
+  display: none;
+}
+
+/* Liste Ref Biblio */
+/* line 638, ../sass/custom.scss */
+#block-views-exposed-filter-block-environnement-recherche-bibliographie-page-1 {
+  /* width: 83%;
+   float: left;*/
+  margin-bottom: 0;
+}
+
+/* Liste Taxonomies */
+/* line 645, ../sass/custom.scss */
+#block-formulaireexposeenvironnement-recherchepage-1-2 {
+  /*  width: 83%;
+    float: left; */
+}
+/* line 648, ../sass/custom.scss */
+#block-formulaireexposeenvironnement-recherchepage-1-2 #edit-search-api-fulltext {
+  border-radius: 20px;
+}
+
+/* doit apparaitre après les autres champs recherche
+.block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 .form-type-search-api-autocomplete {
+  width: 83%;
+}*/
+/* line 661, ../sass/custom.scss */
+.facet-item__value {
+  text-transform: uppercase;
+}
+
+/* réinitialiser */
+/* line 665, ../sass/custom.scss */
+.path-bibliographie #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493 {
+  /*  float: left;
+    display: inline-block;*/
+}
+
+/* bloc presentation section reference biblio */
+/* line 670, ../sass/custom.scss */
+#block-block-content-c1ce5120-b8b3-43b7-89ef-432122f6504d {
+  /*	clear: both;*/
+}
+
+/* Accueil - Recherche avec facette */
+/* Mettre le formulaire pleine largeur, réparti entre 3 éléments:  15%/70%/15% 
+
+contextual-region block block-views block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 clearfix
+*/
+/* line 679, ../sass/custom.scss */
+.block-views-exposed-filter-blockenvironnement-recherche-page-1,
+.block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 {
+  /* valider ailleurs*/
+}
+/* line 681, ../sass/custom.scss */
+.block-views-exposed-filter-blockenvironnement-recherche-page-1 .form-item-crise-facet,
+.block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 .form-item-crise-facet {
+  /*  width: 15%;
+    float: left;*/
+}
+/* line 685, ../sass/custom.scss */
+.block-views-exposed-filter-blockenvironnement-recherche-page-1 .form-type-search-api-autocomplete,
+.block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 .form-type-search-api-autocomplete {
+  /*     width: 74%;*/
+}
+/* line 689, ../sass/custom.scss */
+.block-views-exposed-filter-blockenvironnement-recherche-page-1 .form-actions,
+.block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 .form-actions {
+  /* width: 15%;*/
+}
+/* line 692, ../sass/custom.scss */
+.block-views-exposed-filter-blockenvironnement-recherche-page-1 .form-inline .input-group, .block-views-exposed-filter-blockenvironnement-recherche-page-1 .navbar-form .input-group,
+.block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 .form-inline .input-group,
+.block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 .navbar-form .input-group {
+  /*  width: 100%;*/
+}
+/* line 695, ../sass/custom.scss */
+.block-views-exposed-filter-blockenvironnement-recherche-page-1 .views-exposed-form .form-item,
+.block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 .views-exposed-form .form-item {
+  padding-right: 0;
+}
+/* line 699, ../sass/custom.scss */
+.block-views-exposed-filter-blockenvironnement-recherche-page-1 #edit-search-api-fulltext--2,
+.block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 #edit-search-api-fulltext--2 {
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/* Variante pour le champ apparaissant sur la page Recherche */
+/* line 707, ../sass/custom.scss */
+#views-exposed-form-environnement-recherche-page-1 .form-type-search-api-autocomplete {
+  /* width: 85%;
+   float: left;*/
+}
+
+/* line 713, ../sass/custom.scss */
+.path-frontpage #views-exposed-form-environnement-recherche-page-1 .form-type-search-api-autocomplete {
+  /* width: 70%;
+   float: left;*/
+}
+
+/* line 719, ../sass/custom.scss */
+.block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 .form-type-search-api-autocomplete {
+  /*  width: 83% !important;*/
+}
+
+/* Ne pas montrer une loupe supplémentaire sur le bouton Rechercher */
+/* Ne pas montrer loupe supplémentaire sur Accueil Recherche Facette (main-container) et sur Recherche (region header) */
+/* line 728, ../sass/custom.scss */
+.main-container #edit-submit-environnement-recherche .glyphicon,
+.region-header #edit-submit-environnement-recherche .glyphicon {
+  display: none;
+}
+
+/* Form */
+/* Ne pas montrer la loupe du thème sur formulaire Recherche */
+/* line 742, ../sass/custom.scss */
+.input-group-addon {
+  display: none;
+}
+
+/* line 745, ../sass/custom.scss */
+.input-group .form-control:first-child {
+  border-bottom-right-radius: auto;
+  border-top-right-radius: auto;
+}
+
+/* line 750, ../sass/custom.scss */
+.menu--menu-secondaire > li > a {
+  padding: 2px 6px !important;
+  letter-spacing: 0;
+  margin-right: 8px !important;
+  /*    color: #86bc42;
+      padding: 3px 8px;
+      border-radius: 8px;
+      border: 1px solid #86bc42;
+      margin-right: 8px;
+      text-align: center;
+      background: #fff;*/
+}
+
+/* line 765, ../sass/custom.scss */
+#edit-search-api-fulltext,
+.block-views-exposed-filter-blockenvironnement-recherche-page-1 #edit-search-api-fulltext--2, .block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 #edit-search-api-fulltext--2 {
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/* line 772, ../sass/custom.scss */
+#views-exposed-form-environnement-recherche-page-1 .views-exposed-form > div {
+  display: flex;
+  align-items: center;
+}
+
+/* Barre Grise (region Breadcrumb) */
+/* line 779, ../sass/custom.scss */
+.page-header {
+  padding-bottom: 0 !important;
+  margin: 0 !important;
+  border-bottom: none !important;
+  float: left;
+}
+
+/* line 785, ../sass/custom.scss */
+.page-title,
+.page-header {
+  font-size: 22px;
+  float: left;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/*
+Module Add2Any - Ajoute les boutons de partage dans la barre du titre
+Addtoany2 = ChampInteret, GroupeEnjeu
+Addtoany4 = BibCite
+Addtoany5 = Medias
+*/
+/* line 798, ../sass/custom.scss */
+#block-addtoanybuttons-1,
+#block-addtoanybuttons-2,
+#block-addtoanybuttons-3,
+#block-addtoanybuttons-4,
+#block-addtoanybuttons-5 {
+  margin-bottom: 0;
+  display: inline-block;
+  float: right;
+}
+
+/* line 808, ../sass/custom.scss */
+.addtoany_list {
+  line-height: 20px;
+  /* option: aligner top avec vertical-align: top; */
+}
+
+/* line 812, ../sass/custom.scss */
+.crise-flags {
+  display: none;
+}
+
+/* line 815, ../sass/custom.scss */
+.user-logged-in .crise-flags {
+  display: block;
+}
+
+/* Override vertical-align: middle */
+/* line 819, ../sass/custom.scss */
+.addtoany_list > a, .addtoany_list a img, .addtoany_list a > span {
+  vertical-align: top;
+}
+
+/* Région Aide/Alertes */
+/* line 824, ../sass/custom.scss */
+.alert-info {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* line 829, ../sass/custom.scss */
+.alert-info .icon {
+  display: none;
+}
+
+/* Menus */
+/* Retirer puces CSS sur items de menu */
+/* line 836, ../sass/custom.scss */
+ul.menu > li a:after {
+  display: none;
+}
+
+/* line 840, ../sass/custom.scss */
+#block-menusecondaire-2 {
+  display: inline-block;
+}
+
+/* Régions (suite) */
+/* line 845, ../sass/custom.scss */
+.page_bottom {
+  padding-top: 0;
+  padding-bottom: 50px;
+}
+
+/* line 849, ../sass/custom.scss */
+.footer,
+.copyright,
+.footer_navigation {
+  background: #000;
+}
+
+/* line 854, ../sass/custom.scss */
+#block-footercopyright-2 img {
+  vertical-align: middle;
+  padding-top: 0;
+}
+
+/* Noeuds - Règles générales */
+/* line 860, ../sass/custom.scss */
+.content .field {
+  margin-bottom: 2em;
+}
+
+/* line 863, ../sass/custom.scss */
+.field--label {
+  font-weight: bold;
+}
+
+/* Si on utilise les 3 points sous un titre, utiliser le titre comme point de référence */
+/* line 867, ../sass/custom.scss */
+h3.no-icons {
+  position: relative;
+}
+
+/* Theming Collapsiblock */
+/* line 872, ../sass/custom.scss */
+.field--name-field-ref-biblio .field-view {
+  margin-bottom: 2em;
+}
+
+/* line 876, ../sass/custom.scss */
+.field-group-accordion-wrapper {
+  margin-bottom: 2em;
+}
+/* line 878, ../sass/custom.scss */
+.field-group-accordion-wrapper .ui-state-active {
+  background-color: #86bc42;
+  border: #86bc42;
+}
+
+/* Region Content Bottom */
+/* line 887, ../sass/custom.scss */
+.widget.gsc-icon-box .highlight_content .title {
+  font-size: 16px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 3px;
+}
+
+/* line 894, ../sass/custom.scss */
+.widget.gsc-icon-box .highlight_content .desc {
+  font-size: 15px;
+}
+
+/* Separateur Trois Points*/
+/* line 901, ../sass/custom.scss */
+.accueil_besoins h2.block-title,
+.accueil_besoins .view-header h3,
+.accueil_groupes h2.block-title,
+.accueil_groupes .view-header h3,
+.view-contenus-modele h2.block-title,
+.view-contenus-modele .view-header h3 {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+/* line 906, ../sass/custom.scss */
+.accueil_besoins h2.block-title:after,
+.accueil_besoins .view-header h3:after,
+.accueil_groupes h2.block-title:after,
+.accueil_groupes .view-header h3:after,
+.view-contenus-modele h2.block-title:after,
+.view-contenus-modele .view-header h3:after {
+  content: '';
+  width: 10%;
+  height: 5px;
+  background: url("../images/edubiz_separator.gif") no-repeat center center;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  z-index: 1;
+}
+
+/* Region Page Bottom */
+/* line 922, ../sass/custom.scss */
+.region-page-bottom {
+  /* Appliquer cadre sur tous les contenus associés en bas de page */
+}
+/* line 923, ../sass/custom.scss */
+.region-page-bottom .views-field-title {
+  font-weight: bold;
+}
+/* line 927, ../sass/custom.scss */
+.region-page-bottom .views-row {
+  /*min-height: 200px;*/
+}
+/* line 930, ../sass/custom.scss */
+.region-page-bottom .views-row .pagebottom_wrapper {
+  margin: 0;
+  border: 1px solid #86BC42;
+  padding: 20px;
+  min-height: 200px;
+}
+/* line 942, ../sass/custom.scss */
+.region-page-bottom .view-header h3::after {
+  width: 40px;
+  left: 45px;
+}
+/* line 946, ../sass/custom.scss */
+.region-page-bottom .view-header h3.noicons::after {
+  width: 40px;
+  left: 0;
+}
+
+/* Titre content bottom */
+/* line 954, ../sass/custom.scss */
+.widget.gsc-icon-box .highlight_content .title,
+.views-field-field-modele,
+.views-field-field-service,
+.views-field-field-contenu-connexe {
+  font-size: 16px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 3px;
+}
+
+/* line 964, ../sass/custom.scss */
+.widget.gsc-icon-box .highlight_content .desc,
+.region-page-bottom .views-field-body {
+  font-size: 15px;
+}
+
+/* line 969, ../sass/custom.scss */
+.widget.gsc-icon-box.left {
+  text-align: left;
+}
+
+/* line 972, ../sass/custom.scss */
+.widget.gsc-icon-box.right,
+.widget.gsc-icon-box.left {
+  display: table;
+}
+
+/* line 976, ../sass/custom.scss */
+.widget.gsc-icon-box {
+  margin-bottom: 30px;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+}
+
+/* line 985, ../sass/custom.scss */
+.widget.gsc-icon-box.left .highlight-icon {
+  padding-right: 15px;
+}
+
+/* line 988, ../sass/custom.scss */
+.widget.gsc-icon-box.right .highlight-icon, .widget.gsc-icon-box.left .highlight-icon {
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 0px;
+}
+
+/* line 993, ../sass/custom.scss */
+.widget.gsc-icon-box.right .highlight_content, .widget.gsc-icon-box.left .highlight_content {
+  display: table-cell;
+  vertical-align: top;
+}
+
+/* line 997, ../sass/custom.scss */
+.widget.gsc-icon-box .highlight_content {
+  margin-top: 5px;
+}
+
+/* line 1002, ../sass/custom.scss */
+.widget.gsc-icon-box .highlight-icon .icon-container .icon {
+  position: relative;
+  z-index: 11;
+}
+
+/* line 1006, ../sass/custom.scss */
+[class^="gv-icon"], [class*=" gv-icon"] {
+  font-family: 'gva-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 1017, ../sass/custom.scss */
+.gv-icon-78:before {
+  content: "\e94d";
+}
+
+/* line 1020, ../sass/custom.scss */
+.gv-icon-146:before {
+  content: "\e991";
+}
+
+/* line 1023, ../sass/custom.scss */
+.gv-icon-467:before {
+  content: "\ead2";
+}
+
+/* Sidebars */
+/* Titres des blocs dans la sidebar */
+/* line 1033, ../sass/custom.scss */
+.well,
+.region-sidebar-first,
+.region-sidebar-second {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  /* titre des blocs sidebar */
+}
+/* line 1046, ../sass/custom.scss */
+.well .block .block-title,
+.region-sidebar-first .block .block-title,
+.region-sidebar-second .block .block-title {
+  background: none;
+  position: relative;
+  margin: 0 0 10px;
+  color: #86BC42;
+  border-bottom: 1px solid #86BC42;
+  z-index: 1;
+  /*span*/
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 1px;
+  color: #222;
+  padding: 10px 0 10px;
+  z-index: 9;
+}
+
+/* line 1066, ../sass/custom.scss */
+.page-node-type-connaissance .region-sidebar-second {
+  padding: 0;
+}
+
+/* Taxos listes dans la sidebar */
+/* line 1072, ../sass/custom.scss */
+.item-list ul {
+  overflow: hidden;
+  padding: 0;
+}
+
+/* line 1076, ../sass/custom.scss */
+.item-list ul li.view-list-item {
+  margin: 0 0 30px;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+/* line 1082, ../sass/custom.scss */
+.region-sidebar-second,
+.region-sidebar-first {
+  /* autres règles sidebar */
+}
+/* line 1084, ../sass/custom.scss */
+.region-sidebar-second .field--type-entity-reference,
+.region-sidebar-first .field--type-entity-reference {
+  border: none;
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+  border: none !important;
+  /* Liens Taxos Sidebar */
+}
+/* line 1090, ../sass/custom.scss */
+.region-sidebar-second .field--type-entity-reference a,
+.region-sidebar-first .field--type-entity-reference a {
+  padding: 10px 10px 10px 20px;
+  display: block;
+  border: 1px solid #EEEEEE;
+  background: #F6F6F6;
+  color: #bbbbbb;
+  text-transform: none;
+  font-size: 13px;
+  overflow: hidden;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  position: relative;
+}
+/* line 1106, ../sass/custom.scss */
+.region-sidebar-second .field--type-entity-reference a:after,
+.region-sidebar-first .field--type-entity-reference a:after {
+  content: "\f178";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  font-family: "FontAwesome";
+  z-index: 1;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: hidden;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  color: #86BC42;
+}
+/* line 1123, ../sass/custom.scss */
+.region-sidebar-second .field--type-entity-reference a:hover,
+.region-sidebar-second .field--type-entity-reference a:focus,
+.region-sidebar-second .field--type-entity-reference a:active,
+.region-sidebar-first .field--type-entity-reference a:hover,
+.region-sidebar-first .field--type-entity-reference a:focus,
+.region-sidebar-first .field--type-entity-reference a:active {
+  color: #86BC42;
+  padding-left: 40px;
+}
+
+/**
+* Footer
+*/
+/* line 1140, ../sass/custom.scss */
+#footer .block-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 10px 0 10px;
+}
+
+/* line 1148, ../sass/custom.scss */
+.footer a {
+  color: #86bc42;
+}
+
+/* line 1151, ../sass/custom.scss */
+.footer a.btn {
+  color: #fff;
+}
+
+/* line 1154, ../sass/custom.scss */
+.footer a.btn:hover {
+  color: #86bc42;
+}
+
+/* line 1159, ../sass/custom.scss */
+.copyright .copyright-inner {
+  padding: 0;
+}
+
+/* line 1162, ../sass/custom.scss */
+.footer .footer-center {
+  padding: 40px 0 0;
+}
+
+/* line 1165, ../sass/custom.scss */
+.copyright_left {
+  float: left;
+  padding-bottom: 20px;
+  /* visible dessous */
+}
+
+/* line 1169, ../sass/custom.scss */
+.copyright_right {
+  padding-top: 21px;
+  /* aligner texte avec image */
+  padding-bottom: 20px;
+  /* visible sur mobile */
+}
+
+/**
+* Vues + Listes - règles générales 
+*/
+/* line 1177, ../sass/custom.scss */
+.views-row {
+  margin-bottom: 2em;
+}
+
+/* Exception: Bibliographie */
+/* line 1182, ../sass/custom.scss */
+.view-environnement-recherche-bibliographie .views-row {
+  margin-bottom: 1em;
+}
+
+/* Source: edubiz/home-2 : Our Services
+* .widget.gsc-icon-box .highlight_content .title
+*/
+/* line 1189, ../sass/custom.scss */
+.views-field-title,
+.views-field-title-1,
+.views-field-name {
+  font-size: 16px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 3px;
+}
+
+/* Exception : Ref Biblio */
+/* line 1199, ../sass/custom.scss */
+.view-contenus-vs-biblio {
+  font-size: 16px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 3px;
+}
+/* line 1206, ../sass/custom.scss */
+.view-contenus-vs-biblio .views-field-title {
+  font-size: 15px;
+  font-weight: normal;
+}
+/* line 1210, ../sass/custom.scss */
+.view-contenus-vs-biblio .views-row {
+  margin-bottom: 0;
+}
+
+/* Sur:
+ Moteur Recherche - Titres
+ Glossaire - Titres
+*/
+/* Moteur Recherche - Surtitres
+* Source : Menu principal - liens
+* .navigation .gva_menu > li > a {
+*/
+/* line 1225, ../sass/custom.scss */
+.views-field-type,
+.views-field-type-1,
+.views-field-bundle {
+  display: block;
+  position: relative;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0;
+  text-align: left;
+  color: #656565;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+}
+
+/* Visible sur
+Recherche, Modeles, Services, Ref Biblio
+*/
+/* line 1245, ../sass/custom.scss */
+.region-sidebar-first {
+  padding: 0;
+}
+
+/* line 1250, ../sass/custom.scss */
+.region-copyright {
+  text-align: center;
+}
+
+/* Souligné Custom des titres de section dans le thème Edubiz */
+/* line 1256, ../sass/custom.scss */
+.heading-line {
+  position: relative;
+  display: block;
+  text-align: center;
+  height: 10px;
+  line-height: 5px;
+}
+/* line 1263, ../sass/custom.scss */
+.heading-line span {
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: inline-block;
+  margin: 0 5px;
+}
+/* line 1274, ../sass/custom.scss */
+.heading-line span.one {
+  background: #5EB4E7;
+  margin-left: 0;
+}
+/* line 1278, ../sass/custom.scss */
+.heading-line span.second {
+  background: #F8C44F;
+}
+/* line 1281, ../sass/custom.scss */
+.heading-line span.three {
+  background: #F49626;
+  margin-right: 0;
+}
+
+/* Ne pas rendre les images flexslider responsive à 100% (elles sont plus petites) */
+/* line 1289, ../sass/custom.scss */
+.flexslider .slides img {
+  width: auto;
+  margin: 0 auto 30px;
+}
+
+/* Icones dans Fil Ariane, sur Besoin */
+/* Centrer Icone verticalement
+   Fonctionne avec et sans icône */
+/* line 1297, ../sass/custom.scss */
+#block-contenufield {
+  float: left;
+  padding-right: 30px;
+  margin-bottom: 0;
+  margin-top: -30px;
+  padding-top: 15px;
+  margin-bottom: -21px;
+  line-height: 1;
+  /*    display: none; */
+}
+
+/* Logo */
+/* line 1309, ../sass/custom.scss */
+.logo {
+  max-width: 80px;
+  /* TEMP */
+  z-index: 999999;
+  /* Fixe un bug sur tablette */
+  position: relative;
+}
+
+/* line 1314, ../sass/custom.scss */
+.name {
+  display: none;
+}
+
+/* TEMP recherche entete sur 1 ligne */
+/* line 1318, ../sass/custom.scss */
+#block-crise-formulaireexposeenvironnement-recherchepage-1 {
+  float: right;
+  width: 35%;
+  margin-bottom: 0;
+}
+
+/* line 1323, ../sass/custom.scss */
+.region-top-navigation .views-exposed-form .form-item {
+  padding-right: 20px;
+  width: 40%;
+  float: right;
+}
+
+/* line 1328, ../sass/custom.scss */
+.region-top-navigation #edit-actions {
+  float: right;
+}
+
+/* Contenir le champ recherche (#block-collapsiblesearch) */
+/* line 1332, ../sass/custom.scss */
+.region-top-navigation {
+  position: relative;
+}
+
+/* Label des champs, label des EVA */
+/* line 1338, ../sass/custom.scss */
+.field--label,
+.region-page-bottom h2.block-title,
+.path-frontpage .block-title,
+.field-group-accordion-wrapper h3,
+.path-user .region-content .block-title {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Poppins",sans-serif;
+  border-bottom: 1px solid #86BC42;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+/* Titre Blocs dans Contenu (exclure footer) */
+/* line 1354, ../sass/custom.scss */
+.path-frontpage .main-container .block-title,
+.path-recherche .main-container .region-header .block-title {
+  text-align: center;
+  color: #000;
+  border: none;
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 30px;
+  text-transform: initial;
+}
+
+/**exceptions: Ref Biblio */
+/* line 1365, ../sass/custom.scss */
+.path-bibcite .field--label {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* Champ Document, sur Service */
+/* line 1373, ../sass/custom.scss */
+.field--name-field-document .icon,
+.field--name-field-document .file-link,
+.field--name-field-document .file-size {
+  padding-right: 10px;
+}
+
+/* line 1379, ../sass/custom.scss */
+.file-size {
+  font-size: 10px;
+}
+
+/*PAGER - VOIR RECHERCHE */
+/* line 1386, ../sass/custom.scss */
+nav.pager-nav {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 1392, ../sass/custom.scss */
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+  background-color: #86BC42;
+  border-color: #86BC42;
+}
+
+/* line 1396, ../sass/custom.scss */
+.pagination > li {
+  display: inline-block;
+}
+
+/* facettes */
+/* line 1401, ../sass/custom.scss */
+.facets-widget-links ul {
+  padding-left: 0;
+}
+
+/* Accueil - bloc Besoins (flexslider carousel) */
+/* Taille des flèches */
+/* line 1408, ../sass/custom.scss */
+.flexslider:hover .flex-direction-nav .flex-next:hover,
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  font-size: 24px;
+}
+
+/* line 1414, ../sass/custom.scss */
+#flexslider-1 .views-field-title {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* line 1418, ../sass/custom.scss */
+#flexslider-1 .views-field-title a:hover {
+  color: #86BC42;
+}
+/* line 1422, ../sass/custom.scss */
+#flexslider-1 .views-field-field-image {
+  text-align: center;
+}
+/* line 1425, ../sass/custom.scss */
+#flexslider-1 .views-field-body {
+  text-align: center;
+  font-size: 15px;
+}
+/* line 1429, ../sass/custom.scss */
+#flexslider-1 .slides img {
+  width: 77px;
+  height: 77px;
+}
+
+/* line 1435, ../sass/custom.scss */
+.flex-direction-nav a:before {
+  line-height: 1;
+}
+
+/* line 1438, ../sass/custom.scss */
+.flex-direction-nav a {
+  top: 10%;
+}
+
+/*Accueil Besoins + Accueil Groupes */
+/* line 1445, ../sass/custom.scss */
+#flexslider-1 .widget.gsc-icon-box .highlight_content,
+#flexslider-1 .views-field-title,
+#flexslider-2 .widget.gsc-icon-box .highlight_content,
+#flexslider-2 .views-field-title {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+/* line 1450, ../sass/custom.scss */
+#flexslider-1 .widget.gsc-icon-box.top-center .highlight_content,
+#flexslider-1 .views-field-title,
+#flexslider-2 .widget.gsc-icon-box.top-center .highlight_content,
+#flexslider-2 .views-field-title {
+  text-align: center;
+}
+/* line 1454, ../sass/custom.scss */
+#flexslider-1 .widget.gsc-icon-box .highlight_content .title,
+#flexslider-1 .views-field-title a,
+#flexslider-2 .widget.gsc-icon-box .highlight_content .title,
+#flexslider-2 .views-field-title a {
+  font-size: 16px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 3px;
+}
+/* line 1462, ../sass/custom.scss */
+#flexslider-1 .widget.gsc-icon-box.top-center .title,
+#flexslider-1 .views-field-title a,
+#flexslider-2 .widget.gsc-icon-box.top-center .title,
+#flexslider-2 .views-field-title a {
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+/* line 1469, ../sass/custom.scss */
+#flexslider-1 .widget.gsc-icon-box.top-center .title:after,
+#flexslider-1 .views-field-title a:after,
+#flexslider-2 .widget.gsc-icon-box.top-center .title:after,
+#flexslider-2 .views-field-title a:after {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background: #222;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -25px;
+  z-index: 1;
+}
+
+/* line 1484, ../sass/custom.scss */
+#flexslider-2 .views-field-title {
+  text-align: left;
+}
+/* line 1487, ../sass/custom.scss */
+#flexslider-2 .views-field-title a:after {
+  left: 0;
+  margin-left: 0;
+  color: #86BC42;
+}
+
+/* line 1494, ../sass/custom.scss */
+#flexslider-1 .widget.gsc-icon-box .highlight_content .title,
+#flexslider-1 .views-field-title a,
+#flexslider-2 .widget.gsc-icon-box .highlight_content .title,
+#flexslider-2 .views-field-title a {
+  display: block;
+}
+
+/* line 1501, ../sass/custom.scss */
+.navbar-toggle .icon-bar {
+  background-color: #000;
+}
+
+/* Hide crise facet select by default, but show for expoesd form in block in content region */
+/* line 1506, ../sass/custom.scss */
+#edit-crise-facet {
+  display: none;
+}
+
+/* line 1509, ../sass/custom.scss */
+div.region-content #edit-crise-facet {
+  display: block;
+  /*  min-width: 100px;*/
+}
+
+/* Glossaire - Bonifications */
+/* line 1516, ../sass/custom.scss */
+.path-glossaire .alert {
+  margin-bottom: 0;
+}
+/* line 1519, ../sass/custom.scss */
+.path-glossaire .title_breadcrumb {
+  margin-bottom: 0;
+}
+/* line 1522, ../sass/custom.scss */
+.path-glossaire .attachment-before {
+  margin-bottom: 45px;
+  font-size: 22px;
+}
+/* line 1526, ../sass/custom.scss */
+.path-glossaire .view-content .views-row {
+  margin-bottom: 4em;
+}
+
+/* Liens Read More*/
+/* line 1534, ../sass/custom.scss */
+.view-node a {
+  font-family: "Poppins",sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Poppins",sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* line 1542, ../sass/custom.scss */
+.view-node a i {
+  font-size: 13px;
+  position: relative;
+  top: 1px;
+  margin-left: 2px;
+}
+
+/* line 1548, ../sass/custom.scss */
+[class^="gv-icon"], [class*=" gv-icon"] {
+  font-family: 'gva-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 1559, ../sass/custom.scss */
+.gv-icon-165:before {
+  content: "\e9a4";
+}
+
+/* Autres connaissances, sur noeud connaissances (bloc vert sidebar droite) */
+/* line 1564, ../sass/custom.scss */
+.block-views-blockbloc-autres-connaissances-block-1 {
+  background: #86BC42;
+  color: #fff;
+  padding: 20px;
+}
+
+/* line 1570, ../sass/custom.scss */
+.region-sidebar-second .block-views-blockbloc-autres-connaissances-block-1 .block-title,
+.region-sidebar-second .block-views-blockbloc-autres-connaissances-block-1 .views-field-title {
+  color: #fff;
+}
+/* line 1574, ../sass/custom.scss */
+.region-sidebar-second .block-views-blockbloc-autres-connaissances-block-1 .block-title {
+  border-bottom: 2px solid white;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+/* line 1579, ../sass/custom.scss */
+.region-sidebar-second .block-views-blockbloc-autres-connaissances-block-1 a {
+  color: #fff;
+  line-height: 1;
+  font-weight: normal;
+}
+
+/* Cacher le titre du bloc en double sur Noeud Besoin */
+/* line 1589, ../sass/custom.scss */
+.block-views-blockentity-reference-vs-besoin-block-1 h2.block-title {
+  display: none;
+}
+
+/* Mise en page des Vertical Tabs */
+/* line 1594, ../sass/custom.scss */
+.tabbable {
+  background-color: #fff;
+  border: 1px solid #86BC42;
+  /* Compenser l'effet no-gutter appliqué sur les colonnes internes */
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 1600, ../sass/custom.scss */
+.tabbable .nav-stacked {
+  /*    width: 20%;
+      float: left;*/
+}
+/* line 1604, ../sass/custom.scss */
+.tabbable .tab-content {
+  /*    width: 80%;
+      float: left;*/
+}
+/* line 1608, ../sass/custom.scss */
+.tabbable .nav-tabs > li > a {
+  background: #dff0d8;
+  font-weight: 400;
+  padding: 7px 10px !important;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  border: 1px solid #86BC42;
+  line-height: 1.7;
+}
+/* line 1618, ../sass/custom.scss */
+.tabbable .views-row {
+  margin-bottom: 0;
+}
+
+/* line 1623, ../sass/custom.scss */
+.tabbable_title_wrapper {
+  top: 25%;
+  left: 0;
+  padding: 0 25px;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+/* line 1633, ../sass/custom.scss */
+.tabbable_body a,
+.tabbable_title a {
+  color: #fff;
+  display: block;
+  font-weight: normal;
+  font-weight: bold;
+  line-height: 20px;
+  text-decoration: none;
+  cursor: hand;
+  text-align: center;
+}
+
+/* line 1644, ../sass/custom.scss */
+.tabbable_title a {
+  font-size: 30px;
+  padding-bottom: 0.75em;
+  line-height: 1;
+}
+
+/* line 1649, ../sass/custom.scss */
+.tabbable_body a {
+  font-size: 15px;
+  line-height: 1.33;
+}
+
+/* Glossaire */
+/* line 1656, ../sass/custom.scss */
+.view-glossaire {
+  margin-top: 25px;
+  /* 10px déjà présent = 35px */
+}
+/* line 1658, ../sass/custom.scss */
+.view-glossaire .views-field-view-node a {
+  border: 1px solid #86BC42;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+/* Références bibliographiques */
+/* line 1666, ../sass/custom.scss */
+.glyphicon.text-primary {
+  color: #86BC42;
+}
+
+/* line 1669, ../sass/custom.scss */
+.bibcite-links ul {
+  padding-left: 0;
+}
+
+/* Quicktabs */
+/* line 1674, ../sass/custom.scss */
+.quicktabs-wrapper {
+  padding: 40px 0 0;
+}
+
+/* line 1677, ../sass/custom.scss */
+ul.quicktabs-tabs {
+  margin: 0;
+  padding: 0 0 40px;
+  text-align: center;
+}
+
+/* line 1682, ../sass/custom.scss */
+ul.quicktabs-tabs li a {
+  padding: 6px 20px 5px;
+}
+
+/* line 1685, ../sass/custom.scss */
+ul.quicktabs-tabs li.active a {
+  border: 1px solid #222;
+  border-radius: 20px;
+}
+
+/* Création Compte Utilisateur */
+/* line 1692, ../sass/custom.scss */
+#group-questionnaire .control-label {
+  padding-left: 0;
+}
+
+/* line 1695, ../sass/custom.scss */
+.panel .panel-body {
+  padding: 0;
+}
+
+/* line 1699, ../sass/custom.scss */
+#user-register-form .form-wrapper {
+  padding: 0;
+}
+/* line 1702, ../sass/custom.scss */
+#user-register-form #edit-account {
+  padding-bottom: 1em;
+}
+/* line 1705, ../sass/custom.scss */
+#user-register-form .form-wrapper {
+  padding: 0;
+  border-bottom: 0;
+}
+/* line 1709, ../sass/custom.scss */
+#user-register-form .form-item {
+  margin-bottom: 30px;
+}
+
+/* 18px pour les sections */
+/* line 1714, ../sass/custom.scss */
+.panel .panel-heading .panel-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* 16px pour les titres de champs (defaut) */
+/* line 1719, ../sass/custom.scss */
+.fieldset-legend {
+  font-weight: bold;
+}
+
+/* S'inscrire: cases à cocher */
+/* line 1724, ../sass/custom.scss */
+.path-user .form-radio {
+  margin-right: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+/* line 1729, ../sass/custom.scss */
+.checkbox label,
+.radio label {
+  padding-left: 0;
+}
+
+/* S'inscrire: Boutons Radio */
+/* line 1734, ../sass/custom.scss */
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: relative;
+  margin-right: 1em;
+}
+
+/* Visible dans les conditions d'utilisation du site à la création du compte */
+/* line 1742, ../sass/custom.scss */
+.help-block {
+  color: #657184;
+}
+
+/* Titre des champs taxos en double */
+/* line 1746, ../sass/custom.scss */
+.path-user .field--type-entity-reference legend {
+  display: none;
+}
+
+/* line 1749, ../sass/custom.scss */
+.path-user .field--item {
+  color: #fff;
+}
+
+/* Profil Utilisateur */
+/* line 1756, ../sass/custom.scss */
+.path-user nav.tabs {
+  text-align: center;
+}
+/* line 1759, ../sass/custom.scss */
+.path-user .nav-tabs {
+  margin-bottom: 2em;
+  display: inline-block;
+}
+/* line 1763, ../sass/custom.scss */
+.path-user .nav-tabs > li > a {
+  padding: 6px 20px 5px;
+}
+/* line 1766, ../sass/custom.scss */
+.path-user .nav-tabs li.active a {
+  border: 1px solid #222;
+  border-radius: 20px;
+}
+
+/* hide block-quicktabssuggestionsdecontenu on /user/register */
+/* line 1774, ../sass/custom.scss */
+.tabs--primary {
+  text-align: center;
+}
+
+/**
+* Collapsiblock
+*/
+/* line 1781, ../sass/custom.scss */
+.ui-helper-reset {
+  line-height: 1.8;
+}
+
+/* line 1784, ../sass/custom.scss */
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 1788, ../sass/custom.scss */
+.field-group-accordion-wrapper .ui-state-active {
+  background-color: transparent;
+  border: none;
+}
+
+/* line 1792, ../sass/custom.scss */
+.ui-accordion .ui-accordion-header {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin: 2px 0 0 0;
+  padding: .5em .5em .5em .7em;
+  font-size: 100%;
+}
+
+/* line 1800, ../sass/custom.scss */
+.field-group-accordion-wrapper h3, .path-user .region-content .block-title {
+  letter-spacing: 0;
+  color: #222;
+  background: #fff;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+/* line 1807, ../sass/custom.scss */
+.ui-accordion h3 {
+  font-size: 14px;
+  text-transform: initial;
+}
+
+/* line 1811, ../sass/custom.scss */
+.field-group-accordion-wrapper h3 {
+  text-transform: initial;
+  letter-spacing: 0;
+  font-size: 14px;
+}
+
+/* line 1816, ../sass/custom.scss */
+.field-group-accordion-wrapper {
+  padding: 0;
+}
+
+/* line 1819, ../sass/custom.scss */
+.field-group-accordion-wrapper .ui-state-active {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 1823, ../sass/custom.scss */
+.ui-state-default,
+.ui-state-hover {
+  border: 1px solid #86BC42;
+}
+
+/* line 1827, ../sass/custom.scss */
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+  color: #222;
+}
+
+/* line 1830, ../sass/custom.scss */
+.field-group-accordion-wrapper .ui-state-active {
+  background: transparent;
+  border: 1px solid #86BC42;
+}
+
+/* line 1834, ../sass/custom.scss */
+.ui-widget-content {
+  border: 1px solid #86BC42;
+}
+
+/* bouton ouvert doit être en noir et non en blanc */
+/* line 1838, ../sass/custom.scss */
+.ui-state-active .ui-icon,
+.ui-button:active .ui-icon {
+  background-image: url("images/ui-icons_444444_256x240.png");
+}
+
+/* line 1842, ../sass/custom.scss */
+.ui-icon,
+.ui-widget-content .ui-icon {
+  background-image: url("images/ui-icons_444444_256x240.png") !important;
+}
+
+/* Flags */
+/* line 1848, ../sass/custom.scss */
+.crise-flags a {
+  height: 25px;
+  width: 25px;
+  background: #0166ff;
+  display: block;
+  float: right;
+  border-radius: 4px;
+  margin-right: 4px;
+  margin-top: 0;
+  font-size: 0;
+}
+
+/* line 1859, ../sass/custom.scss */
+.crise-flags a::before {
+  content: "\f024";
+  font-size: 20px;
+  text-indent: 2px;
+  line-height: 25px;
+  color: #fff;
+}
+
+/* line 1866, ../sass/custom.scss */
+a[href*="unflag"]::before {
+  color: #86bc42;
+}
+
+/* Apparaît sous Noeud Modèle */
+/* line 1872, ../sass/custom.scss */
+.main-container .flag {
+  display: none;
+}
+
+/* line 1875, ../sass/custom.scss */
+.path-user .main-container .flag {
+  display: block;
+}
+
+/* Intégration profil Utilisateur */
+/* line 1883, ../sass/custom.scss */
+.panel-default > .panel-heading {
+  border-color: 1px solid #86BC42;
+}
+
+/* Niveau 1 : Panneau et Titre de blocs */
+/* line 1887, ../sass/custom.scss */
+.panel .panel-heading .panel-title,
+.path-user .region-content .block-title,
+#edit-account .control-label {
+  font-size: 14px;
+  padding-right: 20px;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #262C38;
+  text-transform: initial;
+}
+
+/* line 1901, ../sass/custom.scss */
+.panel .panel-heading .panel-title,
+.path-user .region-content .block-title,
+#edit-account .control-label {
+  border-bottom: 1px solid #86BC42;
+}
+
+/* Supprimer le soulignement de titre sur 2e niveau */
+/* line 1907, ../sass/custom.scss */
+.path-user .panel-body .field--label {
+  border-bottom: none;
+}
+
+/* Préférences, panel du bas - supprimer barre grise */
+/* line 1911, ../sass/custom.scss */
+.path-user .panel .panel-heading {
+  border: none;
+}
+
+/* line 1915, ../sass/custom.scss */
+.panel-body .field--type-entity-reference {
+  margin-bottom: 2em;
+}
+
+/* line 1919, ../sass/custom.scss */
+.path-user {
+  /* Niveau 2 : Field label */
+  /* Niveau 3 : texte defaut */
+}
+/* line 1921, ../sass/custom.scss */
+.path-user #bootstrap-panel {
+  padding: 0;
+}
+/* line 1926, ../sass/custom.scss */
+.path-user .user-register-form .field--label {
+  font-size: 16px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 3px;
+  text-transform: initial;
+}
+/* line 1935, ../sass/custom.scss */
+.path-user .user-register-form .field--item,
+.path-user #block-views-block-favorisation-contenu-block-1 .views-field-title,
+.path-user #block-views-block-favorisation-medias-block-1 .views-field-name,
+.path-user #block-views-block-favorisation-ref-biblio-block-1 .views-field-title,
+.path-user #quicktabs-suggestions_contenu .views-field-title,
+.path-user #block-views-block-medias-profil-taxo-type-groupe-block-1 .views-field-name {
+  color: #657184;
+  text-decoration: none;
+  font-family: "Roboto",sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #657184;
+  font-weight: 400;
+}
+/* line 1949, ../sass/custom.scss */
+.path-user #quicktabs-suggestions_contenu {
+  padding-top: 0;
+}
+/* line 1952, ../sass/custom.scss */
+.path-user #quicktabs-container-suggestions_contenu .views-field-name,
+.path-user #block-views-block-medias-profil-taxo-type-groupe-block-1 .views-field-name-1 {
+  /* Niveau 4 small */
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Poppins",sans-serif;
+  border-bottom: none;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+/* line 1968, ../sass/custom.scss */
+#user-register-form .form-wrapper#edit-actions {
+  border-bottom: none;
+  text-align: center;
+}
+
+/* ENLEVER BOUTON DE SEARCH BUTTON 
+#edit-submit--2.button,
+#crisecustom-search-form #edit-actions #edit-submit {
+  background: transparent;
+  color: #000;
+  overflow: hidden;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0;
+  padding: 0;
+  display: inline-block;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  border: none;
+  text-indent: -9999px;
+  width: 30px;
+  height: 30px;
+  background: #eee;
+  z-index: 10;
+}
+*/
+/* Ne pas montrer bouton original */
+/* line 2003, ../sass/custom.scss */
+#crisecustom-search-form #edit-actions {
+  display: none;
+}
+
+/* Contact - Bonifications */
+/* line 2013, ../sass/custom.scss */
+.contact-message-form .js-form-item-mail {
+  height: auto;
+  line-height: auto;
+  padding-left: 0;
+  background: transparent;
+}
+
+/**
+* Modèle associé + Services associés sur Besoins
+*/
+/* line 2025, ../sass/custom.scss */
+.view-entity-reference-vs-besoin .view-content,
+.view-entity-reference-vs-groupe .view-content {
+  text-align: center;
+}
+/* line 2028, ../sass/custom.scss */
+.view-entity-reference-vs-besoin img,
+.view-entity-reference-vs-groupe img {
+  margin: 0 auto;
+}
+
+/* Taxonomie Listes */
+/* Le bouton en savoir plus est en position:absolute en bas (car il apparait avant dans le html) */
+/* TODO: changer l'ordre de sortie html dans le résumé affiché */
+/* line 2037, ../sass/custom.scss */
+.path-taxonomy ul.links {
+  clear: both;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  font-weight: bold;
+}
+/* line 2044, ../sass/custom.scss */
+.path-taxonomy .list-inline > li {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Profil Usager */
+/* line 2051, ../sass/custom.scss */
+#block-views-block-favorisation-ref-biblio-block-1 {
+  margin-bottom: 0;
+}
+
+/* line 2054, ../sass/custom.scss */
+#block-quicktabssuggestionsdecontenu {
+  padding-top: 60px;
+  margin-top: 60px;
+  border-top: 2px solid #86BC42;
+}
+
+/* line 2059, ../sass/custom.scss */
+#block-views-block-medias-profil-taxo-type-groupe-block-1 {
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  border-bottom: 2px solid #86BC42;
+}
+
+/* Médias */
+/* line 2068, ../sass/custom.scss */
+audio,
+video {
+  width: 100%;
+  height: auto;
+}
+
+/* Forcer la hauteur sur Chrome */
+/* line 2074, ../sass/custom.scss */
+audio {
+  height: 40px;
+  margin-bottom: 1em;
+}
+
+/* line 2079, ../sass/custom.scss */
+.path-media .field--name-field-media-image {
+  padding-bottom: 2em;
+}
+
+/* Mobile Search Link - cacher sous 768 */
+/* line 2085, ../sass/custom.scss */
+#block-mobilesearchlink {
+  display: none;
+}
+
+/* line 2089, ../sass/custom.scss */
+#block-collapsiblesearch {
+  display: block;
+}
+
+/* line 2092, ../sass/custom.scss */
+#block-mobilesearchlink {
+  float: right;
+  position: absolute;
+  top: -81px;
+  right: 51px;
+}
+
+/*************************************************
+*
+* Responsive @media 
+*
+**************************************************/
+/* 1- mobile - petits écran */
+@media (max-width: 460px) {
+  /* donner pleine largeur aux items du menu secondaire*/
+  /* line 2110, ../sass/custom.scss */
+  ul.menu.menu--menu-secondaire > li {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Sur cellulaire, passer pleine largeur, aligne à gauche */
+  /* line 2116, ../sass/custom.scss */
+  #block-textepresentationsite {
+    margin-bottom: 0;
+    float: none;
+    display: block;
+    clear: both;
+    margin-top: 0;
+  }
+
+  /* line 2123, ../sass/custom.scss */
+  #block-textepresentationsite p {
+    padding-left: 0;
+  }
+
+  /* Sur les petits écrans, éviter le dépassement du texte */
+  /* line 2127, ../sass/custom.scss */
+  .tabbable_title_wrapper {
+    top: 5%;
+  }
+
+  /* line 2130, ../sass/custom.scss */
+  .tabbable_title a {
+    font-size: 20px;
+  }
+
+  /* line 2133, ../sass/custom.scss */
+  .tabbable_body a {
+    font-size: 12px;
+  }
+}
+/* 2- Mobile, excluant la tablette 768 */
+@media (max-width: 767px) {
+  /* Cacher description sur mobile*/
+  /* line 2142, ../sass/custom.scss */
+  .path-frontpage #flexslider-1 .views-field-body {
+    display: none;
+  }
+
+  /* Footer - Logo Footer pleine largeur et centré */
+  /* line 2146, ../sass/custom.scss */
+  #block-footercopyright-2 img {
+    max-width: 100%;
+    display: block;
+    clear: both;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  /* Sur petits écrans, empiler les quicktabs, sinon ils tombent hors de l'affichage sur les tables responsive */
+  /* line 2154, ../sass/custom.scss */
+  .path-user ul.quicktabs-tabs li {
+    display: block;
+  }
+
+  /* Puisque les icônes ne se rapetissent pas, laisser près de la moitié de l'espace aux icônes */
+  /* line 2160, ../sass/custom.scss */
+  .region-breadcrumb h1 {
+    width: 55%;
+  }
+}
+/* 3-Tablette et - // col-xs // 0-768 */
+@media (max-width: 768px) {
+  /* Mobile Search Link - remplacer la recherche par une icone lien (ipad inclus) */
+  /* line 2171, ../sass/custom.scss */
+  #block-mobilesearchlink {
+    display: block;
+  }
+
+  /* line 2174, ../sass/custom.scss */
+  #block-collapsiblesearch {
+    display: none;
+  }
+
+  /* Faire flotter le menu à droite sur mobile seulement (desktop, à gauche)*/
+  /* line 2180, ../sass/custom.scss */
+  #block-crise-main-menu {
+    position: relative;
+    padding-right: 90px;
+    float: right;
+  }
+
+  /* line 2185, ../sass/custom.scss */
+  .menu--menu-secondaire > li > a {
+    width: 100%;
+  }
+
+  /* rendre menu primaire pleine largeur */
+  /* line 2189, ../sass/custom.scss */
+  #block-crise-main-menu {
+    float: none;
+  }
+
+  /* Annuler l'enchassement du slogan */
+  /* 768px Safari Tablette : menu collé car le menu mobile n'est pas déclenché
+  *
+  * Compenser le padding du menu et du logo
+  */
+  /* line 2197, ../sass/custom.scss */
+  .navbar-collapse {
+    padding-left: 0px;
+  }
+
+  /* line 2200, ../sass/custom.scss */
+  .logo {
+    padding-right: 15px;
+    z-index: 98;
+    /*test pour émulateur safari*/
+  }
+
+  /* line 2204, ../sass/custom.scss */
+  .navbar-nav {
+    margin: 0;
+  }
+
+  /* line 2207, ../sass/custom.scss */
+  .region-sidebar-first {
+    border-bottom: 2px solid #86BC42;
+  }
+}
+/* Footer - 3 tailles à traiter */
+@media (max-width: 460px) {
+  /* Sur mobile, forcer l'alignement gauche-droite des blocs Boutons et Présentation*/
+  /* line 2218, ../sass/custom.scss */
+  .footer-first {
+    width: 100%;
+    float: left;
+  }
+
+  /* line 2222, ../sass/custom.scss */
+  .footer-second {
+    width: 100%;
+    float: left;
+  }
+
+  /* line 2226, ../sass/custom.scss */
+  .footer-third #block-footerlogos {
+    width: 100%;
+  }
+}
+@media (min-width: 460px) and (max-width: 992px) {
+  /* Sur mobile, forcer l'alignement gauche-droite des blocs Boutons et Présentation*/
+  /* line 2232, ../sass/custom.scss */
+  .footer-first {
+    width: 33%;
+    float: left;
+    min-width: 210px;
+  }
+
+  /* line 2237, ../sass/custom.scss */
+  .footer-second {
+    width: 50%;
+    float: left;
+  }
+
+  /* line 2241, ../sass/custom.scss */
+  .footer-third #block-footerlogos {
+    width: 100%;
+  }
+}
+/* Footer - option supplémentaire (pleine largeur) pour petits écrans */
+@media (max-width: 640px) {
+  /* line 2248, ../sass/custom.scss */
+  .copyright_left {
+    width: 100%;
+  }
+
+  /* line 2251, ../sass/custom.scss */
+  .copyright_right {
+    clear: both;
+  }
+
+  /* line 2254, ../sass/custom.scss */
+  .footer-third a {
+    display: block;
+  }
+}
+/* 4- Au-dessus de 992px, géré par Bootstrap */
+@media (min-width: 992px) {
+  /* Tweaker l'alignement des blocs */
+  /* line 2264, ../sass/custom.scss */
+  .footer-second {
+    margin-left: -30px;
+    margin-right: 30px;
+  }
+}
+/* Annuler règle Bootstrap sur la recherche */
+@media (max-width: 992px) {
+  /* line 2279, ../sass/custom.scss */
+  .views-exposed-form > div {
+    width: 100%;
+  }
+
+  /* Si la Sidebar est trop petite, compenser en modifiant le texte */
+  /* line 2284, ../sass/custom.scss */
+  .region-sidebar-second .block-views-blockbloc-autres-connaissances-block-1 .block-title,
+  .region-sidebar-second .block-views-blockbloc-autres-connaissances-block-1 .views-field-title {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  /* Listes responsive: dégager les blocs (annuler si 1 colonne seulement) */
+  /* line 2296, ../sass/custom.scss */
+  .responsiveclear .views-row:nth-of-type(2n+1) {
+    clear: left;
+  }
+}
+/* col-sm // 768-992 */
+/* col-md // 992-1200 */
+/* col-lg 1200+ */
+/* écrans larges */
+/**
+* Varia 
+*/
+/*  Bootstrap Clearfix */
+/* Utilities */
+/* Remove gutter with a class : https://stackoverflow.com/a/19563497 */
+/* line 2320, ../sass/custom.scss */
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 2325, ../sass/custom.scss */
+#views-exposed-form-environnement-recherche-page-1 .form-type-search-api-autocomplete {
+  /*width: 80%;*/
+}
+
+/* line 2328, ../sass/custom.scss */
+#crisecustom-search-form .form-group input.form-control {
+  /* max-width: 300px;*/
+}
+
+/* line 2332, ../sass/custom.scss */
+.path-bibliographie .region-header,
+.path-recherche .region-header {
+  /*  display: flex;
+    justify-content: space-between;*/
+}
+
+/* line 2337, ../sass/custom.scss */
+.path-bibliographie .region-header p,
+.path-recherche .region-header p {
+  margin-bottom: 0;
+}
+
+/* line 2341, ../sass/custom.scss */
+#block-block-content-f42d7565-ff15-4392-9969-8815a9e08493,
+#block-reinitialiserrecherche {
+  margin-top: 0.2em;
+  margin-left: 0.5em;
+}
+
+/* ACCUEIL - STRUCTURE DU BLOC RECHERCHE 
+.block.accueil_recherche_texte
+.block
+  .form
+    .views-exposed-form > div (PARENT)
+      .form-item-crise-facet
+        select-wrapper
+          #edit-crise-facet
+
+      .form-type-search-api-autocomplete
+        .input-group
+          input
+
+      #edit-actions--2    
+        #edit-submit-environnement-recherche
+*/
+/* Flex: élément englobant, sous le form */
+/* line 2368, ../sass/custom.scss */
+#views-exposed-form-environnement-recherche-page-1 > div {
+  display: flex;
+}
+
+/* line 2371, ../sass/custom.scss */
+#views-exposed-form-environnement-recherche-page-1 {
+  /* supprimer bordure sur élément interne*/
+  /* cadre */
+  /* donner 100% au parent de la balise input + rapporter bordure */
+}
+/* line 2372, ../sass/custom.scss */
+#views-exposed-form-environnement-recherche-page-1 .form-type-search-api-autocomplete {
+  /* flex-basis: 75%;
+   padding: 0 10px;*/
+}
+/* line 2377, ../sass/custom.scss */
+#views-exposed-form-environnement-recherche-page-1 .views-exposed-form .form-item input {
+  border: none;
+  border-radius: 0;
+}
+/* line 2386, ../sass/custom.scss */
+#views-exposed-form-environnement-recherche-page-1 div.input-group {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+/* Flex-basis : ok sur accueil */
+/* line 2394, ../sass/custom.scss */
+.path-frontpage #views-exposed-form-environnement-recherche-page-1.form-type-search-api-autocomplete {
+  flex-basis: 75%;
+  padding: 0 10px;
+}
+
+/* line 2400, ../sass/custom.scss */
+.block-views-exposed-filter-blockenvironnement-recherche-page-1 #edit-search-api-fulltext--2 {
+  border: none;
+  /* double bordure*/
+  height: 45px;
+}
+
+/* Structure du bloc Recherche sur Bibliographie (via Context)
+.path-bibliographie
+  .region-header
+    (input + submit)
+    #block-views-exposed-filter-block-environnement-recherche-bibliographie-page-1
+      .views-exposed-form
+        .views-exposed-form > div
+          (input)
+          .views-exposed-form .form-item
+            input
+          #edit-actions--2
+            button
+
+    (réinitialiser)
+    #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493
+      (texte du bloc)
+
+*/
+/* Recherche */
+/* line 2426, ../sass/custom.scss */
+.block-views-exposed-filter-blockenvironnement-recherche-page-1 .form-item-crise-facet {
+  padding-right: 0;
+}
+
+/* line 2429, ../sass/custom.scss */
+#block-reinitialiserrecherche {
+  margin-top: 0;
+}
+
+/* line 2432, ../sass/custom.scss */
+.path-recherche .block-views-exposed-filter-blockenvironnement-recherche-page-1 #edit-search-api-fulltext--2 {
+  height: 40px;
+}
+
+/*
+@media (max-width: 992px) {
+  .path-bibliographie .region-header, 
+  .path-recherche .region-header {
+    .views-exposed-form {
+        display: flex;
+        width: 100%;
+    }
+    .views-exposed-form > div {
+      width: auto;
+      float: none;
+      display: flex;
+    }
+  }
+}
+*/
+/* Recherche responsive - remplacer flex par block*/
+@media (max-width: 767px) {
+  /* line 2458, ../sass/custom.scss */
+  .path-bibliographie .region-header,
+  .path-recherche .region-header {
+    display: block !important;
+    justify-content: unset;
+  }
+
+  /* line 2463, ../sass/custom.scss */
+  #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493,
+  #block-reinitialiserrecherche {
+    margin: 0;
+  }
+
+  /* line 2467, ../sass/custom.scss */
+  .block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 .form-actions {
+    width: 15%;
+    margin-bottom: 0;
+  }
+
+  /* line 2471, ../sass/custom.scss */
+  .region-topbar2 {
+    padding-top: 30px;
+  }
+}
+/* Recherche responsive accueil  - remplacer flex par block*/
+/* Flex-basis : ok sur accueil */
+/* line 2481, ../sass/custom.scss */
+.path-frontpage #views-exposed-form-environnement-recherche-page-1.form-type-search-api-autocomplete {
+  flex-basis: 75%;
+  padding: 0 10px;
+}
+
+@media (max-width: 767px) {
+  /* line 2486, ../sass/custom.scss */
+  #block-views-exposed-filter-block-environnement-recherche-page-1 {
+    display: block !important;
+    justify-content: unset;
+    margin-bottom: 0;
+  }
+
+  /* line 2491, ../sass/custom.scss */
+  .path-frontpage #views-exposed-form-environnement-recherche-page-1 > div {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  /* line 2496, ../sass/custom.scss */
+  .path-frontpage #views-exposed-form-environnement-recherche-page-1 .form-type-search-api-autocomplete {
+    flex-basis: 74%;
+    padding: 0 10px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 2506, ../sass/custom.scss */
+  .path-bibliographie .region-header .views-exposed-form,
+  .path-recherche .region-header .views-exposed-form {
+    display: flex;
+    width: 100%;
+  }
+  /* line 2510, ../sass/custom.scss */
+  .path-bibliographie .region-header .views-exposed-form > div,
+  .path-recherche .region-header .views-exposed-form > div {
+    /* width: auto;
+     float: none;
+     display: flex;*/
+  }
+  /* line 2516, ../sass/custom.scss */
+  .path-bibliographie .region-header #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493,
+  .path-recherche .region-header #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493 {
+    float: none;
+    display: flex;
+  }
+}
+/* Forcer taille */
+/* line 2528, ../sass/custom.scss */
+.path-recherche #views-exposed-form-environnement-recherche-page-1 > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  width: 100%;
+}
+/* line 2534, ../sass/custom.scss */
+.path-recherche .block-views-exposed-filter-blockenvironnement-recherche-page-1 {
+  /*width: 80%;*/
+  display: flex;
+  width: 100%;
+}
+/* line 2539, ../sass/custom.scss */
+.path-recherche #views-exposed-form-environnement-recherche-page-1 .form-type-search-api-autocomplete {
+  /*width: 84%;*/
+}
+
+/* line 2544, ../sass/custom.scss */
+.path-bibliographie #block-views-exposed-filter-block-environnement-recherche-bibliographie-page-1 {
+  display: flex;
+  width: 100%;
+}
+/* line 2551, ../sass/custom.scss */
+.path-bibliographie #views-exposed-form-environnement-recherche-bibliographie-page-1 .form-type-search-api-autocomplete {
+  /*width: 84%;*/
+}
+
+/*
+over 768
+ table
+table-cell
+table-cell
+*/
+/*  display: flex;
+  justify-content: space-between;
+  */
+@media (min-width: 768px) {
+  /* line 2567, ../sass/custom.scss */
+  .path-bibliographie .region-header,
+  .path-recherche .region-header {
+    display: table;
+    justify-content: unset;
+  }
+
+  /* line 2572, ../sass/custom.scss */
+  .path-bibliographie #block-views-exposed-filter-block-environnement-recherche-bibliographie-page-1 {
+    display: table-cell;
+    width: auto;
+  }
+
+  /* line 2576, ../sass/custom.scss */
+  .path-bibliographie #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493 {
+    float: none;
+    /* display: table-cell;*/
+  }
+
+  /* line 2580, ../sass/custom.scss */
+  .path-recherche .block-views-exposed-filter-blockenvironnement-recherche-page-1 {
+    display: table-cell;
+    width: 100%;
+  }
+
+  /* line 2584, ../sass/custom.scss */
+  .path-recherche #block-block-content-c94c37ff-4075-4c04-bab5-abfcce11692b {
+    float: none;
+    /*    display: table-cell;*/
+  }
+
+  /* line 2589, ../sass/custom.scss */
+  .path-recherche .block-views-exposed-filter-blockenvironnement-recherche-page-1,
+  .path-bibliographie #block-views-exposed-filter-block-environnement-recherche-bibliographie-page-1 {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* line 2597, ../sass/custom.scss */
+  .path-recherche .region-header .views-exposed-form,
+  .path-bibliographie .region-header .views-exposed-form {
+    display: table;
+    width: 100%;
+  }
+
+  /* line 2604, ../sass/custom.scss */
+  .path-recherche #views-exposed-form-environnement-recherche-page-1 > div,
+  .path-bibliographie .views-exposed-form > div {
+    display: table;
+    flex-wrap: unset;
+    align-content: unset;
+    width: auto;
+  }
+
+  /* line 2613, ../sass/custom.scss */
+  .path-recherche #views-exposed-form-environnement-recherche-page-1 .form-type-search-api-autocomplete {
+    width: auto;
+  }
+
+  /* recherche, reinitialiser*/
+  /* line 2620, ../sass/custom.scss */
+  .path-bibliographie #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493 {
+    margin: 0;
+  }
+
+  /* line 2624, ../sass/custom.scss */
+  .path-recherche #block-block-content-c94c37ff-4075-4c04-bab5-abfcce11692b,
+  .path-bibliographie #block-block-content-f42d7565-ff15-4392-9969-8815a9e08493 {
+    margin-bottom: 20px;
+  }
+
+  /* line 2628, ../sass/custom.scss */
+  .block-views-exposed-filter-blockenvironnement-recherche-page-1 .form-actions, .block-views-exposed-filter-blockenvironnement-recherche-bibliographie-page-1 .form-actions {
+    padding-left: 10px;
+  }
+}
+/* Recherche Header: bordure*/
+/* line 2637, ../sass/custom.scss */
+#crisecustom-search-form .form-group:hover {
+  border-radius: 30px;
+  box-shadow: none;
+}
+
+/* line 2649, ../sass/custom.scss */
+#block-recherchetextepresentationbesoin .block-title,
+#block-recherchetextepresentationconnaissance .block-title,
+#block-recherchetextepresentationdefinition .block-title,
+#block-recherchetextepresentationgroupe .block-title,
+#block-recherchetextepresentationmodele .block-title,
+#block-accueilrecherchetexte .block-title,
+#block-bibliographietextepresentation .block-title {
+  border: none;
+}
+
+/* line 2653, ../sass/custom.scss */
+.region-topbar2 {
+  clear: both;
+}
+
+/* Double ombre sur Recherche Header: la classe est appellée 2 fois, une dans l'autre */
+/*
+#crisecustom-search-form .form-group {
+  box-shadow:none;
+  border:none;
+}
+#crisecustom-search-form > .form-group {
+    float: right !important;
+    transition: all 0.35s, border-radius 0s;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+
+}
+*/
+/* Fix double bouton pour anonyme */
+/* line 2678, ../sass/custom.scss */
+#block-collapsiblesearch #edit-actions--2 {
+  display: none;
+}
+
+/* line 2681, ../sass/custom.scss */
+#block-collapsiblesearch .btn {
+  display: none;
+}
+
+/* Encadrements */
+/* line 2686, ../sass/custom.scss */
+.view .well {
+  border: 1px solid #86BC42;
+}
+
+/* Pas de réécriture possible sur Bibliographie */
+/* line 2690, ../sass/custom.scss */
+.view-environnement-recherche-bibliographie .well {
+  border: none;
+}
+
+/* line 2698, ../sass/custom.scss */
+.is-active,
+.active-trail:hover .is-active {
+  color: #86BC42;
+  text-decoration: none;
+  background-color: #eeeeee;
+}
