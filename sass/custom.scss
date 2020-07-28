@@ -2701,5 +2701,24 @@ table-cell
 }
 /* test */
 .test {
-  color: #f00;
+  color: #f04;
+}
+.region-page-bottom .views-row .well {
+  min-height: 212px;
+}
+.region-page-bottom .pager {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .region-page-bottom .views-row:nth-child(2n+1){
+    clear: left;
+  }
+}
+@media (min-width: 992px) {
+  .region-page-bottom .views-row:nth-child(2n+1){
+    clear: none;
+  }
+  .region-page-bottom .views-row:nth-child(3n+1){
+    clear: left;
+  }
 }
